@@ -10,10 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/test', function () {
-    return view('master.student-admin');
+Route::group(['prefix' => 'student'], function(){
+    Route::get('/', function () {
+        return view('layouts.student.landing.index');
+    })->name('student.index');
+    Route::get('/modules', function () {
+        return view('layouts.student.modules.index');
+    })->name('student.modules');
 });
