@@ -5,7 +5,7 @@
 <head>
     <base href="">
     <meta charset="utf-8" />
-    <title>Evaluator</title>
+    <title>Feroudja</title>
     <meta name="description" content="User profile block example">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--begin::Fonts -->
@@ -70,7 +70,7 @@
 <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
     <div class="kt-header-mobile__logo">
-        <h4>Evaluator</h4>
+        <h4>Feroudja</h4>
     </div>
     <div class="kt-header-mobile__toolbar">
         <button class="kt-header-mobile__toggler kt-header-mobile__toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
@@ -92,7 +92,7 @@
             <!-- begin:: Aside -->
             <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
                 <div class="container kt-aside__brand-logo">
-                    <h4>Evaluator</h4>
+                    <h4>Feroudja</h4>
                 </div>
                 <div class="kt-aside__brand-tools">
                     <button class="kt-aside__brand-aside-toggler" id="kt_aside_toggler">
@@ -141,7 +141,7 @@
         <rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1"/>
     </g>
 </svg></span>
-                                <span class="kt-menu__link-text">Liste des matiéres</span>
+                                <span class="kt-menu__link-text">Liste des classes</span>
                             </a>
                         </li>
                         <li class="kt-menu__item" >
@@ -153,10 +153,10 @@
         <path d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
     </g>
 </svg></span>
-                                <span class="kt-menu__link-text">Liste des enseignents</span>
+                                <span class="kt-menu__link-text">Liste des etudiants</span>
                             </a>
                         </li>
-                        <li class="kt-menu__item" ><a href="{{route('student.planning')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+                        <li class="kt-menu__item" ><a href="{{route('prof.planning')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect x="0" y="0" width="24" height="24"/>
@@ -166,20 +166,6 @@
         <path d="M11.9630156,7.5 L12.0369844,7.5 C12.2982526,7.5 12.5154733,7.70115317 12.5355117,7.96165175 L12.9585886,13.4616518 C12.9797677,13.7369807 12.7737386,13.9773481 12.4984096,13.9985272 C12.4856504,13.9995087 12.4728582,14 12.4600614,14 L11.5399386,14 C11.2637963,14 11.0399386,13.7761424 11.0399386,13.5 C11.0399386,13.4872031 11.0404299,13.4744109 11.0414114,13.4616518 L11.4644883,7.96165175 C11.4845267,7.70115317 11.7017474,7.5 11.9630156,7.5 Z" fill="#000000"/>
     </g>
 </svg></span><span class="kt-menu__link-text">Emploi de temps</span></a>
-                        </li>
-                        <li class="kt-menu__section ">
-                            <h4 class="kt-menu__section-text">Devoirs et convocations</h4>
-                            <i class="kt-menu__section-icon flaticon-more-v2"></i>
-                        </li>
-                        <li class="kt-menu__item" ><a href="{{route('student.convocation')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect x="0" y="0" width="24" height="24"/>
-        <path d="M4,16 L5,16 C5.55228475,16 6,16.4477153 6,17 C6,17.5522847 5.55228475,18 5,18 L4,18 C3.44771525,18 3,17.5522847 3,17 C3,16.4477153 3.44771525,16 4,16 Z M1,11 L5,11 C5.55228475,11 6,11.4477153 6,12 C6,12.5522847 5.55228475,13 5,13 L1,13 C0.44771525,13 6.76353751e-17,12.5522847 0,12 C-6.76353751e-17,11.4477153 0.44771525,11 1,11 Z M3,6 L5,6 C5.55228475,6 6,6.44771525 6,7 C6,7.55228475 5.55228475,8 5,8 L3,8 C2.44771525,8 2,7.55228475 2,7 C2,6.44771525 2.44771525,6 3,6 Z" fill="#000000" opacity="0.3"/>
-        <path d="M10,6 L22,6 C23.1045695,6 24,6.8954305 24,8 L24,16 C24,17.1045695 23.1045695,18 22,18 L10,18 C8.8954305,18 8,17.1045695 8,16 L8,8 C8,6.8954305 8.8954305,6 10,6 Z M21.0849395,8.0718316 L16,10.7185839 L10.9150605,8.0718316 C10.6132433,7.91473331 10.2368262,8.02389331 10.0743092,8.31564728 C9.91179228,8.60740125 10.0247174,8.9712679 10.3265346,9.12836619 L15.705737,11.9282847 C15.8894428,12.0239051 16.1105572,12.0239051 16.294263,11.9282847 L21.6734654,9.12836619 C21.9752826,8.9712679 22.0882077,8.60740125 21.9256908,8.31564728 C21.7631738,8.02389331 21.3867567,7.91473331 21.0849395,8.0718316 Z" fill="#000000"/>
-    </g>
-</svg>
-						</span><span class="kt-menu__link-text">Convocations</span></a>
                         </li>
                     </ul>
                 </div>

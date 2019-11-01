@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('home.index');
+})->name('home');
 Route::group(['prefix' => 'student'], function(){
     Route::get('/', function () {
         return view('layouts.student.landing.index');
@@ -29,4 +32,11 @@ Route::group(['prefix' => 'student'], function(){
     Route::get('/convocations', function () {
         return view('layouts.student.convocation.index');
     })->name('student.convocation');
+});
+
+Route::group(['prefix' => 'enseigant'], function(){
+
+    Route::get('/planning', function () {
+        return view('layouts.prof.planning.index');
+    })->name('prof.planning');
 });

@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <head>
     <base href="">
     <meta charset="utf-8" />
-    <title>Evaluator</title>
+    <title>Feroudja</title>
     <meta name="description" content="User profile block example">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
