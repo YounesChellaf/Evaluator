@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-
-<!--
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 4 & Angular 8
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
 <html lang="en">
 
 <!-- begin::Head -->
@@ -21,14 +8,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <title>Evaluator</title>
     <meta name="description" content="User profile block example">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!--begin::Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
-
-    <!--end::Fonts -->
-
-    <!--begin::Global Theme Styles(used by all pages) -->
-
     <!--begin:: Vendor Plugins -->
     <link href="{{asset('assets/plugins/general/tether/dist/css/tether.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css')}}" rel="stylesheet" type="text/css" />
@@ -55,11 +36,6 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="{{asset('assets/plugins/general/plugins/flaticon/flaticon.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/general/plugins/flaticon2/flaticon.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/general/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css" />
-
-    <!--end:: Vendor Plugins -->
-
-
-    <!--begin:: Vendor Plugins for custom pages -->
     <link href="{{asset('assets/plugins/custom/plugins/jquery-ui/jquery-ui.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/@fullcalendar/core/main.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/@fullcalendar/daygrid/main.css')}}" rel="stylesheet" type="text/css" />
@@ -80,7 +56,6 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="{{asset('assets/plugins/custom/jstree/dist/themes/default/style.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/jqvmap/dist/jqvmap.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/uppy/dist/uppy.min.css')}}" rel="stylesheet" type="text/css" />
-
     <!--begin::Layout Skins(used by all pages) -->
     <link href="{{asset('assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/skins/brand/dark.css')}}" rel="stylesheet" type="text/css" />
@@ -93,10 +68,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- begin::Body -->
 <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
-
-<!-- begin:: Page -->
-
-<!-- begin:: Header Mobile -->
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
     <div class="kt-header-mobile__logo">
         <h4>Evaluator</h4>
@@ -113,7 +84,6 @@ License: You must have a valid license purchased only from themeforest(the above
     <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
 
         <!-- begin:: Aside -->
-
         <!-- Uncomment this to display the close button of the panel
 <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
 -->
@@ -141,15 +111,8 @@ License: You must have a valid license purchased only from themeforest(the above
 										</g>
 									</svg></span>
                     </button>
-
-                    <!--
-            <button class="kt-aside__brand-aside-toggler kt-aside__brand-aside-toggler--left" id="kt_aside_toggler"><span></span></button>
-            -->
                 </div>
             </div>
-            <!-- end:: Aside -->
-
-            <!-- begin:: Aside Menu -->
             <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
                 <div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1" data-ktmenu-dropdown-timeout="500">
                     <ul class="kt-menu__nav ">
@@ -450,7 +413,7 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
 
             <!-- end:: Header -->
-           @yield('content')
+            @yield('content')
         </div>
     </div>
 </div>
@@ -1220,11 +1183,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="{{asset('assets/plugins/custom/jqvmap/dist/maps/jquery.vmap.germany.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/plugins/custom/jqvmap/dist/maps/jquery.vmap.europe.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/plugins/custom/uppy/dist/uppy.min.js')}}" type="text/javascript"></script>
-
-<!--end:: Vendor Plugins for custom pages -->
-
-<!--end::Global Theme Bundle -->
-
 <!--begin::Page Scripts(used by this page) -->
 <script src="{{asset('assets/js/pages/dashboard.js')}}" type="text/javascript"></script>
 

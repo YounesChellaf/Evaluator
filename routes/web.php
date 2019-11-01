@@ -17,4 +17,16 @@ Route::group(['prefix' => 'student'], function(){
     Route::get('/modules', function () {
         return view('layouts.student.modules.index');
     })->name('student.modules');
+
+    Route::get('/teachers', function () {
+        return view('layouts.student.teachers.index');
+    })->name('student.teachers');
+
+    Route::get('/planning', function () {
+        return view('layouts.student.planning.index');
+    })->name('student.planning');
+
+    Route::get('/convocations', function () {
+        return view('layouts.student.convocation.index');
+    })->name('student.convocation');
 });
