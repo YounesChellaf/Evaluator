@@ -56,3 +56,16 @@ Route::group(['prefix' => 'enseignent'], function(){
         return view('layouts.prof.convocations.index');
     })->name('prof.convocation');
 });
+
+Route::group(['prefix' => 'school'], function(){
+
+    Route::get('/classes', function () {
+        return view('layouts.school.classes.index');
+    })->name('school.classes');
+    Route::get('/students', function () {
+        return view('layouts.school.students.index');
+    })->name('school.students');
+    Route::get('/enseignents', function () {
+        return view('layouts.school.enseignents.index');
+    })->name('school.teachers');
+});

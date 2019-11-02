@@ -89,7 +89,7 @@
             <div class="col-sm-6 col-xl-4">
                 <div class="single_feature">
                     <div class="single_feature_part">
-                        <span class="single_feature_icon"><i class="ti-layers"></i></span>
+                        <span class="single_feature_icon"><i class="ti-user"></i></span>
                         <a href="{{route('student.index')}}"><h4>Parent d'éleve</h4></a>
                         <p>Accéder au compte délivrer par l'école de votre éleve et controller ses résultats</p>
                     </div>
@@ -98,8 +98,8 @@
             <div class="col-sm-6 col-xl-4">
                 <div class="single_feature">
                     <div class="single_feature_part">
-                        <span class="single_feature_icon"><i class="ti-new-window"></i></span>
-                        <h4>Enseignant</h4>
+                        <span class="single_feature_icon"><i class="ti-user"></i></span>
+                        <a href="{{route('prof.landing')}}"><h4>Enseignant</h4></a>
                         <p>Délivrez les notes de vos etudiants et suivez leurs progression scolaire en ligne</p>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
             <div class="col-sm-6 col-xl-4">
                 <div class="single_feature">
                     <div class="single_feature_part single_feature_part_2">
-                        <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
-                        <h4>Administrateur d'ecole</h4>
+                        <span class="single_service_icon style_icon"><i class="ti-home"></i></span>
+                        <a href="{{route('school.classes')}}"><h4>Administrateur d'ecole</h4></a>
                         <p>Accédez au plateforme pour la gestion de votre école</p>
                     </div>
                 </div>

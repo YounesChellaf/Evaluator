@@ -66,9 +66,8 @@
                                                     <div class="col-9">
                                                         <div class="input-group">
                                                             <div class="input-group-prepend"><span class="input-group-text"><i class="la la-phone"></i></span></div>
-                                                            <input type="text" class="form-control" value="+45678967456" placeholder="Phone" aria-describedby="basic-addon1">
+                                                            <input type="text" class="form-control" value="" placeholder="Phone" aria-describedby="basic-addon1">
                                                         </div>
-                                                        <span class="form-text text-muted">We'll never share your email with anyone else.</span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
