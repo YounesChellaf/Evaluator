@@ -462,13 +462,14 @@ License: You must have a valid license purchased only from themeforest(the above
             </div>
 
             <!-- end:: Header -->
-           @yield('content')
+            @yield('content')
         </div>
     </div>
 </div>
 
 <!-- end:: Page -->
 
+<!-- begin::Quick Panel -->
 <div id="kt_quick_panel" class="kt-quick-panel">
     <a href="#" class="kt-quick-panel__close" id="kt_quick_panel_close_btn"><i class="flaticon2-delete"></i></a>
     <div class="kt-quick-panel__nav">
@@ -535,7 +536,6 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
     </div>
 </div>
-
 
 
 <!--Begin:: Chat-->

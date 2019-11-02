@@ -38,12 +38,21 @@ Route::group(['prefix' => 'student'], function(){
 
 });
 
-Route::group(['prefix' => 'enseigant'], function(){
+Route::group(['prefix' => 'enseignent'], function(){
 
+    Route::get('/', function () {
+        return view('layouts.prof.landing.index');
+    })->name('prof.landing');
     Route::get('/planning', function () {
         return view('layouts.prof.planning.index');
     })->name('prof.planning');
     Route::get('/classes', function () {
         return view('layouts.prof.classes.index');
     })->name('prof.classes');
+    Route::get('/students', function () {
+        return view('layouts.prof.students.index');
+    })->name('prof.students');
+    Route::get('/convocation', function () {
+        return view('layouts.prof.convocations.index');
+    })->name('prof.convocation');
 });
