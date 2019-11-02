@@ -87,6 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="{{asset('assets/css/skins/aside/dark.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/skins/header/base/light.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/css/skins/header/menu/light.css')}}" rel="stylesheet" type="text/css" />
+    @yield('css')
 </head>
 
 <!-- end::Head -->
@@ -217,6 +218,17 @@ License: You must have a valid license purchased only from themeforest(the above
     </g>
 </svg>
 						</span><span class="kt-menu__link-text">Convocations</span></a>
+                        </li>
+                        <li class="kt-menu__item" ><a href="{{route('student.notes')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"/>
+        <rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"/>
+    </g>
+</svg>
+						</span><span class="kt-menu__link-text">Notes</span></a>
                         </li>
                     </ul>
                 </div>
@@ -1220,14 +1232,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="{{asset('assets/plugins/custom/jqvmap/dist/maps/jquery.vmap.germany.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/plugins/custom/jqvmap/dist/maps/jquery.vmap.europe.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/plugins/custom/uppy/dist/uppy.min.js')}}" type="text/javascript"></script>
-
-<!--end:: Vendor Plugins for custom pages -->
-
-<!--end::Global Theme Bundle -->
-
-<!--begin::Page Scripts(used by this page) -->
 <script src="{{asset('assets/js/pages/dashboard.js')}}" type="text/javascript"></script>
-
+@yield('js')
 <!--end::Page Scripts -->
 </body>
 
