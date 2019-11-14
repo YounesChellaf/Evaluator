@@ -57,14 +57,27 @@ Route::group(['prefix' => 'enseignent'], function(){
     })->name('prof.convocation');
 });
 
+Route::get('/school/classes/add', function () {
+        return view('layouts.school.classes.Add');
+    })->name('school.classes.add');
+Route::get('/school/students/add', function () {
+    return view('layouts.school.students.Add');
+})->name('school.students.add');
+
 Route::group(['prefix' => 'school'], function(){
 
-    Route::get('/classes', function () {
-        return view('layouts.school.classes.index');
-    })->name('school.classes');
-    Route::get('/students', function () {
-        return view('layouts.school.students.index');
-    })->name('school.students');
+    Route::resource('/classes','ClassController');
+    Route::resource('/students','StudentController');
+//    Route::get('/classes/add','ClassController@showAdd')->name('school.classes.add');
+//    Route::get('/classes/add', function () {
+//        return view('layouts.school.classes.Add');
+//    })->name('school.classes.add');
+//    Route::get('/students', function () {
+//        return view('layouts.school.students.index');
+//    })->name('school.students');
+    Route::get('/students/add', function () {
+        return view('layouts.school.students.Add');
+    })->name('school.students.add');
     Route::get('/enseignents', function () {
         return view('layouts.school.enseignents.index');
     })->name('school.teachers');

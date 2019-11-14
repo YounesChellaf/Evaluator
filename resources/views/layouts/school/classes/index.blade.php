@@ -8,12 +8,7 @@
         <!-- begin:: Subheader -->
 
     @include('layouts.school.classes.subheader')
-
-    <!-- end:: Subheader -->
-
-        <!-- begin:: Content -->
         <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
-
             <!--Begin::Section-->
             <div class="card">
                 <div class="card-body">
@@ -21,52 +16,28 @@
                         <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
                             <thead>
                             <tr>
-                                <th>Code</th>
-                                <th>Année</th>
-                                <th>Nombre d'etudiants</th>
+                                <th>Désignation Scolaire</th>
+                                <th>Emplacement Physique</th>
+                                <th>Nombre Etudiants</th>
+                                <th>Capacité totale</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach( \App\Classe::all() as $classe)
                             <tr>
-                                <th>2M3</th>
-                                <th>2eme année</th>
-                                <th>29</th>
+                                <th>{{$classe->scolar_designation}}</th>
+                                <th>{{$classe->physic_designation}}</th>
+                                <th>{{$classe->student_number}}</th>
+                                <th>{{$classe->places_number}}</th>
+                                <th>
+                                    <div>
+                                        <button class="btn btn-outline-primary">Modifier</button>
+                                        <button class="btn btn-outline-danger">Supprimer</button>
+                                    </div>
+                                </th>
                             </tr>
-                            <tr>
-                                <th>2M3</th>
-                                <th>2eme année</th>
-                                <th>29</th>
-                            </tr>
-                            <tr>
-                                <th>2M3</th>
-                                <th>2eme année</th>
-                                <th>29</th>
-                            </tr>
-                            <tr>
-                                <th>2M3</th>
-                                <th>2eme année</th>
-                                <th>29</th>
-                            </tr>
-                            <tr>
-                                <th>1M1</th>
-                                <th>1eme année</th>
-                                <th>28</th>
-                            </tr>
-                            <tr>
-                                <th>2M2</th>
-                                <th>2eme année</th>
-                                <th>29</th>
-                            </tr>
-                            <tr>
-                                <th>4M3</th>
-                                <th>4eme année</th>
-                                <th>29</th>
-                            </tr>
-                            <tr>
-                                <th>2M3</th>
-                                <th>2eme année</th>
-                                <th>34</th>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
