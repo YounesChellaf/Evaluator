@@ -108,7 +108,7 @@
                 <div class="single_feature">
                     <div class="single_feature_part single_feature_part_2">
                         <span class="single_service_icon style_icon"><i class="ti-home"></i></span>
-                        <a href="{{route('school.classes')}}"><h4>Administrateur d'ecole</h4></a>
+                        <a href="{{route('classes.index')}}"><h4>Administrateur d'ecole</h4></a>
                         <p>Accédez au plateforme pour la gestion de votre école</p>
                     </div>
                 </div>

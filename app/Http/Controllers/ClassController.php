@@ -28,7 +28,7 @@ class ClassController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.school.classes.Add');
     }
 
     /**

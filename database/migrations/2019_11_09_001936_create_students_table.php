@@ -31,6 +31,7 @@ class CreateStudentsTable extends Migration
             $table->string('emergency_phone_number');
             $table->string('user_id');
             $table->string('class_id');
+            $table->string('image_id');
             $table->timestamps();
         });
     }

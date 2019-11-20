@@ -15,7 +15,7 @@
                         </div>
                         @if ($errors->any())
                             <div class="alert alert-danger">
-                                <strong>Whoops!</strong> Il y avait quelques problèmes lors la création du nouvelle resarvation annuel.
+                                <strong>Whoops!</strong> Il y avait quelques problèmes lors de la création.
                                 <br>
                                 <ul class="t7wissa-errors-list">
                                     @foreach ($errors->all() as $error)
@@ -29,12 +29,25 @@
                             @csrf
                             <div class="kt-portlet__body">
                                 <div class="form-group row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-4">
                                         <label>Désignation scolaire:</label>
                                         <input type="text" name="scolar_designation" class="form-control" placeholder="Enter la désignation">
                                         <span class="form-text text-muted">La désignation scolaire .ex (2éme1 ...)</span>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-3">
+                                            <label>Le niveau scolaire :</label>
+                                            <select name="level" class="form-control">
+                                                <option value=""></option>
+                                                <option value="0">Année préparatoire</option>
+                                                <option value="1">Premiére année primaire</option>
+                                                <option value="2">Deuxiéme année primaire</option>
+                                                <option value="3">Troisiéme année primaire</option>
+                                                <option value="4">Quatriéme année primaire</option>
+                                                <option value="5">Cinquiéme année primaire</option>
+                                            </select>
+                                        <span class="form-text text-muted">Le niveau scolaire .ex (niveau 1, ...)</span>
+                                    </div>
+                                    <div class="col-lg-4">
                                         <label class="">Emplacement physique:</label>
                                         <input type="text" name="physic_designation" class="form-control" placeholder="Enter l'emplacement physique">
                                         <span class="form-text text-muted">L'emplacement physique .ex (salle 14 ...)</span>

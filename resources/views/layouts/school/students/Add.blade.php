@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <div class="kt-portlet__body">
-                            <form method="post" action="{{route('students.store')}}" class="kt-form" id="kt_form">
+                            <form method="post" action="{{route('students.store')}}" class="kt-form" id="kt_form" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-2"></div>
@@ -98,7 +98,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-3 col-form-label">Photo d'eleve</label>
                                                     <div class="col-9">
-                                                        <input class="form-control" name="photo" type="file">
+                                                        <input class="form-control" name="image" type="file">
                                                     </div>
                                                 </div>
                                             </div>
@@ -122,7 +122,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-3 col-form-label">Proffession</label>
                                                     <div class="col-9">
-                                                        <input class="form-control" name="job" type="date">
+                                                        <input class="form-control" name="job" type="text">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">

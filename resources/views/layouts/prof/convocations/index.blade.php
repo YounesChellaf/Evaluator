@@ -1,134 +1,120 @@
-@extends('master.prof-admin')
+@section('css')
+    <link href="{{asset('assets/css/dataTables.bootstrap4.css')}}" rel="stylesheet">
+@endsection
+@extends($role ? 'master.prof-admin' : 'master.school-admin' )
 @section('content')
     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-        <!-- begin:: Content Head -->
+    <!-- begin:: Subheader -->
     @include('layouts.prof.convocations.subheader')
-    <!-- end:: Content Head -->
-        <div class="kt-container  kt-grid__item kt-grid__item--fluid">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!--begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--last kt-portlet--head-lg kt-portlet--responsive-mobile" id="kt_page_portlet">
-                        <div class="kt-portlet__head kt-portlet__head--lg">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">Rédiger la convocation</h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-brand">
-                                        <i class="la la-check"></i>
-                                        <span class="kt-hidden-mobile">Envoyer</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-                            <form class="kt-form" id="kt_form">
-                                <div class="row">
-                                    <div class="col-xl-2"></div>
-                                    <div class="col-xl-8">
-                                        <div class="kt-section kt-section--first">
-                                            <div class="kt-section__body">
-                                                <h3 class="kt-section__title kt-section__title-lg">Information générale:</h3>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Country</label>
-                                                    <div class="col-9">
-                                                        <select class="form-control">
-                                                            <option value="US" >Convocation de bétise</option>
-                                                            <option value="UM">Invitation</option>
-                                                            <option value="UM" selected>Réunion générale</option>
-                                                            <option value="UM">Délibiration annuelle</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Nom d'etudiant</label>
-                                                    <div class="col-9">
-                                                        <input class="form-control" type="text" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">prénom d'etudiant</label>
-                                                    <div class="col-9">
-                                                        <input class="form-control" type="text" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Matricule</label>
-                                                    <div class="col-9">
-                                                        <input class="form-control" type="text" value="">
-                                                        <span class="form-text text-muted">pour la validation du convocation par l'administration.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Votre numéro personel</label>
-                                                    <div class="col-9">
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend"><span class="input-group-text"><i class="la la-phone"></i></span></div>
-                                                            <input type="text" class="form-control" value="" placeholder="Phone" aria-describedby="basic-addon1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Email parent</label>
-                                                    <div class="col-9">
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend"><span class="input-group-text"><i class="la la-at"></i></span></div>
-                                                            <input type="text" class="form-control" value="" placeholder="Email" aria-describedby="basic-addon1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group form-group-last row">
-                                                    <label class="col-3 col-form-label">Reason de convocation</label>
-                                                    <div class="col-9">
-                                                        <div class="input-group">
-                                                            <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+    <!-- end:: Subheader -->
+        <!-- begin:: Content -->
+        <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+            <!--Begin::Section-->
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
+                            <thead>
+                            <tr>
+                                @if(! $role)
+                                <th>Enseignent</th>
+                                <th>Matiére</th>
+                                @endif
+                                <th>Etudiant concerné</th>
+                                <th>Motif</th>
+                                <th>Date réception</th>
+                                <th>Etat</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach(\App\Convocation::all() as $convocation)
+                                <tr>
+                                    @if(! $role)
+                                    <th>{{$convocation->prof->last_name .' '. $convocation->prof->first_name }}</th>
+                                    <th>{{$convocation->prof->specialite }}</th>
+                                    @endif
+                                    <th>{{$convocation->student->last_name .' '. $convocation->student->first_name }}</th>
+                                    <th>{{$convocation->motif }}</th>
+                                    <th>{{$convocation->reception_date->format('d-m-Y') }}</th>
+                                    <th>{{$convocation->status()}}</th>
+                                    <th>
+                                        <div>
+                                            <a href="{{route('convocations.show',$convocation->id)}}"><button class="btn btn-outline-dark">Voir</button></a>
+                                            @if($role && $convocation->status == 'tutel_confirmed')
+                                                <a href="{{route('convocations.done',$convocation->id)}}"><button class="btn btn-outline-success">Marquer Fait</button></a>
+                                            @elseif(! $role && $convocation->status == 'draft')
+                                                <a href="{{route('convocations.approuve',$convocation->id)}}"><button class="btn btn-outline-success">Valider la convocation</button></a>
+                                            @endif
                                         </div>
-                                        <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
-                                        <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
-                                        <div class="kt-section">
-                                            <div class="kt-section__body">
-                                                <h3 class="kt-section__title kt-section__title-lg">Information optionnel:</h3>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Date réception</label>
-                                                    <div class="col-9">
-                                                        <input class="form-control" type="date" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group form-group-last row">
-                                                    <label class="col-3 col-form-label">Notifier la convocation par</label>
-                                                    <div class="col-9">
-                                                        <div class="kt-checkbox-inline">
-                                                            <label class="kt-checkbox">
-                                                                <input type="checkbox" checked> Email
-                                                                <span></span>
-                                                            </label>
-                                                            <label class="kt-checkbox">
-                                                                <input type="checkbox" checked> SMS
-                                                                <span></span>
-                                                            </label>
-                                                            <label class="kt-checkbox">
-                                                                <input type="checkbox"> Phone
-                                                                <span></span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div class="col-xl-2"></div>
-                                </div>
-                            </form>
-                        </div>
+                                    </th>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
                     </div>
-                    <!--end::Portlet-->
                 </div>
             </div>
-        </div>
+        </div><!--End::Section-->
     </div>
+@endsection
+@section('js')
+    <script src="{{asset('assets/js/pages/datatables.min.js')}}"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
+    <!-- end - This is for export functionality only -->
+    <script>
+        $(function() {
+            $('#myTable').DataTable();
+            $(function() {
+                var table = $('#example').DataTable({
+                    "columnDefs": [{
+                        "visible": false,
+                        "targets": 2
+                    }],
+                    "order": [
+                        [2, 'asc']
+                    ],
+                    "displayLength": 25,
+                    "drawCallback": function(settings) {
+                        var api = this.api();
+                        var rows = api.rows({
+                            page: 'current'
+                        }).nodes();
+                        var last = null;
+                        api.column(2, {
+                            page: 'current'
+                        }).data().each(function(group, i) {
+                            if (last !== group) {
+                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                last = group;
+                            }
+                        });
+                    }
+                });
+                // Order by the grouping
+                $('#example tbody').on('click', 'tr.group', function() {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                        table.order([2, 'desc']).draw();
+                    } else {
+                        table.order([2, 'asc']).draw();
+                    }
+                });
+            });
+        });
+        $('#example23').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+        $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
+    </script>
 @endsection

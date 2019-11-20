@@ -18,7 +18,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <head>
     <base href="">
     <meta charset="utf-8" />
-    <title>Feroudja</title>
+    <title>{{auth()->user()->school->name}}</title>
     <meta name="description" content="User profile block example">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -100,7 +100,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- begin:: Header Mobile -->
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
     <div class="kt-header-mobile__logo">
-        <h4>Feroudja</h4>
+        <h3></h3>
     </div>
     <div class="kt-header-mobile__toolbar">
         <button class="kt-header-mobile__toggler kt-header-mobile__toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
@@ -123,7 +123,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- begin:: Aside -->
             <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
                 <div class="container kt-aside__brand-logo">
-                    <h4>Feroudja</h4>
+                    <h4>{{auth()->user()->school->name}}</h4>
                 </div>
                 <div class="kt-aside__brand-tools">
                     <button class="kt-aside__brand-aside-toggler" id="kt_aside_toggler">
@@ -163,15 +163,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect x="0" y="0" width="24" height="24"/>
-        <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000"/>
-        <rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1"/>
+        <path d="M3.95709826,8.41510662 L11.47855,3.81866389 C11.7986624,3.62303967 12.2013376,3.62303967 12.52145,3.81866389 L20.0429,8.41510557 C20.6374094,8.77841684 21,9.42493654 21,10.1216692 L21,19.0000642 C21,20.1046337 20.1045695,21.0000642 19,21.0000642 L4.99998155,21.0000673 C3.89541205,21.0000673 2.99998155,20.1046368 2.99998155,19.0000673 L2.99999828,10.1216672 C2.99999935,9.42493561 3.36258984,8.77841732 3.95709826,8.41510662 Z M10,13 C9.44771525,13 9,13.4477153 9,14 L9,17 C9,17.5522847 9.44771525,18 10,18 L14,18 C14.5522847,18 15,17.5522847 15,17 L15,14 C15,13.4477153 14.5522847,13 14,13 L10,13 Z" fill="#000000"/>
     </g>
 </svg></span>
                                 <span class="kt-menu__link-text">Liste des classes</span>
                             </a>
                         </li>
                         <li class="kt-menu__item" >
-                            <a href="{{route('school.teachers')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+                            <a href="{{route('profs.index')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon points="0 0 24 0 24 24 0 24"/>
@@ -194,6 +193,31 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <span class="kt-menu__link-text">Liste des étudiants</span>
                             </a>
                         </li>
+                        <li class="kt-menu__item">
+                            <a href="{{route('modules.index')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect x="0" y="0" width="24" height="24"/>
+        <path d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z" fill="#000000"/>
+        <rect fill="#000000" opacity="0.3" transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519) " x="16.3255682" y="2.94551858" width="3" height="18" rx="1"/>
+    </g>
+</svg></span>
+                                <span class="kt-menu__link-text">Liste des matieres</span>
+                            </a>
+                        </li>
+                        <li class="kt-menu__item">
+                            <a href="{{route('school-admin.convocations.index')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect x="0" y="0" width="24" height="24"/>
+        <path d="M4,16 L5,16 C5.55228475,16 6,16.4477153 6,17 C6,17.5522847 5.55228475,18 5,18 L4,18 C3.44771525,18 3,17.5522847 3,17 C3,16.4477153 3.44771525,16 4,16 Z M1,11 L5,11 C5.55228475,11 6,11.4477153 6,12 C6,12.5522847 5.55228475,13 5,13 L1,13 C0.44771525,13 6.76353751e-17,12.5522847 0,12 C-6.76353751e-17,11.4477153 0.44771525,11 1,11 Z M3,6 L5,6 C5.55228475,6 6,6.44771525 6,7 C6,7.55228475 5.55228475,8 5,8 L3,8 C2.44771525,8 2,7.55228475 2,7 C2,6.44771525 2.44771525,6 3,6 Z" fill="#000000" opacity="0.3"/>
+        <path d="M10,6 L22,6 C23.1045695,6 24,6.8954305 24,8 L24,16 C24,17.1045695 23.1045695,18 22,18 L10,18 C8.8954305,18 8,17.1045695 8,16 L8,8 C8,6.8954305 8.8954305,6 10,6 Z M21.0849395,8.0718316 L16,10.7185839 L10.9150605,8.0718316 C10.6132433,7.91473331 10.2368262,8.02389331 10.0743092,8.31564728 C9.91179228,8.60740125 10.0247174,8.9712679 10.3265346,9.12836619 L15.705737,11.9282847 C15.8894428,12.0239051 16.1105572,12.0239051 16.294263,11.9282847 L21.6734654,9.12836619 C21.9752826,8.9712679 22.0882077,8.60740125 21.9256908,8.31564728 C21.7631738,8.02389331 21.3867567,7.91473331 21.0849395,8.0718316 Z" fill="#000000"/>
+    </g>
+</svg></span>
+                                <span class="kt-menu__link-text">Liste des convocations</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -355,11 +379,11 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px,0px">
                             <div class="kt-header__topbar-user">
                                 <span class="kt-header__topbar-welcome kt-hidden-mobile">Bienvenu,</span>
-                                <span class="kt-header__topbar-username kt-hidden-mobile">Bilal</span>
+                                <span class="kt-header__topbar-username kt-hidden-mobile">{{auth()->user()->first_name}}</span>
                                 <img class="kt-hidden" alt="Pic" src="assets/media/users/300_25.jpg" />
 
                                 <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-                                <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">S</span>
+                                <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold"> {{auth()->user()->first_name[0]}}</span>
                             </div>
                         </div>
                         <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
@@ -370,16 +394,15 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <img class="kt-hidden" alt="Pic" src="assets/media/users/300_25.jpg" />
 
                                     <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-                                    <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">B</span>
+                                    <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success"> {{auth()->user()->first_name[0]}}</span>
                                 </div>
                                 <div class="kt-user-card__name">
-                                    Bilal Ksentini
+                                    {{auth()->user()->first_name.' '.auth()->user()->last_name}}
                                 </div>
                                 <div class="kt-user-card__badge">
                                     <span class="btn btn-success btn-sm btn-bold btn-font-md">4 messages</span>
                                 </div>
                             </div>
-
                             <!--end: Head -->
 
                             <!--begin: Navigation -->
@@ -411,7 +434,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </a>
                                 <div class="kt-notification__custom kt-space-between">
-                                    <a href="custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Se déconnecter</a>
+                                    <a href="{{route('logout')}}" class="btn btn-label btn-label-brand btn-sm btn-bold">Se déconnecter</a>
                                 </div>
                             </div>
 

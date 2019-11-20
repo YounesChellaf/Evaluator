@@ -25,75 +25,35 @@
                                 <th>Prénom</th>
                                 <th>date naissance</th>
                                 <th>Spécialité</th>
-                                <th>Nombre de classe</th>
-                                <th>contacte</th>
+                                <th>Grade</th>
+                                <th>Numéro télephone</th>
+                                <th>Classe affecté</th>
+                                <th>Actions</th>
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach(\App\Prof::all() as $prof)
                             <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Mathématique</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
+                                <th>{{$prof->last_name}}</th>
+                                <th>{{$prof->first_name}}</th>
+                                <th>{{$prof->birth_date}}</th>
+                                <th>{{$prof->specialite}}</th>
+                                <th>{{$prof->grade}}</th>
+                                <th>{{$prof->phone_number}}</th>
+                                <th>
+                                    @foreach($prof->classes as $classe)
+                                       <span class="kt-badge kt-badge--dark kt-badge--inline">{{$classe->scolar_designation}}</span>
+                                    @endforeach
+                                </th>
+                                <th>
+                                    <div>
+                                        <a href="#"><button class="btn btn-outline-dark">Voir</button></a>
+                                        <a href="{{route('profs.edit',$prof->id)}}"><button class="btn btn-outline-primary">Modifier</button></a>
+                                        <a href="{{route('profs.destroy',$prof->id)}}"><button class="btn btn-outline-danger">Supprimer</button></a>
+                                    </div>
+                                </th>
                             </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Physique</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Sport</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Mathématique</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Mathématique</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Francais</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Arabe</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
-                            <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>14-08-2000</th>
-                                <th>Mathématique</th>
-                                <th>5</th>
-                                <th>+213945345345</th>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

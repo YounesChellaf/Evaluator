@@ -71,7 +71,7 @@
 <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
     <div class="kt-header-mobile__logo">
-        <h4>Feroudja</h4>
+        <h4>{{\App\School::find(auth()->user()->prof->classes[0]->school_id)->name}}</h4>
     </div>
     <div class="kt-header-mobile__toolbar">
         <button class="kt-header-mobile__toggler kt-header-mobile__toggler--left" id="kt_aside_mobile_toggler"><span></span></button>
@@ -93,7 +93,7 @@
             <!-- begin:: Aside -->
             <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
                 <div class="container kt-aside__brand-logo">
-                    <h4>Feroudja</h4>
+                    <h4>{{\App\School::find(auth()->user()->prof->classes[0]->school_id)->name}}</h4>
                 </div>
                 <div class="kt-aside__brand-tools">
                     <button class="kt-aside__brand-aside-toggler" id="kt_aside_toggler">
@@ -160,7 +160,7 @@
                             <h4 class="kt-menu__section-text">Effectuer vos convocations</h4>
                             <i class="kt-menu__section-icon flaticon-more-v2"></i>
                         </li>
-                        <li class="kt-menu__item" ><a href="{{route('prof.convocation')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+                        <li class="kt-menu__item" ><a href="{{route('convocations.index')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect x="0" y="0" width="24" height="24"/>
@@ -331,11 +331,11 @@
                         <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px,0px">
                             <div class="kt-header__topbar-user">
                                 <span class="kt-header__topbar-welcome kt-hidden-mobile">Bienvenu,</span>
-                                <span class="kt-header__topbar-username kt-hidden-mobile">Bilal</span>
+                                <span class="kt-header__topbar-username kt-hidden-mobile">{{auth()->user()->first_name}}</span>
                                 <img class="kt-hidden" alt="Pic" src="assets/media/users/300_25.jpg" />
 
                                 <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-                                <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">S</span>
+                                <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold">{{auth()->user()->first_name[0]}}</span>
                             </div>
                         </div>
                         <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
@@ -346,10 +346,10 @@
                                     <img class="kt-hidden" alt="Pic" src="assets/media/users/300_25.jpg" />
 
                                     <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-                                    <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">B</span>
+                                    <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">{{auth()->user()->first_name[0]}}</span>
                                 </div>
                                 <div class="kt-user-card__name">
-                                    Bilal Ksentini
+                                    {{auth()->user()->first_name .' '. auth()->user()->last_name}}
                                 </div>
                                 <div class="kt-user-card__badge">
                                     <span class="btn btn-success btn-sm btn-bold btn-font-md">4 messages</span>
@@ -387,7 +387,7 @@
                                     </div>
                                 </a>
                                 <div class="kt-notification__custom kt-space-between">
-                                    <a href="custom/user/login-v2.html" target="_blank" class="btn btn-label btn-label-brand btn-sm btn-bold">Se déconnecter</a>
+                                    <a href="{{route('logout')}}"  class="btn btn-label btn-label-brand btn-sm btn-bold">Se déconnecter</a>
                                 </div>
                             </div>
 
@@ -845,5 +845,4 @@
 @yield('js')
 </body>
 
-<!-- end::Body -->
-</html>
+<

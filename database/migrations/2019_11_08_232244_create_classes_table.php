@@ -16,9 +16,11 @@ class CreateClassesTable extends Migration
         Schema::create('classes', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('scolar_designation');
-            $table->string('physic_designation');
+            $table->string('physic_designation')->nullable();
             $table->integer('student_number');
-            $table->integer('places_number');
+            $table->integer('places_number')->nullable();
+            $table->integer('school_id');
+            $table->integer('level');
             $table->timestamps();
         });
     }

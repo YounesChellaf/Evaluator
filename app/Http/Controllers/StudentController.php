@@ -76,6 +76,24 @@ class StudentController extends Controller
         if ( $request->post()){
             $student = Student::find($id);
 
+//            Student update
+            $student->last_name = $request->last_name;
+            $student->first_name = $request->first_name;
+            $student->matricule = $request->matricule;
+            $student->birth_date = $request->birth_date;
+            $student->sexe = $request->sexe;
+            $student->address = $request->address;
+            $student->scolar_year = $request->scolar_year;
+            $student->tutel_last_name = $request->tutel_last_name;
+            $student->tutel_first_name = $request->tutel_first_name;
+            $student->tutel_email = $request->tutel_email;
+            $student->job = $request->job;
+            $student->phone_number = $request->phone_number;
+            $student->emergency_phone_number = $request->emergency_phone_number;
+
+            $student->save();
+            return redirect()->route('students.index');
+
         }
     }
 

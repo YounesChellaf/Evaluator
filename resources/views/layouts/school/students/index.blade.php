@@ -32,24 +32,25 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
+
                                 @foreach(\App\Student::all() as $student)
-                                    <th>{{$student->matricule}}</th>
-                                    <th>{{$student->last_name.' '.$student->first_name }}</th>
-                                    <th>{{$student->sexe}}</th>
-                                    <th>{{$student->classe->scolar_designation}}</th>
-                                    <th>{{$student->scolar_year}}</th>
-                                    <th>{{$student->tutel_last_name.' '.$student->tutel_first_name }}</th>
-                                    <th>{{$student->phone_number }}</th>
-                                    <th>
+                                    <tr>
+                                    <td>{{$student->matricule}}</td>
+                                    <td>{{$student->last_name.' '.$student->first_name }}</td>
+                                    <td>{{$student->sexe}}</td>
+                                    <td>{{$student->classe->scolar_designation}}</td>
+                                    <td>{{$student->scolar_year}}</td>
+                                    <td>{{$student->tutel_last_name.' '.$student->tutel_first_name }}</td>
+                                    <td>{{$student->phone_number }}</td>
+                                    <td>
                                         <div>
                                             <a href="{{route('students.show',$student->id)}}"><button class="btn btn-outline-dark">Voir</button></a>
                                             <a href="{{route('students.edit',$student->id)}}"><button class="btn btn-outline-primary">Modifier</button></a>
                                             <button class="btn btn-outline-danger">Supprimer</button>
                                         </div>
-                                    </th>
+                                    </td>
+                                    </tr>
                                 @endforeach
-                            </tr>
                             </tbody>
                         </table>
                     </div>

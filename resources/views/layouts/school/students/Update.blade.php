@@ -24,6 +24,7 @@
                         </div>
                         <div class="kt-portlet__body">
                             <form method="post" action="{{route('students.update',$student->id)}}" class="kt-form" id="kt_form">
+                                @method('PUT')
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-2"></div>
@@ -86,7 +87,7 @@
                                                     <label class="col-3 col-form-label">Classe</label>
                                                     <div class="col-9">
                                                         <select name="class_id" class="form-control">
-                                                            <option value=""></option>
+                                                            <option value="{{$student->classe->id}}">{{$student->classe->scolar_designation}}</option>
                                                             @foreach(\App\Classe::all() as $class)
                                                                 <option value="{{$class->id}}">{{$class->scolar_designation}}</option>
                                                             @endforeach
@@ -129,6 +130,15 @@
                                                         <div class="input-group">
                                                             <div class="input-group-prepend"><span class="input-group-text"><i class="la la-phone"></i></span></div>
                                                             <input type="text" name="phone_number" class="form-control"   aria-describedby="basic-addon1" value="{{$student->phone_number}}">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Adresse Email (optionel)</label>
+                                                    <div class="col-9">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend"><span class="input-group-text"><i class="la la-at"></i></span></div>
+                                                            <input type="email" class="form-control" name="tutel_email" placeholder="Email tutel" aria-describedby="basic-addon1" value="{{$student->tutel_email}}">
                                                         </div>
                                                     </div>
                                                 </div>
