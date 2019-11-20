@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="kt-widget__footer">
                                     <button style="margin-bottom: 5%" type="button" class="btn btn-label-danger  btn-upper">
-                                        <a href="{{route('prof.students')}}">Marquer les abscences</a>
+                                        <a href="{{route('students.absence')}}">Marquer les abscences</a>
                                     </button>
                                     <button type="button" class="btn btn-label-brand  btn-upper">
                                         <a href="{{route('prof.students')}}">Affecter des notes</a>

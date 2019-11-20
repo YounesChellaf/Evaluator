@@ -26,17 +26,18 @@ Route::group(['middleware'=>'auth'], function(){
             return view('layouts.student.modules.index');
         })->name('student.modules');
 
-//        Route::get('/teachers', function () {
-//            return view('layouts.student.teachers.index');
-//        })->name('student.teachers');
 
-//        Route::get('/planning', function () {
-//            return view('layouts.student.planning.index');
-//        })->name('student.planning');
-//
-//        Route::get('/convocations', function () {
-//            return view('layouts.student.convocation.index');
-//        })->name('student.convocation');
+        Route::get('/teachers', function () {
+            return view('layouts.student.teachers.index');
+        })->name('student.teachers');
+
+        Route::get('/planning', function () {
+            return view('layouts.student.planning.index');
+        })->name('student.planning');
+
+        Route::get('/convocations', function () {
+            return view('layouts.student.convocation.index');
+        })->name('student.convocation');
         Route::get('/notes', function () {
             return view('layouts.student.notes.index');
         })->name('student.notes');
@@ -90,6 +91,9 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/students', function () {
             return view('layouts.prof.students.index');
         })->name('prof.students');
+        Route::get('/students/absence', function () {
+            return view('layouts.prof.students.absence');
+        })->name('students.absence');
     });
 //    End of Prof Portal
 });

@@ -21,53 +21,29 @@
                         <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
                             <thead>
                             <tr>
+                                <th>Matricule</th>
+                                <th>Photo</th>
                                 <th>Nom d'etudiants</th>
                                 <th>Prénom d'etudiants</th>
-                                <th>Matricule</th>
-                                <th>devoir 1</th>
-                                <th>devoir 2</th>
-                                <th>Examen</th>
-                                <th>Moyenne</th>
+                                <th>Présence</th>
                             </tr>
                             </thead>
-                            <tfoot>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <th>Moyenne génerale de classe</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th>15.36</th>
-                            </tr>
-                            </tfoot>
                             <tbody>
                             <tr>
-                                <th>nom1</th>
-                                <th>prenom1</th>
-                                <th>23414</th>
-                                <th>14</th>
-                                <th>14</th>
-                                <th>16</th>
-                                <th>14.6</th>
-                            </tr>
-                            <tr>
-                                <th>nom3</th>
-                                <th>prenom3</th>
-                                <th>23414</th>
-                                <th>14</th>
-                                <th>14</th>
-                                <th>16</th>
-                                <th>14.6</th>
+                                <th>23424234</th>
+                                <th>
+                                    <img src="{{asset('assets/media/users/student2.jpeg')}}" alt="image" style="width: 20%">
+                                </th>
+                                <th>Chellaf</th>
+                                <th>Younes</th>
+                                <th>
+                                    <span class="kt-switch kt-switch--success kt-switch--sm">
+										<label>
+											<input type="checkbox" checked="checked" name="quick_panel_notifications_1">
+											<span></span>
+										</label>
+									</span>
+                                </th>
                             </tr>
                             </tbody>
                         </table>
