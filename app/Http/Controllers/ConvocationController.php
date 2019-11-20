@@ -113,7 +113,7 @@ class ConvocationController extends Controller
         $convocation = Convocation::find($id);
         $convocation->status = 'tutel_confirmed';
         $convocation->save();
-        return redirect()->back();
+        return redirect()->route('student.convocation');
     }
 
 }

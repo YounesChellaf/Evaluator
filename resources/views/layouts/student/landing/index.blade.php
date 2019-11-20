@@ -19,27 +19,27 @@
                             <div class="kt-widget kt-widget--user-profile-3">
                                 <div class="kt-widget__top">
                                     <div class="kt-widget__media kt-hidden-">
-                                        <img src="assets/media/users/student2.jpeg" alt="image">
+                                        <img src="{{asset('assets/img/student/'.$student->image->path)}}" alt="image">
                                     </div>
                                     <div class="kt-widget__pic kt-widget__pic--danger kt-font-danger kt-font-boldest kt-font-light kt-hidden">
-                                        JM
+
                                     </div>
                                     <div class="kt-widget__content">
                                         <div class="kt-widget__head">
                                             <a href="#" class="kt-widget__username">
-                                                Bilal Ksentini
+                                                {{$student->last_name .' '. $student->first_name}}
                                                 <i class="flaticon2-correct"></i>
                                             </a>
                                         </div>
                                         <div class="kt-widget__subhead">
                                             <a href="#"><i class="flaticon2-new-email"></i>eleve@gmail.com</a>
-                                            <a href="#"><i class="flaticon2-calendar-3"></i>3 eme année</a>
-                                            <a href="#"><i class="flaticon2-placeholder"></i>Primaire Arbi ben M'hidi</a>
+                                            <a href="#"><i class="flaticon2-calendar-3"></i>{{$student->scolar_year}}</a>
+                                            <a href="#"><i class="flaticon2-placeholder"></i>{{$student->classe->school->name}}</a>
                                         </div>
                                         <div class="kt-widget__info">
                                             <div class="kt-widget__desc">
-                                                Un eleve passioné par le desin et les jeux de chalenge, créatif et ambitieux.
-                                                <br> Le point fort de bilal est la resolution mathématique
+                                                {{$student->about}}
+                                                <br>
                                             </div>
                                             <div class="kt-widget__progress">
                                                 <div class="kt-widget__text">
@@ -62,7 +62,7 @@
                                         </div>
                                         <div class="kt-widget__details">
                                             <span class="kt-widget__title">Conseillé</span>
-                                            <a href="#" class="kt-widget__value kt-font-brand">bilal-conseille@gmail.com</a>
+                                            <a href="#" class="kt-widget__value kt-font-brand">{{$student->tutel_email}}</a>
                                         </div>
                                     </div>
                                     <div class="kt-widget__item">
@@ -71,7 +71,7 @@
                                         </div>
                                         <div class="kt-widget__details">
                                             <span class="kt-widget__title">Location</span>
-                                            <span class="kt-widget__title">Bainem, Alger, Algeria</span>
+                                            <span class="kt-widget__title">{{$student->address}}</span>
                                         </div>
                                     </div>
                                     <div class="kt-widget__item">
@@ -79,7 +79,7 @@
                                             <i class="flaticon-file-2"></i>
                                         </div>
                                         <div class="kt-widget__details">
-                                            <span class="kt-widget__title">20 Devoir</span>
+                                            <span class="kt-widget__title">0 Devoir</span>
                                             <a href="#" class="kt-widget__value kt-font-brand">Voir</a>
                                         </div>
                                     </div>
@@ -88,7 +88,7 @@
                                             <i class="flaticon2-list-2"></i>
                                         </div>
                                         <div class="kt-widget__details">
-                                            <span class="kt-widget__title">3 Convocations</span>
+                                            <span class="kt-widget__title">{{$student->convocation->count()}} Convocations</span>
                                             <a href="#" class="kt-widget__value kt-font-brand">Voir</a>
                                         </div>
                                     </div>

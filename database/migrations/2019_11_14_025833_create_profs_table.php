@@ -26,6 +26,7 @@ class CreateProfsTable extends Migration
             $table->string('phone_number');
             $table->string('email');
             $table->integer('user_id');
+            $table->integer('image_id');
             $table->timestamps();
         });
     }

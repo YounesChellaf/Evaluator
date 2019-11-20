@@ -322,7 +322,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </div>
                                             </a>
-                                            <a href="#" class="kt-notification__item">
+                                            @foreach(auth()->user()->student->convocation->where('status','approuved') as $convocation)
+                                            <a href="{{route('student.convocation.details',$convocation->id)}}" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">
                                                     <i class="flaticon2-image-file kt-font-warning"></i>
                                                 </div>
@@ -331,10 +332,11 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         Nouvelle convocation ajoutée
                                                     </div>
                                                     <div class="kt-notification__item-time">
-                                                        3 jours
+                                                        {{$convocation->updated_at->format('d-M-Y')}}
                                                     </div>
                                                 </div>
                                             </a>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>

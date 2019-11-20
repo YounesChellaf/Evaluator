@@ -19,25 +19,26 @@ Route::group(['middleware'=>'auth'], function(){
 
 //  Tutel Student Portal
     Route::group(['prefix' => 'student','middleware'=>'role:tutel'], function(){
-        Route::get('/', function () {
-            return view('layouts.student.landing.index');
-        })->name('student.index');
+        Route::get('/','TutelPortalController@StudentProfile')->name('student.index');
+        Route::get('/convocations','TutelPortalController@StudentConvocations')->name('student.convocation');
+        Route::get('/convocation/{id}','TutelPortalController@StudentConvocationDetails')->name('student.convocation.details');
+        Route::get('/convocation/confirm/{id}','ConvocationController@confirm')->name('student.convocation.confirm');
+        Route::get('/teachers','TutelPortalController@Teachers')->name('student.teachers');
+
+
+
+
         Route::get('/modules', function () {
             return view('layouts.student.modules.index');
         })->name('student.modules');
 
 
-        Route::get('/teachers', function () {
-            return view('layouts.student.teachers.index');
-        })->name('student.teachers');
+
 
         Route::get('/planning', function () {
             return view('layouts.student.planning.index');
         })->name('student.planning');
 
-        Route::get('/convocations', function () {
-            return view('layouts.student.convocation.index');
-        })->name('student.convocation');
         Route::get('/notes', function () {
             return view('layouts.student.notes.index');
         })->name('student.notes');

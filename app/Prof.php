@@ -23,6 +23,10 @@ class Prof extends Model
         return $this->hasOne(Convocation::class);
     }
 
+    public function image(){
+        return $this->belongsTo(Image::class);
+    }
+
 
     public static function new(Request $request){
         $user = User::create([
@@ -31,6 +35,13 @@ class Prof extends Model
             'email' => $request->email,
             'phone_number' => $request->phone_number,
             'password' => Hash::make($request->password),
+        ]);
+        $photo = $request->file('image');
+        $destpath = 'assets/img/prof';
+        $file_name = $photo->getClientOriginalName();
+        $photo->move($destpath,$file_name);
+        $image = Image::create([
+            'path' => $file_name
         ]);
         $prof = Prof::create([
            'last_name' => $request->last_name,
@@ -44,6 +55,7 @@ class Prof extends Model
            'email' => $request->prof_email,
            'phone_number' => $request->phone_number,
            'user_id' => $user->id,
+           'image_id' => $image->id,
         ]);
 
         foreach ($request->classe as $classe){

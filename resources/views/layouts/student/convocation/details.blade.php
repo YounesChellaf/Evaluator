@@ -1,8 +1,8 @@
-@extends($role ? 'master.prof-admin' : 'master.school-admin' )
+@extends('master.student-admin')
 @section('content')
     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
 
-    @include('layouts.prof.convocations.subheader')
+    @include('layouts.student.convocation.subheader')
 
     <!-- end:: Subheader -->
 
@@ -15,15 +15,11 @@
                     <div class="kt-portlet kt-portlet--height-fluid">
                         <div class="kt-portlet__body">
                             <div class="container row">
-                                <div class="row col-md-10">
-                                <h3 style="padding-right: 3%;padding-left: 5%">Status : </h3> <span style="margin-top: 0.5%">{{$convocation->status()}}</span>
+                                <div class="row col-md-9">
+                                    <h4 style="">Veuillez nous confirmer votre convocation au sein de notre établisement : </h4>
                                 </div>
-                                <div class="col-md-2">
-                                    @if($role && $convocation->status == 'tutel_confirmed')
-                                        <a href="{{route('convocations.done',$convocation->id)}}"><button class="btn btn-outline-success">Marquer Fait</button></a>
-                                    @elseif(! $role && $convocation->status == 'draft')
-                                        <a href="{{route('convocations.approuve',$convocation->id)}}"><button class="btn btn-outline-success">Valider la convocation</button></a>
-                                    @endif
+                                <div class="col-md-3">
+                                    <a href="{{route('student.convocation.confirm',$convocation->id)}}"><button class="btn btn-outline-success">Confirmer ma présence</button></a>
                                 </div>
                             </div>
                         </div>

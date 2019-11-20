@@ -17,7 +17,7 @@ class School extends Model
     }
 
     public function classe(){
-        return $this->belongsTo(Classe::class);
+        return $this->hasMany(Classe::class);
     }
 
 

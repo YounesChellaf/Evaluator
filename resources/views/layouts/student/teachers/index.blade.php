@@ -11,7 +11,8 @@
 
             <!--Begin::Section-->
             <div class="row">
-                <div class="col-xl-3">
+                @foreach($teachers as $teacher)
+                <div class="col-xl-4">
 
                     <!--Begin::Portlet-->
                     <div class="kt-portlet kt-portlet--height-fluid">
@@ -36,7 +37,7 @@
                                     </div>
                                     <div class="kt-widget__info">
                                         <a href="#" class="kt-widget__username">
-                                            Maitre A
+                                            {{$teacher->first_name .' '. $teacher->last_name}}
                                         </a>
                                         <span class="kt-widget__desc">
 															Enseignant de Francais
@@ -45,21 +46,20 @@
                                 </div>
                                 <div class="kt-widget__body">
                                     <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
+                                        {{$teacher->about}}
                                     </div>
                                     <div class="kt-widget__item">
                                         <div class="kt-widget__contact">
                                             <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
+                                            <a href="#" class="kt-widget__data">{{$teacher->email}}</a>
                                         </div>
                                         <div class="kt-widget__contact">
                                             <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
+                                            <a href="#" class="kt-widget__data">{{$teacher->phone_number}}</a>
                                         </div>
                                         <div class="kt-widget__contact">
                                             <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
+                                            <span class="kt-widget__data">{{$teacher->address}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -74,449 +74,7 @@
 
                     <!--End::Portlet-->
                 </div>
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
-                <div class="col-xl-3">
-
-                    <!--Begin::Portlet-->
-                    <div class="kt-portlet kt-portlet--height-fluid">
-                        <div class="kt-portlet__head kt-portlet__head--noborder">
-                            <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">
-                                </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                            </div>
-                        </div>
-                        <div class="kt-portlet__body">
-
-                            <!--begin::Widget -->
-                            <div class="kt-widget kt-widget--user-profile-2">
-                                <div class="kt-widget__head">
-                                    <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
-                                        <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                            ChS
-                                        </div>
-                                    </div>
-                                    <div class="kt-widget__info">
-                                        <a href="#" class="kt-widget__username">
-                                            Maitre A
-                                        </a>
-                                        <span class="kt-widget__desc">
-															Enseignant de Francais
-														</span>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__body">
-                                    <div class="kt-widget__section">
-                                        Diplomé de l'Ecole Normale d'Enseignants Bouzereah
-                                        Experience de 5 ans dans le secteur educatif
-                                    </div>
-                                    <div class="kt-widget__item">
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Email:</span>
-                                            <a href="#" class="kt-widget__data">prof@gmail.com</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Phone:</span>
-                                            <a href="#" class="kt-widget__data">+(213)34254578</a>
-                                        </div>
-                                        <div class="kt-widget__contact">
-                                            <span class="kt-widget__label">Location:</span>
-                                            <span class="kt-widget__data">Bainem, Alger</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#kt_chat_modal">Ecrire un message</button>
-                                </div>
-                            </div>
-
-                            <!--end::Widget -->
-                        </div>
-                    </div>
-
-                    <!--End::Portlet-->
-                </div>
+                @endforeach
             </div>
         </div>
         <!-- end:: Content -->
@@ -555,7 +113,7 @@
                                             <span class="kt-chat__datetime"></span>
                                         </div>
                                         <div class="kt-chat__text">
-                                            Bonjour monsieur Bilal Ksentini, notre platforme vous offre l'aide pour evaluer et suivre votre éleve
+                                            Bonjour monsieur {{auth()->user()->last_name}}, notre platforme vous offre l'aide pour evaluer et suivre votre éleve
                                         </div>
                                     </div>
                                 </div>

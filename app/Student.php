@@ -11,7 +11,7 @@ class Student extends Model
     protected $guarded=[];
 
     public function user(){
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function classe(){
@@ -19,10 +19,10 @@ class Student extends Model
     }
 
     public function convocation(){
-        return $this->hasOne(Convocation::class);
+        return $this->hasMany(Convocation::class);
     }
     public function image(){
-        return $this->hasOne(Image::class);
+        return $this->belongsTo(Image::class);
     }
 
 
