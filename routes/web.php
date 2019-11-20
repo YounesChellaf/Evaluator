@@ -60,8 +60,10 @@ Route::group(['middleware'=>'auth'], function(){
         Route::resource('/students','StudentController');
         Route::resource('/profs','ProfController');
         Route::resource('/modules','ModuleController');
+
 //        Custom routes
         Route::get('/convocations','ConvocationController@index')->name('school-admin.convocations.index');
+        Route::get('/convocations/{id}','ConvocationController@show')->name('school.convocations.show');
         Route::get('/convocations/approuve/{id}','ConvocationController@approuve')->name('convocations.approuve');
 //        End custom routes
     });

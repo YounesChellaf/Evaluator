@@ -20,9 +20,9 @@
                                 </div>
                                 <div class="col-md-2">
                                     @if($role && $convocation->status == 'tutel_confirmed')
-                                        <a href="#"><button class="btn btn-outline-success">Marquer Fait</button></a>
+                                        <a href="{{route('convocations.done',$convocation->id)}}"><button class="btn btn-outline-success">Marquer Fait</button></a>
                                     @elseif(! $role && $convocation->status == 'draft')
-                                        <a href="#"><button class="btn btn-outline-success">Valider la convocation</button></a>
+                                        <a href="{{route('convocations.approuve',$convocation->id)}}"><button class="btn btn-outline-success">Valider la convocation</button></a>
                                     @endif
                                 </div>
                             </div>

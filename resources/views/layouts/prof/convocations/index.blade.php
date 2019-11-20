@@ -40,7 +40,12 @@
                                     <th>{{$convocation->status()}}</th>
                                     <th>
                                         <div>
-                                            <a href="{{route('convocations.show',$convocation->id)}}"><button class="btn btn-outline-dark">Voir</button></a>
+                                            @if($role)
+                                                <a href="{{route('convocations.show',$convocation->id)}}"><button class="btn btn-outline-dark">Voir</button></a>
+                                            @elseif(! $role )
+                                                <a href="{{route('school.convocations.show',$convocation->id)}}"><button class="btn btn-outline-dark">Voir</button></a>
+                                            @endif
+
                                             @if($role && $convocation->status == 'tutel_confirmed')
                                                 <a href="{{route('convocations.done',$convocation->id)}}"><button class="btn btn-outline-success">Marquer Fait</button></a>
                                             @elseif(! $role && $convocation->status == 'draft')
