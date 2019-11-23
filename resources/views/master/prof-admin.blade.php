@@ -225,8 +225,6 @@
                                 <div class="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style="background-image: url(assets/media/misc/bg-1.jpg)">
                                     <h3 class="kt-head__title">
                                         Notifications
-                                        &nbsp;
-                                        <span class="btn btn-success btn-sm btn-bold btn-font-md">+2 nouvelle</span>
                                     </h3>
                                     <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
                                     </ul>
@@ -262,6 +260,7 @@
                                                     </div>
                                                 </div>
                                             </a>
+                                            @foreach(auth()->user()->prof->convocation->where('status','tutel_confirmed') as $convocation)
                                             <a href="#" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">
                                                     <i class="flaticon2-image-file kt-font-warning"></i>
@@ -271,10 +270,11 @@
                                                         Nouvelle convocation ajoutée
                                                     </div>
                                                     <div class="kt-notification__item-time">
-                                                        3 jours
+                                                        {{$convocation->updated_at->format('d-M-Y')}}
                                                     </div>
                                                 </div>
                                             </a>
+                                            @endforeach
                                         </div>
                                     </div>
                                 </div>

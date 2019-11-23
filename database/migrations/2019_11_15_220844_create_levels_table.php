@@ -16,6 +16,7 @@ class CreateLevelsTable extends Migration
         Schema::create('levels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->enum('cycle',['primaire','cem','lycee']);
             $table->timestamps();
         });
     }

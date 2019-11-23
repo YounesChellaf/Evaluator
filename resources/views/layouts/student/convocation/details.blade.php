@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="col-md-6 kt-widget__top">
                                     <div class="kt-widget__media kt-hidden-">
-                                        <img src="{{asset('assets/media/users/student2.jpeg')}}" alt="image">
+                                        <img src="{{asset('assets/img/prof/'.$convocation->prof->image->path)}}" alt="image">
                                     </div>
                                     <div class="kt-widget__content">
                                         <div class="kt-widget__head">

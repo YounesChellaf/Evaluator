@@ -20,7 +20,7 @@ class Prof extends Model
     }
 
     public function convocation(){
-        return $this->hasOne(Convocation::class);
+        return $this->hasMany(Convocation::class);
     }
 
     public function image(){

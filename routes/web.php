@@ -52,6 +52,7 @@ Route::group(['middleware'=>'auth'], function(){
             return view('layouts.admin.landing.index');
         })->name('home');
         Route::resource('schools','SchoolController');
+        Route::resource('levels','LevelController');
     });
 //    End Admin Ferouja Portal
 

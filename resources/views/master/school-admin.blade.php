@@ -273,13 +273,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style="background-image: url(assets/media/misc/bg-1.jpg)">
                                     <h3 class="kt-head__title">
                                         Notifications
-                                        &nbsp;
-                                        <span class="btn btn-success btn-sm btn-bold btn-font-md">+2 nouvelle</span>
                                     </h3>
                                     <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
                                     </ul>
                                 </div>
-
                                 <!--end: Head -->
                                 <div class="tab-content">
                                     <div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">

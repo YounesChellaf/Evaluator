@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LevelRequest;
+use App\Level;
 use Illuminate\Http\Request;
 
 class LevelController extends Controller
@@ -13,7 +15,7 @@ class LevelController extends Controller
      */
     public function index()
     {
-        //
+        return view('layouts.admin.levels.index');
     }
 
     /**
@@ -23,7 +25,7 @@ class LevelController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.admin.levels.Add');
     }
 
     /**
@@ -32,9 +34,16 @@ class LevelController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LevelRequest $request)
     {
-        //
+        if ($request->post()){
+            $request->validate();
+            Level::create([
+                'name' => $request->name,
+                'cycle' => $request->cycle
+            ]);
+            return redirect()->route('levels.index');
+        }
     }
 
     /**

@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="kt-portlet__body">
-                            <form method="post" action="{{route('profs.store')}}" class="kt-form" id="kt_form">
+                            <form method="post" action="{{route('profs.store')}}" class="kt-form" id="kt_form" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-2"></div>
@@ -120,8 +120,15 @@
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-3 col-form-label">Photo d'enseignent</label>
-                                                    <div class="col-9">
-                                                        <input class="form-control" name="photo" type="file">
+                                                    <div class=" kt-avatar kt-avatar--outline" id="kt_user_avatar">
+                                                        <div class="kt-avatar__holder" style="background-image: url(&quot;http://keenthemes.com/metronic/preview/default/custom/user/assets/media/users/100_1.jpg&quot;);"></div>
+                                                        <label class="kt-avatar__upload" data-toggle="kt-tooltip" title="" data-original-title="Change avatar">
+                                                            <i class="fa fa-pen"></i>
+                                                            <input type="file" name="image"/>
+                                                        </label>
+                                                        <span class="kt-avatar__cancel" data-toggle="kt-tooltip" title="" data-original-title="Cancel avatar">
+                                                            <i class="fa fa-times"></i>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
