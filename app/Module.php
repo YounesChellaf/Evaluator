@@ -9,15 +9,23 @@ class Module extends Model
 {
     protected $guarded=[];
 
+    public function level(){
+        return $this->belongsToMany(Level::class);
+    }
+
     public static function new(Request $request){
-        return $module = Module::create([
+        //dd($request->levels);
+        $module = Module::create([
             'designation' => $request->designation,
-            'niveau_1' => $request->niveau_1 ? true : false,
-            'niveau_2' => $request->niveau_2 ? true : false,
-            'niveau_3' => $request->niveau_3 ? true : false,
-            'niveau_4' => $request->niveau_4 ? true : false,
-            'niveau_5' => $request->niveau_5 ? true : false,
+            'description' => $request->description,
+            'coefficient' => $request->coefficient,
+            'hours_volume' => $request->volume,
         ]);
+        foreach ($request->levels as $level){
+            $module->level()->attach($level);
+        }
+
+        return $module;
     }
 
     public static function getLevel($level){

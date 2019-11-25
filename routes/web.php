@@ -96,6 +96,7 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/students/absence', function () {
             return view('layouts.prof.students.absence');
         })->name('students.absence');
+
     });
 //    End of Prof Portal
 });

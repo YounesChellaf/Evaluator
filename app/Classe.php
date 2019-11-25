@@ -20,6 +20,10 @@ class Classe extends Model
     public function school(){
         return $this->belongsTo(School::class);
     }
+
+    public function level(){
+        return $this->belongsTo(Level::class);
+    }
     public static function new(Request $request){
         if ($request->post()){
             $classe = Classe::create([
@@ -28,7 +32,7 @@ class Classe extends Model
                 'student_number' => $request->student_number,
                 'places_number' => $request->places_number,
                 'school_id' => auth()->user()->school->id,
-                'level' => $request->level
+                'level_id' => $request->level_id
             ]);
             return $classe;
         }

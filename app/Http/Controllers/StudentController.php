@@ -25,7 +25,6 @@ class StudentController extends Controller
     {
         return view('layouts.school.students.Add');
     }
-
     /**
      * Store a newly created resource in storage.
      *

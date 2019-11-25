@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateModulesTable extends Migration
+class CreateLevelModuleTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateModulesTable extends Migration
      */
     public function up()
     {
-        Schema::create('modules', function (Blueprint $table) {
+        Schema::create('level_module', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('designation');
-            $table->longText('description');
-            $table->integer('coefficient');
-            $table->integer('hours_volume');
+            $table->integer('module_id');
+            $table->integer('level_id');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateModulesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('modules');
+        Schema::dropIfExists('level_module');
     }
 }

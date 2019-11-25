@@ -6,9 +6,9 @@
                    Liste des convocations
                 </h3>
                 <span class="kt-subheader__separator kt-subheader__separator--v"></span>
-                @if($role)
+                {{--@if($role)--}}
                 <a href="{{route('convocations.create')}}"><button class="btn btn-outline-success">Rédiger votre convocations</button></a>
-                @endif
+                {{--@endif--}}
             </div>
         </div>
     </div>

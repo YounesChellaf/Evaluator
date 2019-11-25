@@ -1,4 +1,7 @@
 @extends('master.school-admin')
+@section('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" />
+@endsection
 @section('content')
     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
     @include('layouts.school.modules.subheader')
@@ -38,21 +41,32 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-2 col-form-label">Choisissez les niveaux adaptés pour ce module</label>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_1" value="1"> Niveau 1
+                                                    <label class="col-3 col-form-label">Déscription du module</label>
+                                                    <div class="col-9">
+                                                        <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
                                                     </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_2" value="1"> Niveau 2
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Coéfficient du module</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" name="coefficient" type="text" >
                                                     </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_3" value="1"> Niveau 3
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Volume horaire par semaine</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" name="volume" type="text" >
                                                     </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_4" value="1"> Niveau 4
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_5" value="1"> Niveau 5
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Niveaux affécté</label>
+                                                    <div class="col-9">
+                                                        <select name="levels[]" id="levels_affect" class="form-control" multiple="multiple">
+                                                            <option value=""></option>
+                                                            @foreach(\App\Level::all() as $level)
+                                                                <option value="{{$level->id}}">{{$level->name .' '. strtoupper($level->cycle)}}</option>
+                                                            @endforeach
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -63,7 +77,6 @@
                             </form>
                         </div>
                     </div>
-
                     <!--end::Portlet-->
                 </div>
             </div>
@@ -71,11 +84,20 @@
     </div>
 @endsection
 @section('js')
+    <script src="http://demo.itsolutionstuff.com/plugin/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#module-form').click(function () {
                 $('#kt_form').submit()
             })
         })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#levels_affect").select2({
+                tags: true
+            });
+        });
     </script>
 @endsection

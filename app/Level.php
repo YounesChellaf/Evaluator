@@ -7,4 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Level extends Model
 {
     protected $guarded=[];
+
+    public function module(){
+        return $this->belongsToMany(Module::class);
+    }
+    public function classe(){
+        return $this->hasMany(Classe::class);
+    }
 }

@@ -36,14 +36,11 @@
                                     </div>
                                     <div class="col-lg-3">
                                             <label>Le niveau scolaire :</label>
-                                            <select name="level" class="form-control">
+                                            <select name="level_id" class="form-control">
                                                 <option value=""></option>
-                                                <option value="0">Année préparatoire</option>
-                                                <option value="1">Premiére année primaire</option>
-                                                <option value="2">Deuxiéme année primaire</option>
-                                                <option value="3">Troisiéme année primaire</option>
-                                                <option value="4">Quatriéme année primaire</option>
-                                                <option value="5">Cinquiéme année primaire</option>
+                                                @foreach(\App\Level::all() as $level)
+                                                <option value="{{$level->id}}">{{$level->name .' '. strtoupper($level->cycle)}}</option>
+                                                @endforeach
                                             </select>
                                         <span class="form-text text-muted">Le niveau scolaire .ex (niveau 1, ...)</span>
                                     </div>

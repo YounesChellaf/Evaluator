@@ -22,11 +22,9 @@
                             <thead>
                             <tr>
                                 <th>Désignation</th>
-                                <th>Niveau 1</th>
-                                <th>Niveau 2</th>
-                                <th>Niveau 3</th>
-                                <th>Niveau 4</th>
-                                <th>Niveau 5</th>
+                                <th>Coeffecient</th>
+                                <th>Volumen horaire</th>
+
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -35,11 +33,8 @@
                                 @foreach(\App\Module::all() as $module)
                                     <tr>
                                     <td>{{$module->designation}}</td>
-                                    <td>{{$module->getLevel($module->niveau_1)}}</td>
-                                    <td>{{$module->getLevel($module->niveau_2)}}</td>
-                                    <td>{{$module->getLevel($module->niveau_3)}}</td>
-                                    <td>{{$module->getLevel($module->niveau_4)}}</td>
-                                    <td>{{$module->getLevel($module->niveau_5)}}</td>
+                                    <td>{{$module->coefficient}}</td>
+                                    <td>{{$module->hours_volume}}</td>
                                     <td>
                                         <div>
                                             <a href="{{route('modules.edit',$module->id)}}"><button class="btn btn-outline-primary">Modifier</button></a>

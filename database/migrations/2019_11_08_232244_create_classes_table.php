@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -20,7 +21,7 @@ class CreateClassesTable extends Migration
             $table->integer('student_number');
             $table->integer('places_number')->nullable();
             $table->integer('school_id');
-            $table->integer('level');
+            $table->integer('level_id');
             $table->timestamps();
         });
     }

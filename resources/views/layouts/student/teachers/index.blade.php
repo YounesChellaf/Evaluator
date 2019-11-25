@@ -30,7 +30,7 @@
                             <div class="kt-widget kt-widget--user-profile-2">
                                 <div class="kt-widget__head">
                                     <div class="kt-widget__media">
-                                        <img class="kt-widget__img kt-hidden-" src="assets/media//users/300_21.jpg" alt="image">
+                                        <img class="kt-widget__img kt-hidden-" src="{{asset('assets/img/prof/'.$teacher->image->path)}}" alt="image">
                                         <div class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
                                             ChS
                                         </div>

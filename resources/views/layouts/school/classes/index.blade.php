@@ -28,7 +28,7 @@
                             @foreach( \App\Classe::where('school_id',auth()->user()->school->id)->get() as $classe)
                             <tr>
                                 <th>{{$classe->scolar_designation}}</th>
-                                <th>{{$classe->level}}</th>
+                                <th>{{$classe->level->name.' '. strtoupper($classe->level->cycle)}}</th>
                                 <th>{{$classe->physic_designation}}</th>
                                 <th>{{$classe->student_number}}</th>
                                 <th>{{$classe->places_number}}</th>

@@ -32,10 +32,13 @@
                                     <td>{{$level->name}}</td>
                                     <td>{{$level->cycle}}</td>
                                     <td>
-                                        <div>
-                                            <a href="{{route('schools.show',$level->id)}}"><button class="btn btn-outline-dark">Voir</button></a>
-                                            <a href="{{route('schools.edit',$level->id)}}"><button class="btn btn-outline-primary">Modifier</button></a>
-                                            <a href="{{route('schools.edit',$level->id)}}"><button class="btn btn-outline-danger">Supprimer</button></a>
+                                        <div class="row">
+                                            <a href="{{route('levels.edit',$level->id)}}"><button class="btn btn-outline-primary">Modifier</button></a>
+                                            <form action="{{route('levels.destroy',$level->id)}}" method="post">
+                                                @method('DELETE')
+                                                @csrf
+                                            <button type="submit" class="btn btn-outline-danger">Supprimer</button>
+                                            </form>
                                         </div>
                                     </td>
                                     </tr>

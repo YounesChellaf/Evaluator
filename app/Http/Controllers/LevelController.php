@@ -37,7 +37,7 @@ class LevelController extends Controller
     public function store(LevelRequest $request)
     {
         if ($request->post()){
-            $request->validate();
+            $request->validated();
             Level::create([
                 'name' => $request->name,
                 'cycle' => $request->cycle
@@ -65,7 +65,9 @@ class LevelController extends Controller
      */
     public function edit($id)
     {
-        //
+        $level = Level::find($id);
+        return view('layouts.admin.levels.Update')->withLevel($level);
+
     }
 
     /**
@@ -77,7 +79,11 @@ class LevelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $level = Level::find($id);
+        $level->name = $request->name;
+        $level->cycle = $request->cycle;
+        $level->save();
+        return redirect()->route('levels.index');
     }
 
     /**
@@ -88,6 +94,7 @@ class LevelController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Level::destroy($id);
+        return redirect()->route('levels.index');
     }
 }
