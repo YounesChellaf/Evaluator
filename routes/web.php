@@ -78,6 +78,7 @@ Route::group(['middleware'=>'auth'], function(){
 //    Prof Portal
     Route::group(['prefix' => 'enseignent','middleware'=>'role:prof'], function(){
         Route::resource('convocations','ConvocationController');
+        Route::resource('absences','AbsenceController');
 
 //        Custom Routes
         Route::get('/convocations/done/{id}','ConvocationController@done')->name('convocations.done');
@@ -93,9 +94,7 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/students', function () {
             return view('layouts.prof.students.index');
         })->name('prof.students');
-        Route::get('/students/absence', function () {
-            return view('layouts.prof.students.absence');
-        })->name('students.absence');
+        Route::get('/classe/{id}/students/absence','AbsenceController@ClasseAbsence')->name('students.absence');
 
     });
 //    End of Prof Portal

@@ -10,7 +10,7 @@ class Classe extends Model
     protected $guarded=[];
 
     public function student(){
-        return $this->hasMany(Student::class);
+        return $this->hasMany(Student::class,'class_id');
     }
 
     public function profs(){
@@ -24,6 +24,12 @@ class Classe extends Model
     public function level(){
         return $this->belongsTo(Level::class);
     }
+
+    public function absence(){
+        return $this->hasMany(Absence::class);
+    }
+
+
     public static function new(Request $request){
         if ($request->post()){
             $classe = Classe::create([

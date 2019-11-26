@@ -36,13 +36,13 @@
                                             Classe {{$classe->scolar_designation}}
                                         </a>
                                         <span class="kt-widget__desc">
-															{{$classe->student_number}} étudiants
+															{{$classe->student->count()}} étudiants
 														</span>
                                     </div>
                                 </div>
                                 <div class="kt-widget__footer">
                                     <button style="margin-bottom: 5%" type="button" class="btn btn-label-danger  btn-upper">
-                                        <a href="{{route('students.absence')}}">Marquer les abscences</a>
+                                        <a href="{{route('students.absence',$classe->id)}}">Marquer les abscences</a>
                                     </button>
                                     <button type="button" class="btn btn-label-brand  btn-upper">
                                         <a href="{{route('prof.students')}}">Affecter des notes</a>

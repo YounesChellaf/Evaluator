@@ -18,7 +18,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
+                        <table id="" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
                             <thead>
                             <tr>
                                 <th>Matricule</th>
@@ -29,22 +29,30 @@
                             </tr>
                             </thead>
                             <tbody>
+                            <form class="absence-form" method="post" action="{{route('absences.store')}}" >
+                                @csrf
+                            @foreach($students as $student)
                             <tr>
-                                <th>23424234</th>
+                                <th>{{$student->matricule}}</th>
                                 <th>
-                                    <img src="{{asset('assets/media/users/student2.jpeg')}}" alt="image" style="width: 20%">
+                                    <img src="{{asset('assets/img/student/'.$student->image->path)}}" alt="image" style="width: 20%">
                                 </th>
-                                <th>Chellaf</th>
-                                <th>Younes</th>
+                                <th>{{$student->last_name}}</th>
+                                <th>{{$student->first_name}}</th>
                                 <th>
                                     <span class="kt-switch kt-switch--success kt-switch--sm">
 										<label>
-											<input type="checkbox" checked="checked" name="quick_panel_notifications_1">
+                                            <input type="hidden" name="classe_id" value="{{$student->classe->id}}">
+                                            <input type="hidden" name="prof" value="{{auth()->user()->prof->id}}">
+											<input type="checkbox" checked="checked" name="presence[]" value="{{$student->id}}">
 											<span></span>
 										</label>
 									</span>
                                 </th>
                             </tr>
+                            @endforeach
+                                <button style="margin-left:75%;margin-bottom: 2%" class="btn btn-primary" type="submit">Soumettre les absences au systéme</button>
+                            </form>
                             </tbody>
                         </table>
                     </div>

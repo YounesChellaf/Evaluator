@@ -25,6 +25,10 @@ class Student extends Model
         return $this->belongsTo(Image::class);
     }
 
+    public function absence(){
+        return $this->hasMany(Absence::class);
+    }
+
 
     public static function new(Request $request){
         if ($request->post()){
