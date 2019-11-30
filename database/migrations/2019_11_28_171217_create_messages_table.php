@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAbsencesTable extends Migration
+class CreateMessagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateAbsencesTable extends Migration
      */
     public function up()
     {
-        Schema::create('absences', function (Blueprint $table) {
+        Schema::create('messages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('student_id');
-            $table->integer('classe_id');
-            $table->integer('prof_id');
-            $table->boolean('is_checked')->default(false);
+            $table->integer('from')->unsigned();
+            $table->integer('to')->unsigned();
+            $table->longText('text');
+            $table->boolean('is_read')->default(false);
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateAbsencesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('absences');
+        Schema::dropIfExists('messages');
     }
 }

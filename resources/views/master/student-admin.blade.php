@@ -25,6 +25,9 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--begin::Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <!--end::Fonts -->
 
     <!--begin::Global Theme Styles(used by all pages) -->
@@ -217,7 +220,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <path d="M10,6 L22,6 C23.1045695,6 24,6.8954305 24,8 L24,16 C24,17.1045695 23.1045695,18 22,18 L10,18 C8.8954305,18 8,17.1045695 8,16 L8,8 C8,6.8954305 8.8954305,6 10,6 Z M21.0849395,8.0718316 L16,10.7185839 L10.9150605,8.0718316 C10.6132433,7.91473331 10.2368262,8.02389331 10.0743092,8.31564728 C9.91179228,8.60740125 10.0247174,8.9712679 10.3265346,9.12836619 L15.705737,11.9282847 C15.8894428,12.0239051 16.1105572,12.0239051 16.294263,11.9282847 L21.6734654,9.12836619 C21.9752826,8.9712679 22.0882077,8.60740125 21.9256908,8.31564728 C21.7631738,8.02389331 21.3867567,7.91473331 21.0849395,8.0718316 Z" fill="#000000"/>
     </g>
 </svg>
-						</span><span class="kt-menu__link-text">Convocations</span></a>
+						</span><span class="kt-menu__link-text">Convocations et absences</span></a>
                         </li>
                         <li class="kt-menu__item" ><a href="{{route('student.notes')}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
@@ -309,19 +312,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </div>
                                             </a>
-                                            <a href="#" class="kt-notification__item">
+                                            @foreach(auth()->user()->student->absence->where('is_checked',false) as $absence)
+                                            <a href="{{route('absences.show',$absence->id)}}" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">
                                                     <i class="flaticon2-chart2 kt-font-danger"></i>
                                                 </div>
                                                 <div class="kt-notification__item-details">
                                                     <div class="kt-notification__item-title">
-                                                        Nouveau devoir ajouté
+                                                        Nouvelle absence
                                                     </div>
                                                     <div class="kt-notification__item-time">
-                                                        1 jours
+                                                        {{$absence->created_at->format('d-M-Y')}}
                                                     </div>
                                                 </div>
                                             </a>
+                                            @endforeach
                                             @foreach(auth()->user()->student->convocation->where('status','approuved') as $convocation)
                                             <a href="{{route('student.convocation.details',$convocation->id)}}" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">

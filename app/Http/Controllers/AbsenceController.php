@@ -57,7 +57,10 @@ class AbsenceController extends Controller
      */
     public function show($id)
     {
-        //
+        $absence = Absence::find($id);
+        $absence->is_checked = true;
+        $absence->save();
+        return view('layouts.student.convocation.absence')->withAbsence($absence);
     }
 
     /**

@@ -17,6 +17,9 @@ Route::get('/', function () {
 
 Route::group(['middleware'=>'auth'], function(){
 
+
+    Route::resource('absences','AbsenceController');
+
 //  Tutel Student Portal
     Route::group(['prefix' => 'student','middleware'=>'role:tutel'], function(){
         Route::get('/','TutelPortalController@StudentProfile')->name('student.index');
@@ -24,7 +27,6 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/convocation/{id}','TutelPortalController@StudentConvocationDetails')->name('student.convocation.details');
         Route::get('/convocation/confirm/{id}','ConvocationController@confirm')->name('student.convocation.confirm');
         Route::get('/teachers','TutelPortalController@Teachers')->name('student.teachers');
-
 
 
 
@@ -78,8 +80,6 @@ Route::group(['middleware'=>'auth'], function(){
 //    Prof Portal
     Route::group(['prefix' => 'enseignent','middleware'=>'role:prof'], function(){
         Route::resource('convocations','ConvocationController');
-        Route::resource('absences','AbsenceController');
-
 //        Custom Routes
         Route::get('/convocations/done/{id}','ConvocationController@done')->name('convocations.done');
         Route::get('/', function () {

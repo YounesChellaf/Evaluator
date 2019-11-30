@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Convocation;
+use App\Prof;
 use App\Student;
 use Illuminate\Http\Request;
 
@@ -20,7 +21,12 @@ class TutelPortalController extends Controller
         return view('layouts.student.convocation.details')->withConvocation($convocation);
     }
 
-    public function Teachers(){
+    public function Teachers(Request $request){
+        if( $request->ajax()){
+            response()->json([
+                'res' => Prof::all()
+            ]);
+        }
         return view('layouts.student.teachers.index')->withTeachers(auth()->user()->student->classe->profs);
     }
 }
