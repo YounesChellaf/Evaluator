@@ -14,13 +14,13 @@
     <!--</div>-->
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="kt-chat">
+            <div class="kt-chat chat">
                 <div class="kt-portlet kt-portlet--last">
                     <div class="kt-portlet__head">
                         <div class="kt-chat__head ">
                             <div class="kt-chat__left">
                                 <div class="kt-chat__label">
-                                    <a href="#" class="kt-chat__title">teacher</a>
+                                    <a href="#" class="kt-chat__title">{{teacher.last_name}} {{teacher.first_name}}</a>
                                     <span class="kt-chat__status">
 												<span class="kt-badge kt-badge--dot kt-badge--success"></span> Actif
 											</span>
@@ -36,37 +36,27 @@
                     <div class="kt-portlet__body">
                         <div class="kt-scroll kt-scroll--pull" data-height="410" data-mobile-height="300">
                             <div class="kt-chat__messages kt-chat__messages--solid">
-                                <div class="kt-chat__message kt-chat__message--success">
-                                    <div class="kt-chat__user">
-												<span class="kt-media kt-media--circle kt-media--sm">
-													<img src="" alt="image">
-												</span>
-                                        <a href="#" class="kt-chat__username">Maitre A</a>
-                                        <span class="kt-chat__datetime"></span>
+                                <div v-for="message in messages" :key="message.id">
+                                    <div v-if="message.from == user.id">
+                                        <div class="kt-chat__message kt-chat__message--success " >
+                                            <div class="kt-chat__text">
+                                                {{message.text}}
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="kt-chat__text">
-                                        Bonjour monsieur , notre platforme vous offre l'aide pour evaluer et suivre votre éleve
+                                    <div v-if="message.to == user.id">
+                                        <div class="kt-chat__message kt-chat__message--info user_send">
+                                            <div class="kt-chat__text">
+                                                {{message.text}}
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="kt-portlet__foot">
-                        <div class="kt-chat__input">
-                            <div class="kt-chat__editor">
-                                <textarea placeholder="Ecrire votre message..." style="height: 50px"></textarea>
-                            </div>
-                            <div class="kt-chat__toolbar">
-                                <div class="kt_chat__tools">
-                                    <a href="#"><i class="flaticon2-link"></i></a>
-                                    <a href="#"><i class="flaticon2-photograph"></i></a>
-                                    <a href="#"><i class="flaticon2-photo-camera"></i></a>
-                                </div>
-                                <div class="kt_chat__actions">
-                                    <button type="button" class="btn btn-brand btn-md  btn-font-sm btn-upper btn-bold kt-chat__reply">Repondre</button>
-                                </div>
-                            </div>
-                        </div>
+                        <Conversation @send="SendMessage"></Conversation>
                     </div>
                 </div>
             </div>
@@ -75,6 +65,7 @@
 </template>
 
 <script>
+    import Conversation from './Conversation'
     export default {
         props: {
             user:{
@@ -84,16 +75,49 @@
             teacher:{
                 type: Object,
                 required: true
+            },
+            messages:{
+                type: Array,
+                required: true,
             }
         },
         data(){
             return {
-                message: [],
+                messages: [],
+                user: this.user,
                 teacher: this.teacher
             }
         },
         mounted(){
-          console.log(this.user)
+            console.log(this.teacher.id);
+            axios.get(`/conversation/${this.teacher.id}`)
+                .then( (response) => {
+                    console.log(response.data);
+                    this.messages = response.data
+                })
+        },
+        methods:{
+          SendMessage(text){
+              axios.post('/conversation/send',{
+                  text: text,
+                  contact_id : this.teacher.id,
+                  user_id : this.user.id
+              }).then( (response) =>
+                  this.messages.push(response.data)
+              )
+          }
+        },
+        components:{
+          Conversation
         }
     }
 </script>
+<style type="scss">
+    .user_send{
+        margin-left: 50% !important;
+    }
+    .chat{
+        overflow: scroll;
+        maxheight: 300px
+    }
+</style>

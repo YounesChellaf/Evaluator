@@ -41,7 +41,7 @@
                                             {{$teacher->first_name .' '. $teacher->last_name}}
                                         </a>
                                         <span class="kt-widget__desc">
-															Enseignant de Francais
+															Enseignant {{$teacher->specialite}}
 														</span>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                                 <div class="kt-widget__footer">
-                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#app">Ecrire un message</button>
+                                    <button type="button" class="btn btn-label-brand btn-lg btn-upper" id="kt_app_chat_launch_btn1" data-toggle="modal" data-target="#teacher-{{$teacher->id}}">Ecrire un message</button>
                                 </div>
                             </div>
 
@@ -80,7 +80,11 @@
         </div>
         <!-- end:: Content -->
     </div>
-    <div class="modal fade- modal-sticky-bottom-right" id="app" role="dialog" >
-        <chat :user="{{auth()->user()}}"></chat>
+    <div id="app">
+    @foreach( $teachers as $teacher)
+    <div class="modal fade- modal-sticky-bottom-right" id="teacher-{{$teacher->id}}" role="dialog" >
+        <model :user="{{auth()->user()}}" :teacher="{{$teacher->user}}"></model>
+    </div>
+    @endforeach
     </div>
 @endsection

@@ -49,4 +49,11 @@ class User extends Authenticatable
     public function prof(){
         return $this->hasOne(Prof::class,'user_id');
     }
+
+    public function SentMessage(){
+        return $this->hasMany(Message::class, 'from');
+    }
+    public function ReceivedMessage(){
+        return $this->hasMany(Message::class, 'to');
+    }
 }

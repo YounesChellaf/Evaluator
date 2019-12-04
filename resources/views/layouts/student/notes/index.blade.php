@@ -18,7 +18,6 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Exporter votre relevé de notes</h4>
-
                         <div class="table-responsive">
                             <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
                                 <thead>
@@ -184,4 +183,5 @@
         });
         $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
     </script>
+
 @endsection

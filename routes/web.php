@@ -19,6 +19,8 @@ Route::group(['middleware'=>'auth'], function(){
 
 
     Route::resource('absences','AbsenceController');
+    Route::get('/conversation/{id}','MessageController@getProfMessage');
+    Route::post('/conversation/send','MessageController@sendMessage');
 
 //  Tutel Student Portal
     Route::group(['prefix' => 'student','middleware'=>'role:tutel'], function(){
@@ -27,6 +29,10 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/convocation/{id}','TutelPortalController@StudentConvocationDetails')->name('student.convocation.details');
         Route::get('/convocation/confirm/{id}','ConvocationController@confirm')->name('student.convocation.confirm');
         Route::get('/teachers','TutelPortalController@Teachers')->name('student.teachers');
+
+
+//        Conversation student parent
+
 
 
 
@@ -95,6 +101,7 @@ Route::group(['middleware'=>'auth'], function(){
             return view('layouts.prof.students.index');
         })->name('prof.students');
         Route::get('/classe/{id}/students/absence','AbsenceController@ClasseAbsence')->name('students.absence');
+        Route::get('/classe/{id}/students/note','NoteController@StudentsNote')->name('students.notes');
 
     });
 //    End of Prof Portal

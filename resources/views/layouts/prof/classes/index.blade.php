@@ -45,7 +45,7 @@
                                         <a href="{{route('students.absence',$classe->id)}}">Marquer les abscences</a>
                                     </button>
                                     <button type="button" class="btn btn-label-brand  btn-upper">
-                                        <a href="{{route('prof.students')}}">Affecter des notes</a>
+                                        <a href="{{route('students.notes',$classe->id)}}">Affecter des notes</a>
                                     </button>
                                 </div>
                             </div>
