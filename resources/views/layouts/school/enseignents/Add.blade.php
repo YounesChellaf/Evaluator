@@ -63,17 +63,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Spécialité</label>
-                                                    <div class="col-9 kt-input-icon">
-                                                        <input type="text" name="specialite" class="form-control" >
-                                                        <span class="kt-input-icon__icon kt-input-icon__icon--right"><span><i class="la la-map-marker"></i></span></span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-3 col-form-label">Grade</label>
-                                                    <div class="col-9 kt-input-icon">
-                                                        <input type="text" name="grade" class="form-control" >
-                                                        <span class="kt-input-icon__icon kt-input-icon__icon--right"><span><i class="la la-map-marker"></i></span></span>
+                                                    <label class="col-3 col-form-label">Matiére á enseigner</label>
+                                                    <div class="col-9">
+                                                        <select name="module_id" id="module_affect" class="form-control" multiple="multiple">
+                                                            <option value=""></option>
+                                                            @foreach(\App\Module::all() as $module)
+                                                                <option value="{{$module->id}}">{{$module->designation}}</option>
+                                                            @endforeach
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -182,6 +179,11 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $("#class_affect").select2({
+                tags: true
+            });
+        });
+        $(document).ready(function() {
+            $("#module_affect").select2({
                 tags: true
             });
         });

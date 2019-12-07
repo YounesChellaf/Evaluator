@@ -31,6 +31,10 @@ class Prof extends Model
         return $this->hasMany(Absence::class);
     }
 
+    public function module(){
+        return $this->belongsTo(Module::class);
+    }
+
 
     public static function new(Request $request){
         $user = User::create([
@@ -53,13 +57,12 @@ class Prof extends Model
            'about' => $request->about,
            'birth_date' => $request->birth_date,
            'sexe' => $request->sexe,
-           'grade' => $request->grade,
-           'specialite' => $request->specialite,
+           'module_id' => $request->module_id,
            'address' => $request->address,
            'email' => $request->prof_email,
            'phone_number' => $request->phone_number,
            'user_id' => $user->id,
-           'image_id' => $image->id,
+           'image_id' => 1,
         ]);
 
         foreach ($request->classe as $classe){
