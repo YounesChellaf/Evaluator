@@ -5,8 +5,7 @@
                     Liste des etudiants de votre classe
                 </h3>
                 <span class="kt-subheader__separator kt-subheader__separator--v"></span>
-                <div class="kt-subheader__group kt-hidden" id="kt_subheader_group_actions">
-                </div>
+                <button id="students_note_submit" class="btn btn-outline-success">Mis á jour des notes</button>
             </div>
         </div>
     </div>

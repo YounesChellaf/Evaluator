@@ -86,6 +86,7 @@ Route::group(['middleware'=>'auth'], function(){
 //    Prof Portal
     Route::group(['prefix' => 'enseignent','middleware'=>'role:prof'], function(){
         Route::resource('convocations','ConvocationController');
+        Route::resource('notes','NoteController');
 //        Custom Routes
         Route::get('/convocations/done/{id}','ConvocationController@done')->name('convocations.done');
         Route::get('/', function () {

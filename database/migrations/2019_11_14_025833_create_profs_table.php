@@ -20,7 +20,6 @@ class CreateProfsTable extends Migration
             $table->longText('about')->nullable();
             $table->date('birth_date');
             $table->enum('sexe',['male','female']);
-            $table->string('specialite');
             $table->string('module_id');
             $table->string('address');
             $table->string('phone_number');

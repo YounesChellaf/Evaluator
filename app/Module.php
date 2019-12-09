@@ -15,6 +15,9 @@ class Module extends Model
     public function prof(){
         return $this->hasMany(Prof::class);
     }
+    public function note(){
+        return $this->hasMany(Note::class);
+    }
 
     public static function new(Request $request){
         //dd($request->levels);

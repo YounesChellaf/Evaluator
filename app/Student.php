@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Spatie\Permission\Models\Role;
 
 class Student extends Model
 {
@@ -29,10 +30,13 @@ class Student extends Model
         return $this->hasMany(Absence::class);
     }
 
+    public function note(){
+        return $this->hasMany(Note::class);
+    }
 
     public static function new(Request $request){
         if ($request->post()){
-            $user = User::create([
+            $user = User::firstOrCreate([
                 'first_name' => $request->tutel_first_name,
                 'last_name' => $request->tutel_last_name,
                 'phone_number' => $request->phone_number,
@@ -40,6 +44,7 @@ class Student extends Model
                 'password' => Hash::make($request->password),
 
             ]);
+            $user->assignRole(Role::where('name','tutel')->first());
             $photo = $request->file('image');
             $destpath = 'assets/img/student';
             $file_name = $photo->getClientOriginalName();

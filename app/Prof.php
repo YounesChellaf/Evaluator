@@ -37,20 +37,20 @@ class Prof extends Model
 
 
     public static function new(Request $request){
-        $user = User::create([
+        $user = User::firstOrCreate([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'email' => $request->email,
             'phone_number' => $request->phone_number,
             'password' => Hash::make($request->password),
         ]);
-        $photo = $request->file('image');
-        $destpath = 'assets/img/prof';
-        $file_name = $photo->getClientOriginalName();
-        $photo->move($destpath,$file_name);
-        $image = Image::create([
-            'path' => $file_name
-        ]);
+//        $photo = $request->file('image');
+//        $destpath = 'assets/img/prof';
+//        $file_name = $photo->getClientOriginalName();
+//        $photo->move($destpath,$file_name);
+//        $image = Image::create([
+//            'path' => $file_name
+//        ]);
         $prof = Prof::create([
            'last_name' => $request->last_name,
            'first_name' => $request->first_name,

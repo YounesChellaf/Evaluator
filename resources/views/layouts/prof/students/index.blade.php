@@ -17,270 +17,6 @@
             <!--Begin::Section-->
             <div class="card">
                 <div class="card-body">
-                    {{--<div class="table-responsive">--}}
-                        {{--<table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">--}}
-                            {{--<thead>--}}
-                            {{--<tr>--}}
-                                {{--<th>Nom d'etudiants</th>--}}
-                                {{--<th>Prénom d'etudiants</th>--}}
-                                {{--<th>Matricule</th>--}}
-                                {{--<th>devoir 1</th>--}}
-                                {{--<th>devoir 2</th>--}}
-                                {{--<th>Examen</th>--}}
-                                {{--<th>Moyenne</th>--}}
-                            {{--</tr>--}}
-                            {{--</thead>--}}
-                            {{--<tfoot>--}}
-                            {{--<tr>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>Moyenne génerale de classe</th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th></th>--}}
-                                {{--<th>15.36</th>--}}
-                            {{--</tr>--}}
-                            {{--</tfoot>--}}
-                            {{--<tbody>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom1</th>--}}
-                                {{--<th>prenom1</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom2</th>--}}
-                                {{--<th>prenom2</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--<tr>--}}
-                                {{--<th>nom3</th>--}}
-                                {{--<th>prenom3</th>--}}
-                                {{--<th>23414</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>14</th>--}}
-                                {{--<th>16</th>--}}
-                                {{--<th>14.6</th>--}}
-                            {{--</tr>--}}
-                            {{--</tbody>--}}
-                        {{--</table>--}}
-                    {{--</div>--}}
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
@@ -288,7 +24,6 @@
                                     <div class="table-responsive">
                                         <table id="mainTable" class="table editable-table table-bordered table-striped m-b-0">
                                             <thead>
-
                                             <tr>
                                             <th>Nom d'etudiants</th>
                                             <th>Prénom d'etudiants</th>
@@ -300,20 +35,25 @@
                                             <th>Moyenne</th>
                                             </tr>
                                             </thead>
+                                            <form class="note-form" action="{{route('notes.store')}}" method="post">
+                                            @csrf
                                             <tbody>
                                             @foreach($students as $student)
                                             <tr>
+                                                <input type="hidden" name="student_id[]" value="{{$student->id}}">
+                                                <input type="hidden" name="module_id" value="{{auth()->user()->prof->module->id}}">
                                                 <td>{{$student->last_name}}</td>
                                                 <td>{{$student->first_name}}</td>
                                                 <td>{{$student->matricule}}</td>
-                                                <td><input class="form-control" type="text" value="5"/></td>
-                                                <td><input class="form-control" type="text" value="5"/></td>
-                                                <td><input class="form-control" type="text" value="5"/></td>
-                                                <td><input class="form-control" type="text" value="5"/></td>
+                                                <td><input class="form-control" name="evaluation[]" type="text" value=""/></td>
+                                                <td><input class="form-control" name="task_one[]" type="text" value=""/></td>
+                                                <td><input class="form-control" name="task_two[]" type="text" value=""/></td>
+                                                <td><input class="form-control" name="exam[]" type="text" value=""/></td>
                                                 <td></td>
                                             </tr>
                                             @endforeach
                                             </tbody>
+                                            </form>
                                             <tfoot>
                                             <tr>
                                                 <th></th>
@@ -358,6 +98,13 @@
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
     <!-- end - This is for export functionality only -->
+    <script>
+        $(document).ready(function () {
+            $('#students_note_submit').click(function () {
+                $('.note-form').submit()
+            })
+        })
+    </script>
     <script>
         $(function() {
             $('#myTable').DataTable();

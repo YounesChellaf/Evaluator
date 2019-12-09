@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Classe;
+use App\Note;
 use Illuminate\Http\Request;
 
 class NoteController extends Controller
@@ -39,7 +40,28 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        if ($request->post()){
+            for ($i=0;$i<count($request->student_id);$i++){
+                    if ( Note::where([
+                        ['student_id',$request->student_id[$i]],
+                        ['module_id',$request->module_id]
+                    ])->get())
+                        dd('dad');
+//                        $this->update($request,$note->id);
+                    else
+                        $note = Note::create([
+                            'student_id' => $request->student_id[$i],
+                            'evaluation' => $request->evaluation[$i],
+                            'task_one' => $request->task_one[$i],
+                            'task_two' => $request->student_id[$i],
+                            'module_id' => $request->module_id,
+                            'exam' => $request->exam[$i],
+                        ]);
+            }
+            return redirect()->back();
+        }
+
     }
 
     /**

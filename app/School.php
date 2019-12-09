@@ -22,7 +22,7 @@ class School extends Model
 
 
     public static function new(Request $request){
-        $user = User::create([
+        $user = User::firstOrCreate([
           'first_name' => $request->first_name,
           'last_name' => $request->last_name,
           'phone_number' => $request->phone_number,

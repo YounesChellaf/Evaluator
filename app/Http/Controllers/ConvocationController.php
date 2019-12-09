@@ -15,6 +15,9 @@ class ConvocationController extends Controller
      */
     public function index()
     {
+        if (\request()->ajax()){
+            return response()->json(Convocation::all());
+        }
         $role = auth()->user()->hasRole(\Spatie\Permission\Models\Role::where('name','prof')->first());
         return view('layouts.prof.convocations.index')->withRole($role);
     }
