@@ -17,7 +17,7 @@ class CreateNotesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('student_id');
             $table->integer('module_id');
-            $table->integer('evaluation')->nullable();
+            $table->float('evaluation')->nullable();
             $table->float('task_one')->nullable();
             $table->float('task_two')->nullable();
             $table->float('exam')->nullable();

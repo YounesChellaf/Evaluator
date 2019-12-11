@@ -47,9 +47,7 @@ Route::group(['middleware'=>'auth'], function(){
             return view('layouts.student.planning.index');
         })->name('student.planning');
 
-        Route::get('/notes', function () {
-            return view('layouts.student.notes.index');
-        })->name('student.notes');
+        Route::get('/notes/{id}','NoteController@StudentShowNotes')->name('student.notes');
     });
 //    End Tutel Student Portal
 

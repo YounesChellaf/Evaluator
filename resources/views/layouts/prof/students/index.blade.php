@@ -45,10 +45,10 @@
                                                 <td>{{$student->last_name}}</td>
                                                 <td>{{$student->first_name}}</td>
                                                 <td>{{$student->matricule}}</td>
-                                                <td><input class="form-control" name="evaluation[]" type="text" value=""/></td>
-                                                <td><input class="form-control" name="task_one[]" type="text" value=""/></td>
-                                                <td><input class="form-control" name="task_two[]" type="text" value=""/></td>
-                                                <td><input class="form-control" name="exam[]" type="text" value=""/></td>
+                                                <td><input class="form-control" name="evaluation[]" type="text" value="{{$student->note->where('module_id',auth()->user()->prof->module->id)->first()->evaluation}}"/></td>
+                                                <td><input class="form-control" name="task_one[]" type="text" value="{{$student->note->where('module_id',auth()->user()->prof->module->id)->first()->task_one}}"/></td>
+                                                <td><input class="form-control" name="task_two[]" type="text" value="{{$student->note->where('module_id',auth()->user()->prof->module->id)->first()->task_two}}"/></td>
+                                                <td><input class="form-control" name="exam[]" type="text" value="{{$student->note->where('module_id',auth()->user()->prof->module->id)->first()->exam}}"/></td>
                                                 <td></td>
                                             </tr>
                                             @endforeach

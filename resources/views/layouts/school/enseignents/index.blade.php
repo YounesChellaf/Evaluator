@@ -25,7 +25,6 @@
                                 <th>Prénom</th>
                                 <th>date naissance</th>
                                 <th>Spécialité</th>
-                                <th>Grade</th>
                                 <th>Numéro télephone</th>
                                 <th>Classe affecté</th>
                                 <th>Actions</th>
@@ -37,8 +36,7 @@
                                 <th>{{$prof->last_name}}</th>
                                 <th>{{$prof->first_name}}</th>
                                 <th>{{$prof->birth_date}}</th>
-                                <th>{{$prof->specialite}}</th>
-                                <th>{{$prof->grade}}</th>
+                                <th>{{$prof->module->designation}}</th>
                                 <th>{{$prof->phone_number}}</th>
                                 <th>
                                     @foreach($prof->classes as $classe)

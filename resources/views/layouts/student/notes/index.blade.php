@@ -27,16 +27,10 @@
                                     <th>devoir 1</th>
                                     <th>devoir 2</th>
                                     <th>Examen</th>
-                                    <th>Moyenne matiére</th>
-                                    <th>Coéficient</th>
-                                    <th>Moyenne finale</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
                                     <th></th>
                                     <th></th>
                                     <th></th>
@@ -49,72 +43,18 @@
                                     <th></th>
                                     <th></th>
                                     <th></th>
-                                    <th></th>
-                                    <th></th>
-                                    <th>15.36</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
+                                @foreach($student->note as $note)
                                 <tr>
-                                    <th>Arab</th>
-                                    <th>15</th>
-                                    <th>14</th>
-                                    <th>14</th>
-                                    <th>16</th>
-                                    <th>14.6</th>
-                                    <th>4</th>
-                                    <th>58.2</th>
+                                    <th>{{\App\Module::find($note->module_id)->designation}}</th>
+                                    <th>{{$note->evaluation}}</th>
+                                    <th>{{$note->task_one}}</th>
+                                    <th>{{$note->task_two}}</th>
+                                    <th>{{$note->exam}}</th>
                                 </tr>
-                                <tr>
-                                    <th>Francais</th>
-                                    <th>15</th>
-                                    <th>12</th>
-                                    <th>14</th>
-                                    <th>16</th>
-                                    <th>13.6</th>
-                                    <th>2</th>
-                                    <th>27.2</th>
-                                </tr>
-                                <tr>
-                                    <th>Mathématique</th>
-                                    <th>19</th>
-                                    <th>16</th>
-                                    <th>16</th>
-                                    <th>16</th>
-                                    <th>17.4</th>
-                                    <th>5</th>
-                                    <th>90</th>
-                                </tr>
-                                <tr>
-                                    <th>Science islamique</th>
-                                    <th>15</th>
-                                    <th>14</th>
-                                    <th>14</th>
-                                    <th>16</th>
-                                    <th>14.6</th>
-                                    <th>3</th>
-                                    <th>14.6</th>
-                                </tr>
-                                <tr>
-                                    <th>Histoire géographique</th>
-                                    <th>15</th>
-                                    <th>14</th>
-                                    <th>14</th>
-                                    <th>16</th>
-                                    <th>14.6</th>
-                                    <th>3</th>
-                                    <th>14.6</th>
-                                </tr>
-                                <tr>
-                                    <th>sport</th>
-                                    <th>18</th>
-                                    <th>18</th>
-                                    <th>18</th>
-                                    <th>18</th>
-                                    <th>18</th>
-                                    <th>1</th>
-                                    <th>18</th>
-                                </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>
