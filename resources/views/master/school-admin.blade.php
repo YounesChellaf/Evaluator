@@ -479,6 +479,17 @@ License: You must have a valid license purchased only from themeforest(the above
 									</span>
                         </div>
                     </div>
+                    <div class="form-group form-group-xs row">
+                        <label class="col-8 col-form-label">Autoriser la communication Enseignent/Tuteur:</label>
+                        <div class="col-4 kt-align-right">
+									<span class="kt-switch kt-switch--success kt-switch--sm">
+										<label>
+											<input type="checkbox" checked="checked" name="quick_panel_notifications_1">
+											<span></span>
+										</label>
+									</span>
+                        </div>
+                    </div>
                     <div class="form-group form-group-last form-group-xs row">
                         <label class="col-8 col-form-label">Discactiver status en ligne:</label>
                         <div class="col-4 kt-align-right">
