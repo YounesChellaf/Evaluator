@@ -3,39 +3,61 @@
     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
 
         <!-- begin:: Content Head -->
-        @include('layouts.student.planning.subheader')
-        <!-- end:: Content Head -->
+    @include('layouts.student.planning.subheader')
+    <!-- end:: Content Head -->
 
         <!-- begin:: Content -->
         <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
-            <div class="row">
-                <div class="col-lg-12">
 
-                    <!--begin::Portlet-->
-                    <div class="kt-portlet" id="kt_portlet">
+            <div class="row">
+
+
+                <!--begin::Portlet-->
+                @foreach(\App\Planning::all()->groupBy('day') as $key => $day)
+
+                <div class="col-lg-6 col-xl-3 order-lg-1 order-xl-1">
+                    <!--Begin::Portlet-->
+                    <div class="kt-portlet kt-portlet--height-fluid">
                         <div class="kt-portlet__head">
                             <div class="kt-portlet__head-label">
-												<span class="kt-portlet__head-icon">
-													<i class="flaticon-calendar-2"></i>
-												</span>
                                 <h3 class="kt-portlet__head-title">
-                                    Google Calendar
+                                    {{$key}}
                                 </h3>
-                            </div>
-                            <div class="kt-portlet__head-toolbar">
-                                <a href="#" class="btn btn-brand btn-elevate">
-                                    <i class="la la-plus"></i>
-                                    Add Event
-                                </a>
                             </div>
                         </div>
                         <div class="kt-portlet__body">
-                            <div id="kt_calendar"></div>
+
+                            <!--Begin::Timeline 3 -->
+                            <div class="kt-timeline-v2">
+                                <div class="kt-timeline-v2__items  kt-padding-top-25 kt-padding-bottom-30">
+                                    @foreach($day as $planning_day)
+                                    <div class="kt-timeline-v2__item">
+                                        <span class="kt-timeline-v2__item-time">{{$planning_day->start_sceance}}</span>
+                                        <div class="kt-timeline-v2__item-cricle">
+                                            <i class="fa fa-genderless kt-font-success"></i>
+                                        </div>
+                                        <div class="kt-timeline-v2__item-text kt-timeline-v2__item-text--bold">
+                                            {{$planning_day->module->designation}}
+                                        </div>
+                                        <div class="kt-list-pics kt-list-pics--sm kt-padding-l-20">
+                                            <a href="#"><img src="assets/media/users/100_4.jpg" title=""></a>
+                                            <a href="#"><img src="assets/media/users/100_13.jpg" title=""></a>
+                                            <a href="#"><img src="assets/media/users/100_11.jpg" title=""></a>
+                                            <a href="#"><img src="assets/media/users/100_14.jpg" title=""></a>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+
+                            <!--End::Timeline 3 -->
                         </div>
                     </div>
 
-                    <!--end::Portlet-->
+                    <!--End::Portlet-->
                 </div>
+                @endforeach
+                <!--end::Portlet-->
             </div>
         </div>
         <!-- end:: Content -->

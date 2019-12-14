@@ -18,6 +18,9 @@ class Module extends Model
     public function note(){
         return $this->hasMany(Note::class);
     }
+    public function planning(){
+        return $this->hasMany(Planning::class);
+    }
 
     public static function new(Request $request){
         //dd($request->levels);

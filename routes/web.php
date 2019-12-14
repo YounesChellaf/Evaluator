@@ -69,6 +69,7 @@ Route::group(['middleware'=>'auth'], function(){
         Route::resource('/students','StudentController');
         Route::resource('/profs','ProfController');
         Route::resource('/modules','ModuleController');
+        Route::resource('/plannings','PlanningController');
 
 //        Custom routes
         Route::get('/convocations','ConvocationController@index')->name('school-admin.convocations.index');

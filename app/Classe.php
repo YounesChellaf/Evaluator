@@ -29,6 +29,10 @@ class Classe extends Model
         return $this->hasMany(Absence::class);
     }
 
+    public function planning(){
+        return $this->hasMany(Planning::class);
+    }
+
 
     public static function new(Request $request){
         if ($request->post()){

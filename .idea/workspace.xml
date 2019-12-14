@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44374005-e319-4c09-8c97-98070cc792ed" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/school/planning/Add.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/school/planning/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/school/planning/subheader.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/student/planning/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/student/planning/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/master/school-admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/school-admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,94 +39,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/students/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/planning/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="54" column="52" lean-forward="true" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+            <state relative-caret-position="412">
+              <caret line="29" column="103" selection-start-line="29" selection-start-column="103" selection-end-line="29" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="2019_11_08_232244_create_classes_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_08_232244_create_classes_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+            <state relative-caret-position="368">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Prof.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Prof.php">
+      <file leaf-file-name="Module.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Module.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="460">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student-admin.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/master/student-admin.blade.php">
+      <file leaf-file-name="Add.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/planning/Add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="224" column="111" selection-start-line="224" selection-start-column="111" selection-end-line="224" selection-end-column="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2019_11_14_120541_create_modules_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_14_120541_create_modules_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/NoteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+            <state relative-caret-position="-150">
+              <caret line="172" column="19" lean-forward="true" selection-start-line="172" selection-start-column="19" selection-end-line="172" selection-end-column="19" />
               <folding>
-                <element signature="e#40#55#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/student/notes/index.blade.php">
+      <file leaf-file-name="Planning.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Planning.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="361">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#23#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanningController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PlanningController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subheader.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/planning/subheader.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/student/planning/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_12_13_162415_create_plannings_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_13_162415_create_plannings_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/enseignents/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/planning/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="school-admin.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/master/school-admin.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="482" column="104" selection-start-line="482" selection-start-column="104" selection-end-line="482" selection-end-column="104" />
+            <state relative-caret-position="50">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -127,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
       <find>bilal</find>
       <find>conv</find>
       <find>convoc</find>
@@ -139,7 +152,6 @@
       <find>hasRole</find>
       <find>school-&gt;name</find>
       <find>Nouvelle</find>
-      <find>Activer notification</find>
       <find>media</find>
       <find>Bonjour</find>
       <find>notification</find>
@@ -157,6 +169,8 @@
       <find>prof.cla</find>
       <find>enseign</find>
       <find>note</find>
+      <find>Activer notification</find>
+      <find>enseignent</find>
     </findStrings>
     <replaceStrings>
       <replace>../../img/banner_img.png</replace>
@@ -171,18 +185,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/layouts/school/modules/Add.blade.php" />
-        <option value="$PROJECT_DIR$/app/Level.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_25_142716_create_level_module_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_25_145209_create_level_module_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/school/modules/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/school/modules/student-details.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/student/modules/subheader.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/student/modules/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/prof/convocations/subheader.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/Classe.php" />
         <option value="$PROJECT_DIR$/app/Absence.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/prof/students/absence.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AbsenceController.php" />
@@ -209,19 +215,27 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_14_025833_create_profs_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ConvocationController.php" />
         <option value="$PROJECT_DIR$/app/Note.php" />
-        <option value="$PROJECT_DIR$/app/Module.php" />
         <option value="$PROJECT_DIR$/app/Prof.php" />
         <option value="$PROJECT_DIR$/app/Student.php" />
         <option value="$PROJECT_DIR$/app/School.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/prof/students/subheader.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_12_09_203846_create_notes_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/prof/students/index.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/NoteController.php" />
         <option value="$PROJECT_DIR$/resources/views/master/student-admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/student/notes/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/school/enseignents/index.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_12_13_162415_create_plannings_table.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/master/school-admin.blade.php" />
+        <option value="$PROJECT_DIR$/app/Classe.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PlanningController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/school/planning/subheader.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/school/planning/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Module.php" />
+        <option value="$PROJECT_DIR$/app/Planning.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/school/planning/Add.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/student/planning/index.blade.php" />
       </list>
     </option>
   </component>
@@ -353,13 +367,7 @@
             <path>
               <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
               <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
@@ -384,6 +392,40 @@
               <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="planning" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="planning" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="master" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -393,7 +435,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="PRo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;User&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/User.php&#10;mod&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;web&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/web.php&#10;note&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_09_203846_create_notes_table.php&#10;Pro&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;Note&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/NoteController.php&#10;Scho&#9;null&#9;null&#10;Stude&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Student.php&#10;Prof&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;notif&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_09_211148_create_notifications_table.php&#10;Modu&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;notes&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_09_203846_create_notes_table.php&#10;Convo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/ConvocationController.php&#10;Studen&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Student.php&#10;Roles&#9;null&#9;null&#10;pro&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_025833_create_profs_table.php&#10;PRof&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;module&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;prof_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_025833_create_profs_table.php&#10;Absence&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/AbsenceController.php&#10;MEss&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/MessageController.php&#10;mess&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_28_171217_create_messages_table.php&#10;ME&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Message.php&#10;Messa&#9;null&#9;null&#10;USer&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/User.php&#10;Tutel&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/TutelPortalController.php&#10;user_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2014_10_12_000000_create_users_table.php&#10;USerf&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/factories/UserFactory.php&#10;broa&#9;FILE&#9;file:///Users/issam/dev/evaluator/config/broadcasting.php&#10;pacj&#9;FILE&#9;file:///Users/issam/dev/evaluator/package.json&#10;convo&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_18_152014_create_convocations_table.php&#10;Convoca&#9;null&#9;null&#10;Clas&#9;null&#9;null&#10;absence&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/AbsenceController.php&#10;absen&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Absence.php&#10;Class&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;abs&#9;FILE&#9;file:///Users/issam/dev/evaluator/resources/views/layouts/prof/students/absence.blade.php&#10;LEve&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Level.php&#10;Cla&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;Tute&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/TutelPortalController.php&#10;leve&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_25_145209_create_level_module_table.php&#10;app.ph&#9;FILE&#9;file:///Users/issam/dev/evaluator/config/app.php&#10;modu&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;stude&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_09_001936_create_students_table.php&#10;LEvel&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Level.php&#10;class&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_08_232244_create_classes_table.php&#10;level&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_15_220844_create_levels_table.php&#10;user&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/seeds/UserSeeder.php&#10;api&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/api.php" />
+    <property name="SearchEverywhereHistoryKey" value="Modu&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;pla&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_13_162415_create_plannings_table.php&#10;Pla&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/PlanningController.php&#10;cla&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_08_232244_create_classes_table.php&#10;eb&#9;FILE&#9;jar:///Applications/PhpStorm .app/Contents/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc&#10;mod&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;class&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_08_232244_create_classes_table.php&#10;web&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/web.php&#10;plan&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_13_162415_create_plannings_table.php&#10;PRo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;User&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/User.php&#10;note&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_09_203846_create_notes_table.php&#10;Pro&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;Note&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/NoteController.php&#10;Scho&#9;null&#9;null&#10;Stude&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Student.php&#10;Prof&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;notif&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_09_211148_create_notifications_table.php&#10;notes&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_12_09_203846_create_notes_table.php&#10;Convo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/ConvocationController.php&#10;Studen&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Student.php&#10;Roles&#9;null&#9;null&#10;pro&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_025833_create_profs_table.php&#10;PRof&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Prof.php&#10;module&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;prof_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_025833_create_profs_table.php&#10;Absence&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/AbsenceController.php&#10;MEss&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/MessageController.php&#10;mess&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_28_171217_create_messages_table.php&#10;ME&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Message.php&#10;Messa&#9;null&#9;null&#10;USer&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/User.php&#10;Tutel&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/TutelPortalController.php&#10;user_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2014_10_12_000000_create_users_table.php&#10;USerf&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/factories/UserFactory.php&#10;broa&#9;FILE&#9;file:///Users/issam/dev/evaluator/config/broadcasting.php&#10;pacj&#9;FILE&#9;file:///Users/issam/dev/evaluator/package.json&#10;convo&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_18_152014_create_convocations_table.php&#10;Convoca&#9;null&#9;null&#10;Clas&#9;null&#9;null&#10;absence&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/AbsenceController.php&#10;absen&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Absence.php&#10;Class&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;abs&#9;FILE&#9;file:///Users/issam/dev/evaluator/resources/views/layouts/prof/students/absence.blade.php&#10;LEve&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Level.php&#10;Cla&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;Tute&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/TutelPortalController.php&#10;leve&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_25_145209_create_level_module_table.php&#10;app.ph&#9;FILE&#9;file:///Users/issam/dev/evaluator/config/app.php&#10;modu&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -402,17 +444,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Models" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts/student/landing" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layouts/school/planning" />
       <recent name="$PROJECT_DIR$/public/assets/js/pages" />
       <recent name="$PROJECT_DIR$/public/assets/img" />
       <recent name="$PROJECT_DIR$/resources/views/layouts/admin/levels" />
       <recent name="$PROJECT_DIR$/resources/views/layouts/admin/schools" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts/admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/Models" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts/student/landing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -459,12 +501,12 @@
       <workItem from="1575458777179" duration="266000" />
       <workItem from="1575476266169" duration="2806000" />
       <workItem from="1575842214803" duration="546000" />
-      <workItem from="1575883890189" duration="10167000" />
+      <workItem from="1575883890189" duration="20656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153442000" />
+    <option name="totallyTimeSpent" value="163931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -523,90 +565,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/student/convocation/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2277">
-          <caret line="99" column="136" selection-start-line="99" selection-start-column="136" selection-end-line="99" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/student/convocation/absence.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_18_152014_create_convocations_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="58" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TutelPortalController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_28_171217_create_messages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/style.bundle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21208">
@@ -760,13 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Note.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -819,7 +770,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/students/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="54" column="52" lean-forward="true" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
+          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -833,24 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_14_120541_create_modules_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -882,10 +819,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/modules/Add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="63" column="139" selection-start-line="63" selection-start-column="99" selection-end-line="63" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_14_120541_create_modules_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="577" column="16" selection-start-line="577" selection-start-column="16" selection-end-line="577" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Classe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/master/school-admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="482" column="104" selection-start-line="482" selection-start-column="104" selection-end-line="482" selection-end-column="104" />
+        <state relative-caret-position="274">
+          <caret line="221" column="36" selection-start-line="221" selection-start-column="36" selection-end-line="221" selection-end-column="36" />
+          <folding>
+            <element signature="e#13727#14665#0#HTML" />
+            <element signature="e#15020#16211#0#HTML" />
+            <element signature="e#16573#17764#0#HTML" />
+            <element signature="e#17951#19145#0#HTML" />
+            <element signature="e#19341#20203#0#HTML" />
+            <element signature="e#19359#20816#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PlanningController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/planning/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/planning/subheader.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_08_232244_create_classes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/planning/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="29" column="103" selection-start-line="29" selection-start-column="103" selection-end-line="29" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_13_162415_create_plannings_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Planning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/planning/Add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="172" column="19" lean-forward="true" selection-start-line="172" selection-start-column="19" selection-end-line="172" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/student/planning/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
       </provider>
     </entry>
