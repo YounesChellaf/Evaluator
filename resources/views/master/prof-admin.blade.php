@@ -234,6 +234,19 @@
                                 <div class="tab-content">
                                     <div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">
                                         <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true" data-height="300" data-mobile-height="200">
+                                            <a href="{{route('chats.index')}}" class="kt-notification__item">
+                                                <div class="kt-notification__item-icon">
+                                                    <i class="flaticon2-chat kt-font-warning"></i>
+                                                </div>
+                                                <div class="kt-notification__item-details">
+                                                    <div class="kt-notification__item-title">
+                                                        Nouveaux messages
+                                                    </div>
+                                                    <div class="kt-notification__item-time">
+                                                        2 heures
+                                                    </div>
+                                                </div>
+                                            </a>
                                             <a href="#" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">
                                                     <i class="flaticon2-line-chart kt-font-success"></i>

@@ -32,17 +32,9 @@ Route::group(['middleware'=>'auth'], function(){
 
 
 //        Conversation student parent
-
-
-
-
         Route::get('/modules', function () {
             return view('layouts.student.modules.index');
         })->name('student.modules');
-
-
-
-
         Route::get('/planning', function () {
             return view('layouts.student.planning.index');
         })->name('student.planning');
@@ -86,6 +78,7 @@ Route::group(['middleware'=>'auth'], function(){
     Route::group(['prefix' => 'enseignent','middleware'=>'role:prof'], function(){
         Route::resource('convocations','ConvocationController');
         Route::resource('notes','NoteController');
+        Route::resource('chats','ChatController');
 //        Custom Routes
         Route::get('/convocations/done/{id}','ConvocationController@done')->name('convocations.done');
         Route::get('/', function () {
@@ -102,6 +95,7 @@ Route::group(['middleware'=>'auth'], function(){
         })->name('prof.students');
         Route::get('/classe/{id}/students/absence','AbsenceController@ClasseAbsence')->name('students.absence');
         Route::get('/classe/{id}/students/note','NoteController@StudentsNote')->name('students.notes');
+
 
     });
 //    End of Prof Portal

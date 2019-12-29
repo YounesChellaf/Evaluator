@@ -34,7 +34,9 @@ class Prof extends Model
     public function module(){
         return $this->belongsTo(Module::class);
     }
-
+    public function planning(){
+        return $this->hasMany(Planning::class);
+    }
 
     public static function new(Request $request){
         $user = User::firstOrCreate([

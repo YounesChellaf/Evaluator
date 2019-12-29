@@ -32,18 +32,24 @@
                                 <div class="kt-timeline-v2__items  kt-padding-top-25 kt-padding-bottom-30">
                                     @foreach($day as $planning_day)
                                     <div class="kt-timeline-v2__item">
-                                        <span class="kt-timeline-v2__item-time">{{$planning_day->start_sceance}}</span>
-                                        <div class="kt-timeline-v2__item-cricle">
-                                            <i class="fa fa-genderless kt-font-success"></i>
+                                        <div class="row">
+                                            <div>
+                                                <span class="kt-timeline-v2__item-time">{{$planning_day->start_sceance}}</span><br>
+                                                <span class="kt-timeline-v2__item-time">{{$planning_day->end_sceance}}</span>
+                                            </div>
+                                            <div >
+                                                <div class="kt-timeline-v2__item-cricle">
+                                                    <i class="fa fa-genderless kt-font-success"></i>
+                                                </div>
+                                                <div  style="top: 1rem !important;" class="kt-timeline-v2__item-cricle">
+                                                    <i  class="fa fa-genderless kt-font-danger"></i>
+                                                </div>
+                                            </div>
                                         </div>
+
                                         <div class="kt-timeline-v2__item-text kt-timeline-v2__item-text--bold">
-                                            {{$planning_day->module->designation}}
-                                        </div>
-                                        <div class="kt-list-pics kt-list-pics--sm kt-padding-l-20">
-                                            <a href="#"><img src="assets/media/users/100_4.jpg" title=""></a>
-                                            <a href="#"><img src="assets/media/users/100_13.jpg" title=""></a>
-                                            <a href="#"><img src="assets/media/users/100_11.jpg" title=""></a>
-                                            <a href="#"><img src="assets/media/users/100_14.jpg" title=""></a>
+                                                {{$planning_day->module->designation}}
+
                                         </div>
                                     </div>
                                     @endforeach

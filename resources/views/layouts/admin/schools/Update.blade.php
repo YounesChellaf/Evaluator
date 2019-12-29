@@ -1,7 +1,7 @@
 @extends('master.admin')
 @section('content')
     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-        @include('layouts.school.students.subheader')
+        @include('layouts.admin.schools.subheader')
         <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
             <div class="row">
                 <div class="col-lg-12">

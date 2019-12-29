@@ -9,7 +9,7 @@
         <!-- begin:: Content -->
         <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
 
-            @foreach(auth()->user()->student->classe->level->module as $module)
+            @foreach(auth()->user()->actifStudent(null)->classe->level->module as $module)
             <div class="kt-portlet">
                 <div class="kt-portlet__body">
                     <div class="kt-widget kt-widget--user-profile-3">

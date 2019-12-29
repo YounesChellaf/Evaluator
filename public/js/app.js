@@ -2006,6 +2006,490 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MessageList.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MessageList.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('good');
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Model.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Model.vue?vue&type=script&lang=js& ***!
@@ -38227,6 +38711,1262 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MessageList.vue?vue&type=template&id=6a7499aa&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MessageList.vue?vue&type=template&id=6a7499aa& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass:
+        "kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid"
+    },
+    [
+      _c(
+        "div",
+        {
+          staticClass:
+            "kt-grid kt-grid--desktop kt-grid--ver kt-grid--ver-desktop kt-app"
+        },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "kt-grid__item kt-app__toggle kt-app__aside kt-app__aside--lg kt-app__aside--fit",
+              attrs: { id: "kt_chat_aside" }
+            },
+            [
+              _c("div", { staticClass: "kt-portlet kt-portlet--last" }, [
+                _c("div", { staticClass: "kt-portlet__body" }, [
+                  _c("div", { staticClass: "kt-searchbar" }, [
+                    _c("div", { staticClass: "input-group" }, [
+                      _c("div", { staticClass: "input-group-prepend" }, [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "input-group-text",
+                            attrs: { id: "basic-addon1" }
+                          },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                staticClass: "kt-svg-icon",
+                                attrs: {
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                                  width: "24px",
+                                  height: "24px",
+                                  viewBox: "0 0 24 24",
+                                  version: "1.1"
+                                }
+                              },
+                              [
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      stroke: "none",
+                                      "stroke-width": "1",
+                                      fill: "none",
+                                      "fill-rule": "evenodd"
+                                    }
+                                  },
+                                  [
+                                    _c("rect", {
+                                      attrs: {
+                                        x: "0",
+                                        y: "0",
+                                        width: "24",
+                                        height: "24"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z",
+                                        fill: "#000000",
+                                        "fill-rule": "nonzero",
+                                        opacity: "0.3"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        d:
+                                          "M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z",
+                                        fill: "#000000",
+                                        "fill-rule": "nonzero"
+                                      }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          placeholder: "Search",
+                          "aria-describedby": "basic-addon1"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(1)
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(2)
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "kt-app__aside-close",
+        attrs: { id: "kt_chat_aside_close" }
+      },
+      [_c("i", { staticClass: "la la-close" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "kt-widget kt-widget--users kt-mt-20" }, [
+      _c("div", { staticClass: "kt-scroll kt-scroll--pull" }, [
+        _c("div", { staticClass: "kt-widget__items" }, [
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_9.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Matt Pears")]
+                ),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "kt-badge kt-badge--success kt-badge--dot"
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHead of Development\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [
+                _vm._v("36 Mines")
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                { staticClass: "kt-badge kt-badge--success kt-font-bold" },
+                [_vm._v("7")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_7.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Charlie Stone")]
+                ),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "kt-badge kt-badge--success kt-badge--dot"
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArt Director\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [
+                _vm._v("5 Hours")
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                { staticClass: "kt-badge kt-badge--success kt-font-bold" },
+                [_vm._v("2")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_12.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Jason Muller")]
+                ),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "kt-badge kt-badge--success kt-badge--dot"
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPython Developer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("2 Days")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_4.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Teresa Fox")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPR Executive\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("4 Days")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_8.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Giannis Nelson")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLead Cowboy\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("1 Week")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_10.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Lisa Moss")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQA Manager\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("3 Week")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_13.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Carles Puyol")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDefence Officer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [
+                _vm._v("2 Month")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_21.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Luka Doncic")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDose whatever he wants\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("1 Year")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_9.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Matt Pears")]
+                ),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "kt-badge kt-badge--success kt-badge--dot"
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHead of Development\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [
+                _vm._v("36 Mines")
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                { staticClass: "kt-badge kt-badge--success kt-font-bold" },
+                [_vm._v("7")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_7.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Charlie Stone")]
+                ),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "kt-badge kt-badge--success kt-badge--dot"
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArt Director\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [
+                _vm._v("5 Hours")
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                { staticClass: "kt-badge kt-badge--success kt-font-bold" },
+                [_vm._v("2")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_12.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Jason Muller")]
+                ),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "kt-badge kt-badge--success kt-badge--dot"
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPython Developer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("2 Days")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_4.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Teresa Fox")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPR Executive\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("4 Days")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/100_8.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Giannis Nelson")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLead Cowboy\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("1 Week")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_10.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Lisa Moss")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQA Manager\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("3 Week")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_13.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Carles Puyol")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDefence Officer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [
+                _vm._v("2 Month")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "kt-widget__item" }, [
+            _c("span", { staticClass: "kt-media kt-media--circle" }, [
+              _c("img", {
+                attrs: { src: "assets/media/users/300_21.jpg", alt: "image" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__info" }, [
+              _c("div", { staticClass: "kt-widget__section" }, [
+                _c(
+                  "a",
+                  { staticClass: "kt-widget__username", attrs: { href: "#" } },
+                  [_vm._v("Luka Doncic")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "kt-widget__desc" }, [
+                _vm._v(
+                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDose whatever he wants\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "kt-widget__action" }, [
+              _c("span", { staticClass: "kt-widget__date" }, [_vm._v("1 Year")])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "kt-grid__item kt-grid__item--fluid kt-app__content",
+        attrs: { id: "kt_chat_content" }
+      },
+      [
+        _c("div", { staticClass: "kt-chat" }, [
+          _c(
+            "div",
+            { staticClass: "kt-portlet kt-portlet--head-lg kt-portlet--last" },
+            [
+              _c("div", { staticClass: "kt-portlet__head" }, [
+                _c("div", { staticClass: "kt-chat__head " }, [
+                  _c("div", { staticClass: "kt-chat__center" }, [
+                    _c("div", { staticClass: "kt-chat__label" }, [
+                      _c(
+                        "a",
+                        { staticClass: "kt-chat__title", attrs: { href: "#" } },
+                        [_vm._v("Jason Muller")]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "kt-chat__status" }, [
+                        _c("span", {
+                          staticClass:
+                            "kt-badge kt-badge--dot kt-badge--success"
+                        }),
+                        _vm._v(" Active\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "kt-chat__pic kt-hidden" }, [
+                      _c(
+                        "span",
+                        {
+                          staticClass: "kt-media kt-media--sm kt-media--circle",
+                          attrs: {
+                            "data-toggle": "kt-tooltip",
+                            "data-placement": "right",
+                            title: "Jason Muller",
+                            "data-original-title": "Tooltip title"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              src: "assets/media/users/300_12.jpg",
+                              alt: "image"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "kt-media kt-media--sm kt-media--circle",
+                          attrs: {
+                            "data-toggle": "kt-tooltip",
+                            "data-placement": "right",
+                            title: "Nick Bold",
+                            "data-original-title": "Tooltip title"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              src: "assets/media/users/300_11.jpg",
+                              alt: "image"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "kt-media kt-media--sm kt-media--circle",
+                          attrs: {
+                            "data-toggle": "kt-tooltip",
+                            "data-placement": "right",
+                            title: "Milano Esco",
+                            "data-original-title": "Tooltip title"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              src: "assets/media/users/100_14.jpg",
+                              alt: "image"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "span",
+                        {
+                          staticClass: "kt-media kt-media--sm kt-media--circle",
+                          attrs: {
+                            "data-toggle": "kt-tooltip",
+                            "data-placement": "right",
+                            title: "Teresa Fox",
+                            "data-original-title": "Tooltip title"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: {
+                              src: "assets/media/users/100_4.jpg",
+                              alt: "image"
+                            }
+                          })
+                        ]
+                      )
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "kt-portlet__body" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "kt-scroll kt-scroll--pull",
+                    attrs: { "data-mobile-height": "300" }
+                  },
+                  [
+                    _c("div", { staticClass: "kt-chat__messages" }, [
+                      _c("div", { staticClass: "kt-chat__message" }, [
+                        _c("div", { staticClass: "kt-chat__user" }, [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "kt-media kt-media--circle kt-media--sm"
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  src: "assets/media/users/100_12.jpg",
+                                  alt: "image"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "kt-chat__username",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("Jason Muller")]
+                          ),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "kt-chat__datetime" }, [
+                            _vm._v("2 Hours")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "kt-chat__text kt-bg-light-success" },
+                          [
+                            _vm._v(
+                              "\n                                            How likely are you to recommend our company "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "to your friends and family?\n                                        "
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "kt-chat__message kt-chat__message--right"
+                        },
+                        [
+                          _c("div", { staticClass: "kt-chat__user" }, [
+                            _c("span", { staticClass: "kt-chat__datetime" }, [
+                              _vm._v("30 Seconds")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "kt-chat__username",
+                                attrs: { href: "#" }
+                              },
+                              [_vm._v("You")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "kt-media kt-media--circle kt-media--sm"
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src: "assets/media/users/300_21.jpg",
+                                    alt: "image"
+                                  }
+                                })
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "kt-chat__text kt-bg-light-brand" },
+                            [
+                              _vm._v(
+                                "\n                                            Hey there, we’re just writing to let you know "
+                              ),
+                              _c("br"),
+                              _vm._v(
+                                "that you’ve been subscribed to a repository on GitHub.\n                                        "
+                              )
+                            ]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "kt-chat__message" }, [
+                        _c("div", { staticClass: "kt-chat__user" }, [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "kt-media kt-media--circle kt-media--sm"
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  src: "assets/media/users/100_12.jpg",
+                                  alt: "image"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "kt-chat__username",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("Jason Muller")]
+                          ),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "kt-chat__datetime" }, [
+                            _vm._v("30 Seconds")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "kt-chat__text kt-bg-light-success" },
+                          [
+                            _vm._v(
+                              "\n                                            Ok, Understood!\n                                        "
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "kt-chat__message kt-chat__message--right"
+                        },
+                        [
+                          _c("div", { staticClass: "kt-chat__user" }, [
+                            _c("span", { staticClass: "kt-chat__datetime" }, [
+                              _vm._v("Just Now")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "kt-chat__username",
+                                attrs: { href: "#" }
+                              },
+                              [_vm._v("You")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "kt-media kt-media--circle kt-media--sm"
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src: "assets/media/users/300_21.jpg",
+                                    alt: "image"
+                                  }
+                                })
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "kt-chat__text kt-bg-light-brand" },
+                            [
+                              _vm._v(
+                                "\n                                            You’ll receive notifications for all issues, pull requests!\n                                        "
+                              )
+                            ]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "kt-chat__message" }, [
+                        _c("div", { staticClass: "kt-chat__user" }, [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "kt-media kt-media--circle kt-media--sm"
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  src: "assets/media/users/100_12.jpg",
+                                  alt: "image"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "kt-chat__username",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("Jason Muller")]
+                          ),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "kt-chat__datetime" }, [
+                            _vm._v("2 Hours")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "kt-chat__text kt-bg-light-success" },
+                          [
+                            _vm._v(
+                              "\n                                            You were automatically "
+                            ),
+                            _c("b", { staticClass: "kt-font-brand" }, [
+                              _vm._v("subscribed")
+                            ]),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v(
+                              "because you’ve been given access to the repository\n                                        "
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "kt-chat__message kt-chat__message--right"
+                        },
+                        [
+                          _c("div", { staticClass: "kt-chat__user" }, [
+                            _c("span", { staticClass: "kt-chat__datetime" }, [
+                              _vm._v("30 Seconds")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "kt-chat__username",
+                                attrs: { href: "#" }
+                              },
+                              [_vm._v("You")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "kt-media kt-media--circle kt-media--sm"
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src: "assets/media/users/300_21.jpg",
+                                    alt: "image"
+                                  }
+                                })
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "kt-chat__text kt-bg-light-brand" },
+                            [
+                              _vm._v(
+                                "\n                                            You can unwatch this repository immediately "
+                              ),
+                              _c("br"),
+                              _vm._v("by clicking here: "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "kt-font-bold kt-link",
+                                  attrs: { href: "#" }
+                                },
+                                [_vm._v("https://github.com")]
+                              )
+                            ]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "kt-chat__message" }, [
+                        _c("div", { staticClass: "kt-chat__user" }, [
+                          _c(
+                            "span",
+                            {
+                              staticClass:
+                                "kt-media kt-media--circle kt-media--sm"
+                            },
+                            [
+                              _c("img", {
+                                attrs: {
+                                  src: "assets/media/users/100_12.jpg",
+                                  alt: "image"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              staticClass: "kt-chat__username",
+                              attrs: { href: "#" }
+                            },
+                            [_vm._v("Jason Muller")]
+                          ),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "kt-chat__datetime" }, [
+                            _vm._v("30 Seconds")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "kt-chat__text kt-bg-light-success" },
+                          [
+                            _vm._v(
+                              "\n                                            Discover what students who viewed Learn Figma - UI/UX Design "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "Essential Training also viewed\n                                        "
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "kt-chat__message kt-chat__message--right"
+                        },
+                        [
+                          _c("div", { staticClass: "kt-chat__user" }, [
+                            _c("span", { staticClass: "kt-chat__datetime" }, [
+                              _vm._v("Just Now")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "a",
+                              {
+                                staticClass: "kt-chat__username",
+                                attrs: { href: "#" }
+                              },
+                              [_vm._v("You")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "kt-media kt-media--circle kt-media--sm"
+                              },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src: "assets/media/users/300_21.jpg",
+                                    alt: "image"
+                                  }
+                                })
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "kt-chat__text kt-bg-light-brand" },
+                            [
+                              _vm._v(
+                                "\n                                            Most purchased Business courses during this sale!\n                                        "
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "kt-portlet__foot" }, [
+                _c("div", { staticClass: "kt-chat__input" }, [
+                  _c("div", { staticClass: "kt-chat__editor" }, [
+                    _c("textarea", {
+                      staticStyle: { height: "50px" },
+                      attrs: { placeholder: "Type here..." }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "kt-chat__toolbar" }, [
+                    _c("div", { staticClass: "kt_chat__tools" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("i", { staticClass: "flaticon2-link" })
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("i", { staticClass: "flaticon2-photograph" })
+                      ]),
+                      _vm._v(" "),
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("i", { staticClass: "flaticon2-photo-camera" })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "kt_chat__actions" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn btn-brand btn-md btn-upper btn-bold kt-chat__reply",
+                          attrs: { type: "button" }
+                        },
+                        [_vm._v("reply")]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Model.vue?vue&type=template&id=5a7eb74e&":
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Model.vue?vue&type=template&id=5a7eb74e& ***!
@@ -50414,6 +52154,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.component('chat', __webpack_require__(/*! ./components/Chat.vue */ "./resources/js/components/Chat.vue")["default"]);
 Vue.component('model', __webpack_require__(/*! ./components/Model.vue */ "./resources/js/components/Model.vue")["default"]);
+Vue.component('messageList', __webpack_require__(/*! ./components/MessageList.vue */ "./resources/js/components/MessageList.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -50622,6 +52363,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conversation_vue_vue_type_template_id_63f956ee___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conversation_vue_vue_type_template_id_63f956ee___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/MessageList.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/MessageList.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MessageList_vue_vue_type_template_id_6a7499aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MessageList.vue?vue&type=template&id=6a7499aa& */ "./resources/js/components/MessageList.vue?vue&type=template&id=6a7499aa&");
+/* harmony import */ var _MessageList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MessageList.vue?vue&type=script&lang=js& */ "./resources/js/components/MessageList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _MessageList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MessageList_vue_vue_type_template_id_6a7499aa___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _MessageList_vue_vue_type_template_id_6a7499aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/MessageList.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/MessageList.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/MessageList.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MessageList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./MessageList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MessageList.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MessageList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/MessageList.vue?vue&type=template&id=6a7499aa&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/MessageList.vue?vue&type=template&id=6a7499aa& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MessageList_vue_vue_type_template_id_6a7499aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./MessageList.vue?vue&type=template&id=6a7499aa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MessageList.vue?vue&type=template&id=6a7499aa&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MessageList_vue_vue_type_template_id_6a7499aa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MessageList_vue_vue_type_template_id_6a7499aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

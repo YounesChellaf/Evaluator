@@ -64,10 +64,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!--begin:: Vendor Plugins for custom pages -->
     <link href="{{asset('assets/plugins/custom/plugins/jquery-ui/jquery-ui.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/plugins/custom/@fullcalendar/core/main.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/plugins/custom/@fullcalendar/daygrid/main.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/plugins/custom/@fullcalendar/list/main.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('assets/plugins/custom/@fullcalendar/timegrid/main.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/datatables.net-bs4/css/dataTables.bootstrap4.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/plugins/custom/datatables.net-autofill-bs4/css/autoFill.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
@@ -222,7 +218,7 @@ License: You must have a valid license purchased only from themeforest(the above
 </svg>
 						</span><span class="kt-menu__link-text">Convocations et absences</span></a>
                         </li>
-                        <li class="kt-menu__item" ><a href="{{route('student.notes',auth()->user()->student->id)}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+                        <li class="kt-menu__item" ><a href="{{route('student.notes',auth()->user()->actifStudent(null)->id)}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon points="0 0 24 0 24 24 0 24"/>
@@ -288,8 +284,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="kt-head kt-head--skin-dark kt-head--fit-x kt-head--fit-b" style="background-image: url(assets/media/misc/bg-1.jpg)">
                                     <h3 class="kt-head__title">
                                         Notifications
-                                        &nbsp;
-                                        <span class="btn btn-success btn-sm btn-bold btn-font-md">+2 nouvelle</span>
                                     </h3>
                                     <ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-success kt-notification-item-padding-x" role="tablist">
                                     </ul>
@@ -299,6 +293,19 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="tab-content">
                                     <div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">
                                         <div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true" data-height="300" data-mobile-height="200">
+                                            <a href="{{route('chats.index')}}" class="kt-notification__item">
+                                                <div class="kt-notification__item-icon">
+                                                    <i class="flaticon2-chat kt-font-warning"></i>
+                                                </div>
+                                                <div class="kt-notification__item-details">
+                                                    <div class="kt-notification__item-title">
+                                                        Nouveaux messages
+                                                    </div>
+                                                    <div class="kt-notification__item-time">
+                                                        2 heures
+                                                    </div>
+                                                </div>
+                                            </a>
                                             <a href="#" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">
                                                     <i class="flaticon2-line-chart kt-font-success"></i>
@@ -312,35 +319,48 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </div>
                                             </a>
-                                            @foreach(auth()->user()->student->absence->where('is_checked',false) as $absence)
-                                            <a href="{{route('absences.show',$absence->id)}}" class="kt-notification__item">
+                                            <a href="#" class="kt-notification__item">
                                                 <div class="kt-notification__item-icon">
                                                     <i class="flaticon2-chart2 kt-font-danger"></i>
                                                 </div>
                                                 <div class="kt-notification__item-details">
                                                     <div class="kt-notification__item-title">
-                                                        Nouvelle absence
+                                                        Nouveau devoir ajouté
                                                     </div>
                                                     <div class="kt-notification__item-time">
-                                                        {{$absence->created_at->format('d-M-Y')}}
+                                                        1 jours
                                                     </div>
                                                 </div>
                                             </a>
+                                            @foreach(auth()->user()->actifStudent(null)->absence->where('is_checked',false) as $absence)
+                                                <a href="{{route('absences.show',$absence->id)}}" class="kt-notification__item">
+                                                    <div class="kt-notification__item-icon">
+                                                        <i class="flaticon2-chart2 kt-font-danger"></i>
+                                                    </div>
+                                                    <div class="kt-notification__item-details">
+                                                        <div class="kt-notification__item-title">
+                                                            Nouvelle absence
+                                                        </div>
+                                                        <div class="kt-notification__item-time">
+                                                            {{$absence->created_at->format('d-M-Y')}}
+                                                        </div>
+                                                    </div>
+                                                </a>
                                             @endforeach
-                                            @foreach(auth()->user()->student->convocation->where('status','approuved') as $convocation)
-                                            <a href="{{route('student.convocation.details',$convocation->id)}}" class="kt-notification__item">
-                                                <div class="kt-notification__item-icon">
-                                                    <i class="flaticon2-image-file kt-font-warning"></i>
-                                                </div>
-                                                <div class="kt-notification__item-details">
-                                                    <div class="kt-notification__item-title">
-                                                        Nouvelle convocation ajoutée
+                                            @foreach(auth()->user()->actifStudent(null)->convocation->where('status','approuved') as $convocation)
+                                                <a href="{{route('student.convocation.details',$convocation->id)}}" class="kt-notification__item">
+                                                    <div class="kt-notification__item-icon">
+                                                        <i class="flaticon2-image-file kt-font-warning"></i>
                                                     </div>
-                                                    <div class="kt-notification__item-time">
-                                                        {{$convocation->updated_at->format('d-M-Y')}}
+                                                    <div class="kt-notification__item-details">
+                                                        <div class="kt-notification__item-title">
+                                                            Nouvelle convocation ajoutée
+                                                        </div>
+                                                        <div class="kt-notification__item-time">
+                                                            {{$convocation->updated_at->format('d-M-Y')}}
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
+                                                </a>
                                             @endforeach
                                         </div>
                                     </div>
@@ -416,7 +436,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <span class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success">{{auth()->user()->first_name[0]}}</span>
                                 </div>
                                 <div class="kt-user-card__name">
-                                    {{auth()->user()->first_name .' '. auth()->user()->last_name }}
+                                    {{auth()->user()->first_name .' '. auth()->user()->last_name}}
                                 </div>
                                 <div class="kt-user-card__badge">
                                     <span class="btn btn-success btn-sm btn-bold btn-font-md">4 messages</span>
@@ -454,7 +474,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
                                 </a>
                                 <div class="kt-notification__custom kt-space-between">
-                                    <a href="{{route('logout')}}" class="btn btn-label btn-label-brand btn-sm btn-bold">Se déconnecter</a>
+                                    <a href="{{route('logout')}}"  class="btn btn-label btn-label-brand btn-sm btn-bold">Se déconnecter</a>
                                 </div>
                             </div>
 
@@ -489,6 +509,17 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="tab-content">
             <div class="container tab-pane fade show kt-scroll active" id="kt_quick_panel_tab_notifications" role="tabpanel">
                 <form class="kt-form">
+                    <div class="kt-heading kt-heading--sm kt-heading--space-sm">Switcher votre compte</div>
+                    <div class="form-group form-group-xs row">
+                        <label class="col-8 col-form-label">{{auth()->user()->actifStudent(null)->first_name}}:</label>
+                        <div class="col-4 kt-align-right">
+										<label>
+											<input type="radio"  name="quick_panel_notifications_1">
+											<span></span>
+										</label>
+                        </div>
+                    </div>
+                    <div class="kt-separator kt-separator--space-md kt-separator--border-dashed"></div>
                     <div class="kt-heading kt-heading--sm kt-heading--space-sm">General</div>
                     <div class="form-group form-group-xs row">
                         <label class="col-8 col-form-label">Activer notification:</label>

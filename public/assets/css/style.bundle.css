@@ -26910,7 +26910,9 @@ strong {
   .kt-timeline-v2:before {
     content: '';
     position: absolute;
-    left: 2rem;
+    left: 5.6rem;
+      margin-right: 10rem;
+    padding-right: 3%;
     width: 0.214rem;
     top: 5px;
     bottom: 5px;
@@ -26919,14 +26921,15 @@ strong {
   .kt-timeline-v2 .kt-timeline-v2__items .kt-timeline-v2__item {
     display: table;
     position: relative;
-    margin-bottom: 1.75rem; }
+    margin-bottom: 1.95rem;
+  border-bottom: 0.09rem solid #daeaf6
+  }
     .kt-timeline-v2 .kt-timeline-v2__items .kt-timeline-v2__item .kt-timeline-v2__item-time {
       display: table-cell;
       font-size: 1.1rem;
       font-weight: 500;
       vertical-align: top;
-      position: absolute;
-      padding-top: 0.18rem;
+      position: relative;
       /*margin-right: 5%;*/
       color: #74788d; }
     .kt-timeline-v2 .kt-timeline-v2__items .kt-timeline-v2__item .kt-timeline-v2__item-cricle {
@@ -26951,6 +26954,7 @@ strong {
         font-size: 1.2rem;
         font-weight: 500;
         padding-top: 0.21rem;
+          padding-left: 15%;
         color: #74788d; }
       .kt-timeline-v2 .kt-timeline-v2__items .kt-timeline-v2__item .kt-timeline-v2__item-text > span {
         font-weight: 700; }

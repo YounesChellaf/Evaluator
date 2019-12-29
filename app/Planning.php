@@ -9,7 +9,6 @@ class Planning extends Model
 {
     //
     protected $guarded=[];
-
     public function classe(){
         return $this->belongsTo(Classe::class);
     }
@@ -17,12 +16,17 @@ class Planning extends Model
     public function module(){
         return $this->belongsTo(Module::class);
     }
+
+    public function prof(){
+        return $this->belongsTo(Prof::class);
+    }
     public static function new(Request $request){
         for ($i=0;$i<$request->nb_seance;$i++){
             Planning::create([
                 'classe_id' => $request->classe_id,
                 'trimestre' => $request->trimestre,
                 'module_id' => $request->module_id[$i],
+                'prof_id' => $request->prof_id[$i],
                 'day' => $request->day[$i],
                 'start_sceance' => $request->start_sceance[$i],
                 'end_sceance' => $request->end_sceance[$i],

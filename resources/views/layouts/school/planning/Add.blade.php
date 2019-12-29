@@ -69,12 +69,21 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-lg-2">
                                                     <label>Le module:</label>
                                                     <select name="module_id[]"   class="module_affect form-control" multiple="multiple">
                                                         <option value=""></option>
                                                         @foreach(\App\Module::all() as $module)
                                                             <option value="{{$module->id}}">{{$module->designation}}</option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <label>L'enseignent:</label>
+                                                    <select name="prof_id[]"   class="module_affect form-control" multiple="multiple">
+                                                        <option value=""></option>
+                                                        @foreach(\App\Prof::all() as $prof)
+                                                            <option value="{{$prof->id}}">{{$prof->last_name.' '.$prof->first_name}}</option>
                                                         @endforeach
                                                     </select>
                                                 </div>
@@ -146,14 +155,24 @@
                     "                                                    </div> " +
                     "                                          </div>\n" +
                     "                                         </div>\n" +
-                    "                                         <div class=\"col-md-3\">\n" +
-                    "                                                <label>Le jour:</label>\n" +
+                    "                                         <div class=\"col-md-2\">\n" +
+                    "                                                <label>Le module:</label>\n" +
                     "                                                    <div class=\"form-material\">\n" +
                     "                                                        <select name=\"module_id[]\"   class=\"module_affect form-control\" multiple=\"multiple\">\n" +
                         @foreach(\App\Module::all() as $module)
                     "<option value=\"{{$module->id}}\">{{$module->designation}}</option>\n"+
                        @endforeach
                     "                                                        </select>\n" +
+                    "                                                    </div> " +
+                    "                                          </div>\n" +
+                    "                                         <div class=\"col-md-2\">\n" +
+                    "                                                <label>L'enseignent:</label>\n" +
+                    "                                                    <div class=\"form-material\">\n" +
+                    "                                                        <select name=\"prof_id[]\"   class=\"module_affect form-control\" multiple=\"multiple\">\n" +
+                        @foreach(\App\Prof::all() as $prof)
+                            "<option value=\"{{$prof->id}}\">{{$prof->last_name.' '.$prof->first_name}}</option>\n"+
+                        @endforeach
+                            "                                                        </select>\n" +
                     "                                                    </div> " +
                     "                                          </div>\n" +
                     "                                         <div class=\"col-md-2\">\n" +
@@ -166,7 +185,7 @@
                     "                                         </div>\n" +
                     "                                     </div>");
                 // var fType = $("<select class=\"fieldtype\"><option value=\"checkbox\">Checked</option><option value=\"textbox\">Text</option><option value=\"textarea\">Paragraph</option></select>");
-                var removeButton = $("<button  style='position: relative; margin-top: -6%;margin-left: 76.5%' type=\"button\" class=\"remove btn btn-danger\" value='\-\'>Supprimer</button>");
+                var removeButton = $("<button  style='position: relative; margin-top: -6%;margin-left: 85%' type=\"button\" class=\"remove btn btn-danger\" value='\-\'>Supprimer</button>");
                 removeButton.click(function() {
                     i--;
                     $(this).parent().remove();

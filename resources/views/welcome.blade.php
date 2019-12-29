@@ -98,3 +98,36 @@
         </div>
     </body>
 </html>
+
+
+
+@foreach(auth()->user()->student->absence->where('is_checked',false) as $absence)
+    <a href="{{route('absences.show',$absence->id)}}" class="kt-notification__item">
+        <div class="kt-notification__item-icon">
+            <i class="flaticon2-chart2 kt-font-danger"></i>
+        </div>
+        <div class="kt-notification__item-details">
+            <div class="kt-notification__item-title">
+                Nouvelle absence
+            </div>
+            <div class="kt-notification__item-time">
+                {{$absence->created_at->format('d-M-Y')}}
+            </div>
+        </div>
+    </a>
+@endforeach
+@foreach(auth()->user()->student->convocation->where('status','approuved') as $convocation)
+    <a href="{{route('student.convocation.details',$convocation->id)}}" class="kt-notification__item">
+        <div class="kt-notification__item-icon">
+            <i class="flaticon2-image-file kt-font-warning"></i>
+        </div>
+        <div class="kt-notification__item-details">
+            <div class="kt-notification__item-title">
+                Nouvelle convocation ajoutée
+            </div>
+            <div class="kt-notification__item-time">
+                {{$convocation->updated_at->format('d-M-Y')}}
+            </div>
+        </div>
+    </a>
+@endforeach

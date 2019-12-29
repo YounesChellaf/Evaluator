@@ -17,6 +17,7 @@ class CreatePlanningsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('classe_id');
             $table->integer('module_id');
+            $table->integer('prof_id');
             $table->string('day');
             $table->enum('trimestre',['first','second','third'])->default('first');
             $table->time('start_sceance');

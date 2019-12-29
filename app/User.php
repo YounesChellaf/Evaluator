@@ -9,9 +9,18 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
+
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        $attributes->currentStudent = $this->student->first();
+
+    }
+
     use Notifiable;
     use  HasRoles;
 
+    protected $attributes=['currentStudent'];
     /**
      * The attributes that are mass assignable.
      *
@@ -40,7 +49,7 @@ class User extends Authenticatable
     ];
 
     public function student(){
-        return $this->hasOne(Student::class);
+        return $this->hasMany(Student::class);
     }
     public function school(){
         return $this->hasOne(School::class);
@@ -55,5 +64,13 @@ class User extends Authenticatable
     }
     public function ReceivedMessage(){
         return $this->hasMany(Message::class, 'to');
+    }
+
+    public function getActifStudent(){
+        return $this->attributes->currentStudent;
+    }
+
+    public function setActifStudent($id){
+        $this->attributes->currentStudent = Student::find($id);
     }
 }
