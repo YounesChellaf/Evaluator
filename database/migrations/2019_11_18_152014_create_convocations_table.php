@@ -15,7 +15,8 @@ class CreateConvocationsTable extends Migration
     {
         Schema::create('convocations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('student_id');
+            $table->integer('class_id');
+            $table->enum('type',['student','classe']);
             $table->integer('prof_id');
             $table->string('motif');
             $table->longText('reason');

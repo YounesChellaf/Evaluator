@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function () {
-    return view('home.index');
+    return view('home.home');
 })->name('home');
 
 

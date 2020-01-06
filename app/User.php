@@ -13,8 +13,6 @@ class User extends Authenticatable
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
-        $attributes->currentStudent = $this->student->first();
-
     }
 
     use Notifiable;
@@ -67,10 +65,9 @@ class User extends Authenticatable
     }
 
     public function getActifStudent(){
-        return $this->attributes->currentStudent;
+
     }
 
     public function setActifStudent($id){
-        $this->attributes->currentStudent = Student::find($id);
     }
 }

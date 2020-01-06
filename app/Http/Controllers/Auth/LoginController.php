@@ -26,11 +26,28 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
-//    protected function redirectTo()
-//    {
-//        return redirect()->back();
-//    }
+//    protected $redirectTo = '/';
+    protected function redirectTo()
+    {
+       switch (auth()->user()->getRoleNames()[0]){
+           case 'admin':
+               return redirect()->route('classes.index');
+               break;
+           case 'school-admin':
+               return redirect()->route('classes.index');
+               break;
+           case'prof':
+               $this->redirectTo ='/enseignent/';
+               break;
+           case 'tutel':
+               $this->redirectTo = '/student';
+               break;
+           default:
+           break;
+       }
+       return $this->redirectTo;
+
+    }
 
     /**
      * Create a new controller instance.
