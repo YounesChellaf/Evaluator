@@ -11,10 +11,10 @@ class TutelPortalController extends Controller
 {
 
     public function StudentProfile(){
-        return view('layouts.student.landing.index')->withStudent(auth()->user()->actifStudent(null));
+        return view('layouts.student.landing.index')->withStudent(auth()->user()->student);
     }
     public function StudentConvocations(){
-        return view('layouts.student.convocation.index')->withStudent(auth()->user()->actifStudent(null));
+        return view('layouts.student.convocation.index')->withStudent(auth()->user()->student);
     }
     public function StudentConvocationDetails($id){
         $convocation = Convocation::find($id);
@@ -27,6 +27,6 @@ class TutelPortalController extends Controller
                 'res' => Prof::all()
             ]);
         }
-        return view('layouts.student.teachers.index')->withTeachers(auth()->user()->actifStudent(null)->classe->profs);
+        return view('layouts.student.teachers.index')->withTeachers(auth()->user()->student->classe->profs);
     }
 }

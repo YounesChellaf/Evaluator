@@ -20,7 +20,7 @@
                                 <th>Enseignent</th>
                                 <th>Matiére</th>
                                 @endif
-                                <th>Etudiant concerné</th>
+                                <th>Destination</th>
                                 <th>Motif</th>
                                 <th>Date réception</th>
                                 <th>Etat</th>
@@ -34,9 +34,21 @@
                                     <th>{{$convocation->prof->last_name .' '. $convocation->prof->first_name }}</th>
                                     <th>{{$convocation->prof->specialite }}</th>
                                     @endif
-                                    <th>{{$convocation->student->last_name .' '. $convocation->student->first_name }}</th>
+                                    @if($convocation->type =='classe')
+                                            <th>
+                                                @foreach($convocation->classe as $classe)
+                                                {{$classe->scolar_designation}} ,
+                                                @endforeach
+                                            </th>
+                                    @else
+                                            <th>
+                                                @foreach($convocation->student as $student)
+                                                    {{$student->last_name .' '. $student->first_name }} ,
+                                                @endforeach
+                                            </th>
+                                    @endif
                                     <th>{{$convocation->motif }}</th>
-                                    <th>{{$convocation->reception_date->format('d-m-Y') }}</th>
+                                    <th>{{$convocation->reception_date->for\mat('d-m-Y') }}</th>
                                     <th>{{$convocation->status()}}</th>
                                     <th>
                                         <div>

@@ -60,30 +60,20 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class=" container form-group row">
-                                                        <div class="form">
-                                                            <div class="myradio">
-                                                                <input type="radio" name="myRadio" id="one" class="myradio__input" checked>
-                                                            </div>
-                                                            <div class="myradio">
-                                                                <input type="radio" name="myRadio" id="two" class="myradio__input">
-
-                                                            </div>
-                                                            <div class="myradio">
-                                                                <input type="radio" name="myRadio" id="three" class="myradio__input">
-                                                                <label for="three" class="myradio__label">InVision</label>
-                                                            </div>
-                                                            <div class="myradio">
-                                                                <input type="radio" name="myRadio" id="four" class="myradio__input">
-                                                                <label for="four" class="myradio__label">Sketch</label>
-                                                            </div>
-                                                        </div>
-                                                 </div>
-
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Je veut convoquer</label>
+                                                    <div class="col-9">
+                                                        <select name="type" class="form-control" id="type">
+                                                            <option value=""></option>
+                                                            <option value="student">Etudiants</option>
+                                                            <option value="classe">Classes</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                                 <div class="form-group row" id="student_div_convocated">
                                                     <label class="col-3 col-form-label">Nom et prénom d'etudiant</label>
                                                     <div class="col-9">
-                                                        <select name="student_id" class="form-control" id="student_convocated" multiple>
+                                                        <select name="student_id[]" class="form-control" id="student_convocated" multiple>
                                                             <option value=""></option>
                                                             @foreach(auth()->user()->prof->classes as $class)
                                                                 @foreach(\App\Student::where('class_id',$class->id)->get() as $student)
@@ -96,7 +86,7 @@
                                                 <div class="form-group row" id="class_div_convocated">
                                                     <label class="col-3 col-form-label">Classe á convoqué</label>
                                                     <div class="col-9">
-                                                        <select name="class_id" class="form-control" id="class_convocated" multiple>
+                                                        <select name="class_id[]" class="form-control" id="class_convocated" multiple>
                                                             <option value=""></option>
                                                             @foreach(auth()->user()->prof->classes as $class)
                                                                     <option value="{{$class->id}}">{{$class->scolar_designation}}</option>
@@ -175,14 +165,21 @@
             });
             $("#student_div_convocated,#class_div_convocated").hide()
 
-            $("#student").change(function () {
-                $("#student_div_convocated").show()
-                $("#class_div_convocated").hide()
+            $("#type").change(function () {
+                if ($("#type").val() =='student') {
+                    $("#student_div_convocated").show()
+                    $("#class_div_convocated").hide()
+                }
+                else if ($("#type").val() =='classe') {
+                    $("#student_div_convocated").hide()
+                    $("#class_div_convocated").show()
+                }
+                else {
+                    $("#student_div_convocated").hide()
+                    $("#class_div_convocated").hide()
+                }
             })
-            $("#class").change(function () {
-                $("#student_div_convocated").hide()
-                $("#class_div_convocated").show()
-            })
+
         });
     </script>
 @endsection

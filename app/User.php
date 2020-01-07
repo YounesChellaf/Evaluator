@@ -17,8 +17,6 @@ class User extends Authenticatable
 
     use Notifiable;
     use  HasRoles;
-
-    protected $attributes=['currentStudent'];
     /**
      * The attributes that are mass assignable.
      *
@@ -47,7 +45,7 @@ class User extends Authenticatable
     ];
 
     public function student(){
-        return $this->hasMany(Student::class);
+        return $this->hasOne(Student::class);
     }
     public function school(){
         return $this->hasOne(School::class);
@@ -62,12 +60,5 @@ class User extends Authenticatable
     }
     public function ReceivedMessage(){
         return $this->hasMany(Message::class, 'to');
-    }
-
-    public function getActifStudent(){
-
-    }
-
-    public function setActifStudent($id){
     }
 }

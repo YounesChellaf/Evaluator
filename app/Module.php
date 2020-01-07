@@ -33,7 +33,6 @@ class Module extends Model
         foreach ($request->levels as $level){
             $module->level()->attach($level);
         }
-
         return $module;
     }
 

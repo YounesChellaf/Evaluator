@@ -27,7 +27,6 @@ class ConvocationRequest extends FormRequest
             'motif' => 'required',
             'reason' => 'required|min:10',
             'reception_date' => 'required',
-            'student_id' => 'required',
         ];
     }
     public function messages()
@@ -37,7 +36,6 @@ class ConvocationRequest extends FormRequest
             'reason.required' => 'La raison de la convocation est obligatoire',
             'reason.min' => 'La raison doit avoir au minimum 10 caractéres',
             'reception_date.required' => 'La date de reception du parent est obligatoire',
-            'student_id.required' => 'La designation d eleve est obligatoire',
         ];
     }
 }

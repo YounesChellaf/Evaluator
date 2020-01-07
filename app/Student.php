@@ -20,7 +20,7 @@ class Student extends Model
     }
 
     public function convocation(){
-        return $this->hasMany(Convocation::class);
+        return $this->belongsToMany(Convocation::class,'convocation_student');
     }
     public function image(){
         return $this->belongsTo(Image::class);

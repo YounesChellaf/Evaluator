@@ -33,6 +33,10 @@ class Classe extends Model
         return $this->hasMany(Planning::class);
     }
 
+    public function convocation(){
+        return $this->belongsToMany(Convocation::class,'convocation_student');
+    }
+
 
     public static function new(Request $request){
         if ($request->post()){

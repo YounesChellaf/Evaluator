@@ -31,16 +31,16 @@ class LoginController extends Controller
     {
        switch (auth()->user()->getRoleNames()[0]){
            case 'admin':
-               return redirect()->route('classes.index');
+               $this->redirectTo ='/admin/';
                break;
            case 'school-admin':
-               return redirect()->route('classes.index');
+               $this->redirectTo ='/school/classes';
                break;
            case'prof':
                $this->redirectTo ='/enseignent/';
                break;
            case 'tutel':
-               $this->redirectTo = '/student';
+               $this->redirectTo = '/student/';
                break;
            default:
            break;

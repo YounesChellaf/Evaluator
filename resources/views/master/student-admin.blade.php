@@ -218,7 +218,7 @@ License: You must have a valid license purchased only from themeforest(the above
 </svg>
 						</span><span class="kt-menu__link-text">Convocations et absences</span></a>
                         </li>
-                        <li class="kt-menu__item" ><a href="{{route('student.notes',auth()->user()->actifStudent(null)->id)}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
+                        <li class="kt-menu__item" ><a href="{{route('student.notes',auth()->user()->student->id)}}" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon points="0 0 24 0 24 24 0 24"/>
@@ -332,7 +332,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </div>
                                             </a>
-                                            @foreach(auth()->user()->actifStudent(null)->absence->where('is_checked',false) as $absence)
+                                            @foreach(auth()->user()->student->absence->where('is_checked',false) as $absence)
                                                 <a href="{{route('absences.show',$absence->id)}}" class="kt-notification__item">
                                                     <div class="kt-notification__item-icon">
                                                         <i class="flaticon2-chart2 kt-font-danger"></i>
@@ -347,7 +347,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                     </div>
                                                 </a>
                                             @endforeach
-                                            @foreach(auth()->user()->actifStudent(null)->convocation->where('status','approuved') as $convocation)
+                                            @foreach(auth()->user()->student->convocation->where('status','approuved') as $convocation)
                                                 <a href="{{route('student.convocation.details',$convocation->id)}}" class="kt-notification__item">
                                                     <div class="kt-notification__item-icon">
                                                         <i class="flaticon2-image-file kt-font-warning"></i>
@@ -511,7 +511,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <form class="kt-form">
                     <div class="kt-heading kt-heading--sm kt-heading--space-sm">Switcher votre compte</div>
                     <div class="form-group form-group-xs row">
-                        <label class="col-8 col-form-label">{{auth()->user()->actifStudent(null)->first_name}}:</label>
+                        <label class="col-8 col-form-label">{{auth()->user()->student->first_name}}:</label>
                         <div class="col-4 kt-align-right">
 										<label>
 											<input type="radio"  name="quick_panel_notifications_1">

@@ -88,9 +88,9 @@
                 <div class="row d_flex">
                     <div class="col-md-6">
                         <div class="text-bg">
-                            <h1>Digital Marketing Landing Page 2019</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-                            <div class="text-center"><a href="#">Read More</a></div>
+                            <h1>Ferouja platforme, L'étudiant est notre trésor</h1>
+                            <p>La premiére plateforme en ligne en algerie pour l'accompagnement de votre etudiant á distance</p>
+                           <a href="{{route('login')}}">Utiliser le service</a>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -110,9 +110,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <span>Increase your client for</span>
-                    <h2>Better position of Business</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page </p>
+                    <span>A propos de nous</span>
+                    <h2>L'equipe feroudja</h2>
                 </div>
             </div>
         </div>
@@ -121,8 +120,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="business_box ">
-                            <figure><img src="images/business_img.jpg" alt="#"/></figure>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                            <figure><img src="{{asset('assets/home/images/business_img.jpg')}}" alt="#"/></figure>
+                            <p>Une equipe jeune et talentueuse réuni pour le travail sur un objectif commun qui vise á  améliorer l'interaction entre enseignent et le parent d'éleve afin de progresser le niveau d'éleve et rassurer une génération d'avenir. Ferouja vous assure aussi la bonne gestion de votre école comme support de gestion interne pour organism scolaire</p>
                             <a class="read_more" href="#">Read more</a>
                         </div>
                     </div>
@@ -133,36 +132,36 @@
 </div>
 <!-- end business -->
 <!-- Projects -->
-<div class="projects">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="titlepage">
-                    <span>Previous Projects</span>
-                    <h2>Better position of Business</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="projects_box ">
-                            <figure><img src="images/projects_img.png" alt="#"/></figure>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="projects_box ">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
-                            <a class="read_more" href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div class="projects">--}}
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-12">--}}
+                {{--<div class="titlepage">--}}
+                    {{--<span>Previous Projects</span>--}}
+                    {{--<h2>Better position of Business</h2>--}}
+                    {{--<p>It is a long established fact that a reader will be distracted by the readable content of a page </p>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-10 offset-md-1">--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-6 offset-md-3">--}}
+                        {{--<div class="projects_box ">--}}
+                            {{--<figure><img src="{{asset('assets/home/images/projects_img.png')}}" alt="#"/></figure>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="col-md-12">--}}
+                        {{--<div class="projects_box ">--}}
+                            {{--<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>--}}
+                            {{--<a class="read_more" href="#">Read more</a>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+{{--</div>--}}
 <!-- end projects -->
 <!-- Testimonial -->
 <div class="section">
@@ -171,21 +170,18 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>Testimonial</h2>
+                        <h2>Témoignage</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="Testimonial_box">
-                        <i><img src="images/plan1.png" alt="#"/></i>
-                    </div>
+                <div class="col-md-2">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <div class="Testimonial_box">
-                        <h4>Donals</h4>
-                        <p>Tof Lorem Ipsum, you need to be There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a pass <br>
-                            age of Lorem Ipsum, you need to be
+                        <h4>Younes</h4>
+                        <p>Á presque une année d'utilisation de cette platforme formidable, j'ai reussi á suivre le parcours de mon fils durant l'année scolaire á distance <br>
+                            Merci Ferouja pour tous !
                         </p>
                     </div>
                 </div>
@@ -201,8 +197,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>Contact us</h2>
-                    <span>There are many variations of passages of Lorem Ipsum available, but the </span>
+                    <h2>Contacter nous</h2>
+                    <span>Notre equipe Ferouja est toujours dans l'ecoute de vos questions et propositions</span>
                 </div>
             </div>
         </div>
@@ -213,10 +209,10 @@
                 <form class="main_form ">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <input class="form_contril" placeholder="Name " type="text" name="Name ">
+                            <input class="form_contril" placeholder="Nom " type="text" name="Name ">
                         </div>
                         <div class="col-md-12">
-                            <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
+                            <input class="form_contril" placeholder="Numéro téléphone" type="text" name=" Phone Number">
                         </div>
                         <div class="col-md-12">
                             <input class="form_contril" placeholder="Email" type="text" name="Email">
@@ -225,7 +221,7 @@
                             <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
                         </div>
                         <div class="col-sm-12">
-                            <button class="send_btn">Send</button>
+                            <button class="send_btn">Envoyer</button>
                         </div>
                     </div>
                 </form>
@@ -241,8 +237,8 @@
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="cont">
-                        <h3> <strong class="multi"> Free Multipurpose Responsive</strong><br>
-                            Landing Page 2019
+                        <h3> <strong class="multi"> Nous sommes aussi présents</strong><br>
+                            au reseaux sociaux
                         </h3>
                     </div>
                 </div>

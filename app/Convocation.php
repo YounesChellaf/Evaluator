@@ -11,7 +11,11 @@ class Convocation extends Model
     protected $dates=['reception_date'];
 
     public function student(){
-        return $this->belongsTo(Student::class);
+        return $this->belongsToMany(Student::class, 'convocation_student');
+    }
+
+    public function classe(){
+        return $this->belongsToMany(Classe::class, 'classe_convocation');
     }
 
     public function prof(){
@@ -19,13 +23,30 @@ class Convocation extends Model
     }
 
     public static function new(Request $request){
-        $convocation = Convocation::create([
-            'student_id' => $request->student_id,
-            'prof_id' => $request->prof_id,
-            'motif' => $request->motif,
-            'reason' => $request->reason,
-            'reception_date' => $request->reception_date,
-        ]);
+        if ($request->type == 'classe'){
+            foreach ( $request->class_id as $class_id ){
+                $convocation = Convocation::create([
+                    'type' => $request->type,
+                    'prof_id' => $request->prof_id,
+                    'motif' => $request->motif,
+                    'reason' => $request->reason,
+                    'reception_date' => $request->reception_date,
+                ]);
+                $convocation->classe()->attach(Classe::find($class_id));
+            }
+        }
+        elseif ($request->type == 'student'){
+            foreach ( $request->student_id as $student_id ){
+                $convocation = Convocation::create([
+                    'type' => $request->type,
+                    'prof_id' => $request->prof_id,
+                    'motif' => $request->motif,
+                    'reason' => $request->reason,
+                    'reception_date' => $request->reception_date,
+                ]);
+                $convocation->student()->attach(Student::find($student_id));
+            }
+        }
         return $convocation;
     }
 
