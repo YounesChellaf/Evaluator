@@ -1,108 +1,113 @@
+
+
 <!DOCTYPE html>
-
-<!--
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 4 & Angular 8
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
 <html lang="en">
-
-<!-- begin::Head -->
 <head>
-    <base href="">
-    <meta charset="utf-8" />
-    <title>Feroudja</title>
-    <meta name="description" content="User profile block example">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--begin::Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
-    <!--begin::Layout Skins(used by all pages) -->
-    <link href="{{asset('assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
-    @yield('css')
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>diigo</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{asset('assets/home/css/bootstrap.min.css')}}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{asset('assets/home/css/style.css')}}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{{asset('assets/home/css/responsive.css')}}">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{{asset('assets/home/css/jquery.mCustomScrollbar.min.css')}}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-
-<!-- end::Head -->
-
-<!-- begin::Body -->
-<body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
-
-<!-- begin:: Page -->
-<div class="kt-grid kt-grid--ver kt-grid--root">
-    <div class="kt-grid kt-grid--hor kt-grid--root  kt-login kt-login--v6 kt-login--signin" id="kt_login">
-        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--desktop kt-grid--ver-desktop kt-grid--hor-tablet-and-mobile">
-            @yield('content')
-            <div class="kt-grid__item kt-grid__item--fluid kt-grid__item--center kt-grid kt-grid--ver kt-login__content" style="background-image: url(assets/media//bg/bg-4.jpg);">
-                <div class="kt-login__section">
-                    <div class="kt-login__block">
-                        <h1 class="kt-login__title">Ferouja</h1>
-                        <div class="kt-login__desc">
-                            Votre plateforme de suivi scolaire !
-                            <br>L'etudiantest notre résponsabilité
+<!-- body -->
+<body class="main-layout">
+<!-- loader  -->
+{{--<div class="loader_bg">--}}
+{{--<div class="loader"><img src="images/loading.gif" alt="#" /></div>--}}
+{{--</div>--}}
+<!-- end loader -->
+<!-- header -->
+<header>
+    <!-- header inner -->
+    <div  class="" id="home">
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{{asset('assets/home/images/logo.png')}}" alt="#" /></a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#home"> Acceuil  </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">A propos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{route('login')}}">Mon compte</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</header>
+<div class="section">
+    <div class="container">
+        <div id="" class="Testimonial">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    @yield('content')
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
-<!-- end:: Page -->
-
-<!-- begin::Global Config(global config for global JS sciprts) -->
-<script>
-    var KTAppOptions = {
-        "colors": {
-            "state": {
-                "brand": "#5d78ff",
-                "dark": "#282a3c",
-                "light": "#ffffff",
-                "primary": "#5867dd",
-                "success": "#34bfa3",
-                "info": "#36a3f7",
-                "warning": "#ffb822",
-                "danger": "#fd3995"
-            },
-            "base": {
-                "label": [
-                    "#c5cbe3",
-                    "#a1a8c3",
-                    "#3d4465",
-                    "#3e4466"
-                ],
-                "shape": [
-                    "#f0f3ff",
-                    "#d9dffa",
-                    "#afb4d4",
-                    "#646c9a"
-                ]
-            }
-        }
-    };
-</script>
-
-<!-- end::Global Config -->
-
-<!--begin::Global Theme Bundle(used by all pages) -->
-
-<!--begin:: Vendor Plugins -->
-
-<!--end:: Vendor Plugins -->
-<script src="{{asset('assets/js/scripts.bundle.js')}}" type="text/javascript"></script>
-
-<!--begin:: Vendor Plugins for custom pages -->
-@yield('js')
-<!--end::Page Scripts -->
-
-<!--end::Page Scripts -->
+<!-- end footer -->
+<!-- Javascript files-->
+<script src="{{asset('assets/home/js/jquery.min.js')}}"></script>
+<script src="{{asset('assets/home/js/popper.min.js')}}"></script>
+<script src="{{asset('assets/home/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/home/js/jquery-3.0.0.min.js')}}"></script>
+<script src="{{asset('assets/home/js/plugin.js')}}"></script>
+<!-- sidebar -->
+<script src="{{asset('assets/home/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{asset('assets/home/js/custom.js')}}"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
-
-<!-- end::Body -->
 </html>
+
