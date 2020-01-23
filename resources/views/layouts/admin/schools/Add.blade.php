@@ -21,6 +21,17 @@
                                 </div>
                             </div>
                         </div>
+                        @if($errors->any())
+                            <div class="alert alert-danger">
+                                <strong>Whoops !</strong>Il y avait quelques problèmes lors de la création.
+                                <br>
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                        <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <div class="kt-portlet__body">
                             <form method="post" action="{{route('schools.store')}}" class="kt-form" id="kt_form">
                                 @csrf

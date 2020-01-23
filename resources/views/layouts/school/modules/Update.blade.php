@@ -1,7 +1,10 @@
 @extends('master.school-admin')
+@section('css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" />
+@endsection
 @section('content')
     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-        @include('layouts.school.students.subheader')
+        @include('layouts.school.modules.subheader')
         <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -10,21 +13,31 @@
                     <div class="kt-portlet kt-portlet--last kt-portlet--head-lg kt-portlet--responsive-mobile" id="kt_page_portlet">
                         <div class="kt-portlet__head kt-portlet__head--lg">
                             <div class="kt-portlet__head-label">
-                                <h3 class="kt-portlet__head-title">Information Etudiant<small>avec contacte parent</small></h3>
+                                <h3 class="kt-portlet__head-title">Renseignement sur le module</h3>
                             </div>
                             <div class="kt-portlet__head-toolbar">
 
                                 <div class="btn-group">
-                                    <button id="student-form" type="button" class="btn btn-brand">
+                                    <button id="module-form" type="button" class="btn btn-brand">
                                         <i class="la la-check"></i>
-                                        <span class="kt-hidden-mobile">Mis á jour au systeme</span>
+                                        <span class="kt-hidden-mobile">Mettre á jour au systeme</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <strong>Whoops!</strong> Il y avait quelques problèmes lors de la création.
+                                <br>
+                                <ul class="t7wissa-errors-list">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <div class="kt-portlet__body">
                             <form method="post" action="{{route('modules.update',$module->id)}}" class="kt-form" id="kt_form">
-                                @method('PUT')
                                 @csrf
                                 <div class="row">
                                     <div class="col-xl-2"></div>
@@ -35,37 +48,46 @@
                                                 <div class="form-group row">
                                                     <label class="col-3 col-form-label">Désignation du module</label>
                                                     <div class="col-9">
-                                                        <input class="form-control" name="designation" type="text" value="{{$module->designation}}">
+                                                        <input class="form-control" name="designation" type="text" value="{{$module->designation}}" >
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label class="col-2 col-form-label">Choisissez les niveaux adaptés pour ce module</label>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_1" value="1" {{$module->isChecked($module->niveau_1)}}> Niveau 1
+                                                    <label class="col-3 col-form-label">Déscription du module</label>
+                                                    <div class="col-9">
+                                                        <textarea class="form-control" name="description" id="" cols="30" rows="10">{{$module->description}}</textarea>
                                                     </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_2" value="1" {{$module->isChecked($module->niveau_2)}}> Niveau 2
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Coéfficient du module</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" name="coefficient" type="text" value="{{$module->coefficient}}" >
                                                     </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_3" value="1" {{$module->isChecked($module->niveau_3)}}> Niveau 3
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Volume horaire par semaine</label>
+                                                    <div class="col-9">
+                                                        <input class="form-control" name="volume" type="text" value="{{$module->hours_volume}}">
                                                     </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_4" value="1" {{$module->isChecked($module->niveau_4)}}> Niveau 4
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <input type="checkbox" name="niveau_5" value="1" {{$module->isChecked($module->niveau_5)}}> Niveau 5
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-3 col-form-label">Niveaux affécté</label>
+                                                    <div class="col-9">
+                                                        <select name="levels[]" id="levels_affect" class="form-control" multiple="multiple">
+                                                            <option value=""></option>
+                                                            @foreach(\App\Level::all() as $level)
+                                                                <option value="{{$level->id}}">{{$level->name .' '. strtoupper($level->cycle)}}</option>
+                                                            @endforeach
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="kt-separator kt-separator--border-dashed kt-separator--space-lg"></div>
                                     </div>
                                     <div class="col-xl-2"></div>
                                 </div>
                             </form>
                         </div>
                     </div>
-
                     <!--end::Portlet-->
                 </div>
             </div>
@@ -73,11 +95,20 @@
     </div>
 @endsection
 @section('js')
+    <script src="http://demo.itsolutionstuff.com/plugin/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#student-form').click(function () {
+            $('#module-form').click(function () {
                 $('#kt_form').submit()
             })
         })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#levels_affect").select2({
+                tags: true
+            });
+        });
     </script>
 @endsection

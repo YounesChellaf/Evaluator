@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\School\AddSchoolRequest;
+use App\Http\Requests\School\UpdateSchoolRequest;
 use App\School;
+use App\User;
 use Illuminate\Http\Request;
 
 class SchoolController extends Controller
@@ -33,7 +36,7 @@ class SchoolController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AddSchoolRequest $request)
     {
         if ($request->post()){
             School::new($request);
@@ -72,7 +75,7 @@ class SchoolController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateSchoolRequest $request, $id)
     {
         $school = School::find($id);
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Level;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -30,7 +30,7 @@ class LevelRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'La designation du niveau est obligatoire'
+            'name.required' => 'La designation du niveau est obligatoire',
         ];
     }
 }

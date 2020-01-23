@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Student\AddStudentRequest;
 use App\Student;
+use App\User;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -34,6 +36,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         if ($request->post()){
+            //$request->validated();
             Student::new($request);
             return redirect()->route('students.index');
         }
@@ -105,5 +108,13 @@ class StudentController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function complete(Request $request)
+    {
+        $search = $request->get('term');
+        $result = User::where('userName', 'LIKE', '%'. $search. '%')->get();
+        return response()->json($result);
     }
 }

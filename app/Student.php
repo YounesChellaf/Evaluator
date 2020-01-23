@@ -35,23 +35,29 @@ class Student extends Model
     }
 
     public static function new(Request $request){
-        if ($request->post()){
-            $user = User::firstOrCreate([
-                'first_name' => $request->tutel_first_name,
-                'last_name' => $request->tutel_last_name,
-                'phone_number' => $request->phone_number,
-                'email' => $request->email,
-                'password' => Hash::make($request->password),
 
-            ]);
-            $user->assignRole(Role::where('name','tutel')->first());
-            $photo = $request->file('image');
-            $destpath = 'assets/img/student';
-            $file_name = $photo->getClientOriginalName();
-            $photo->move($destpath,$file_name);
-            $image = Image::create([
-                'path' => $file_name
-            ]);
+        if ($request->post()){
+            if ($request->existedUser){
+                $user = json_decode($request->existedUserName);
+            }
+            else{
+                $user = User::firstOrCreate([
+                    'first_name' => $request->tutel_first_name,
+                    'last_name' => $request->tutel_last_name,
+                    'phone_number' => $request->phone_number,
+                    'email' => $request->email,
+                    'userName' => $request->userName,
+                    'password' => Hash::make($request->password),
+                ]);
+                $user->assignRole(Role::where('name','tutel')->first());
+            }
+//            $photo = $request->file('image');
+//            $destpath = 'assets/img/student';
+//            $file_name = $photo->getClientOriginalName();
+//            $photo->move($destpath,$file_name);
+//            $image = Image::create([
+//                'path' => $file_name
+//            ]);
             $student =Student::create([
                'matricule' => $request->matricule,
                'last_name' => $request->last_name,
@@ -69,7 +75,7 @@ class Student extends Model
                'emergency_phone_number' => $request->emergency_phone_number,
                'user_id' => $user->id,
                'class_id' => $request->class_id,
-               'image_id' => $image->id,
+               'image_id' => 1,
             ]);
 
             return $student;

@@ -22,6 +22,16 @@
                             </div>
                         </div>
                         <div class="kt-portlet__body">
+                            @if($errors->any())
+                                <div class="alert alert-danger">
+                                    <strong>Whoops !</strong>Il y'avait quelques probléme lors de la création.
+                                    <ul>
+                                        @foreach($errors->all() as $error)
+                                            <li>{{$error}}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                             <form method="post" action="{{route('levels.store')}}" class="kt-form" id="kt_form">
                                 @csrf
                                 <div class="row">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Prof\AddProfRequest;
 use App\Prof;
 use Illuminate\Http\Request;
 
@@ -33,7 +34,7 @@ class ProfController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AddProfRequest $request)
     {
         if ($request->post()){
             Prof::new($request);

@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\LevelRequest;
+
+use App\Http\Requests\Level\LevelRequest;
 use App\Level;
 use Illuminate\Http\Request;
 
@@ -77,7 +78,7 @@ class LevelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(LevelRequest $request, $id)
     {
         $level = Level::find($id);
         $level->name = $request->name;

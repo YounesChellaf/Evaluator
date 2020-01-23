@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Module\AddModuleRequest;
 use App\Module;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\AssignOp\Mod;
@@ -34,7 +35,7 @@ class ModuleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AddModuleRequest $request)
     {
         if ($request->post()){
             Module::new($request);

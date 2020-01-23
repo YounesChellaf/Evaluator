@@ -48,7 +48,7 @@
                                             </th>
                                     @endif
                                     <th>{{$convocation->motif }}</th>
-                                    <th>{{$convocation->reception_date->for\mat('d-m-Y') }}</th>
+                                    <th>{{$convocation->reception_date->format('d-m-Y') }}</th>
                                     <th>{{$convocation->status()}}</th>
                                     <th>
                                         <div>

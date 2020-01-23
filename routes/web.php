@@ -14,10 +14,8 @@ Route::get('/', function () {
     return view('home.home');
 })->name('home');
 
-
+Route::get('autocomplete','StudentController@complete')->name('autocomplete');
 Route::group(['middleware'=>'auth'], function(){
-
-
     Route::resource('absences','AbsenceController');
     Route::get('/conversation/{id}','MessageController@getProfMessage');
     Route::post('/conversation/send','MessageController@sendMessage');
@@ -67,6 +65,9 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/convocations','ConvocationController@index')->name('school-admin.convocations.index');
         Route::get('/convocations/{id}','ConvocationController@show')->name('school.convocations.show');
         Route::get('/convocations/approuve/{id}','ConvocationController@approuve')->name('convocations.approuve');
+        Route::get('/general', function () {
+            return view('layouts.school.landing.index');
+        })->name('school-admin.landing');
 //        End custom routes
     });
 //    End School Admin Portal

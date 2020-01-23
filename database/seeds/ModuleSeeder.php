@@ -12,32 +12,25 @@ class ModuleSeeder extends Seeder
      */
     public function run()
     {
-        Module::inserte([
+        Module::insert([
             [
                 'designation' => 'Langue Arab',
-                'niveau_0' => true,
-                'niveau_1' => true,
-                'niveau_2' => true,
-                'niveau_3' => true,
-                'niveau_4' => true,
-                'niveau_5' => true,
+                'description' => 'Langue Arab',
+                'coefficient' => 5,
+                'hours_volume' => 30,
             ],
             [
-                'designation' => 'Langue Arab',
-                'niveau_0' => true,
-                'niveau_1' => true,
-                'niveau_2' => true,
-                'niveau_3' => true,
-                'niveau_4' => true,
-                'niveau_5' => true,
+                'designation' => 'Langue Francaise',
+                'description' => 'Langue Francaise',
+                'coefficient' => 5,
+                'hours_volume' => 30,
             ],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
+            [
+                'designation' => 'Mathematique',
+                'description' => 'Mathematique',
+                'coefficient' => 5,
+                'hours_volume' => 30,
+            ]
         ]);
     }
 }
