@@ -40,6 +40,7 @@
                                 <th>{{$student->last_name}}</th>
                                 <th>{{$student->first_name}}</th>
                                 <th>
+                                    <div class="bootstrap-switch-container" style="width: 156px; margin-left: 0px;"><span class="bootstrap-switch-handle-on bootstrap-switch-success" style="width: 52px;">ON</span><span class="bootstrap-switch-label" style="width: 52px;">&nbsp;</span><span class="bootstrap-switch-handle-off bootstrap-switch-warning" style="width: 52px;">OFF</span><input data-switch="true" type="checkbox" checked="checked" data-on-color="success" data-off-color="warning"></div>
                                     <span class="kt-switch kt-switch--success kt-switch--sm">
 										<label>
                                             <input type="hidden" name="classe_id" value="{{$student->classe->id}}">

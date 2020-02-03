@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44374005-e319-4c09-8c97-98070cc792ed" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Module/AddModuleRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Prof/AddProfRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Student/AddStudentRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/school/classes/Update.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/school/landing/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/school/landing/subheader.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LevelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ModuleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ModuleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ClassRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Classe/ClassRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/LevelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Level/LevelRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/School.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/School.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ModuleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ModuleSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/levels/Add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/levels/Add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/levels/Update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/levels/Update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/schools/Add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/schools/Add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/schools/Update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/schools/Update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/prof/convocations/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/prof/convocations/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/classes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/classes/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/enseignents/Add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/enseignents/Add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/enseignents/Update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/enseignents/Update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/enseignents/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/enseignents/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/modules/Add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/modules/Add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/modules/Update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/modules/Update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/school/students/Add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/school/students/Add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/student/modules/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/student/modules/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master/school-admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/school-admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/prof/students/absence.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/prof/students/absence.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,65 +31,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Student.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Student.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+            <state relative-caret-position="1242">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddStudentRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/Student/AddStudentRequest.php">
+      <file leaf-file-name="absence.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/students/absence.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
+      <file leaf-file-name="prof-admin.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/master/prof-admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
-              <caret line="49" column="26" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="17480">
+              <caret line="760" column="61" selection-start-line="760" selection-start-column="55" selection-end-line="760" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="School.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/School.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1058">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-            </state>
-          </provider>
+      <file leaf-file-name="EventServiceProvider.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/enseignents/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/students/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2760">
-              <caret line="120" column="18" selection-start-line="16" selection-start-column="12" selection-end-line="120" selection-end-column="18" />
+            <state relative-caret-position="391">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Classe.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Classe.php">
+      <file leaf-file-name="style.bundle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/style.bundle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            <state relative-caret-position="414">
+              <caret line="3774" column="3" lean-forward="true" selection-start-line="3774" selection-start-column="3" selection-end-line="3774" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/classes/index.blade.php">
+      <file leaf-file-name="style.bundle.min.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/style.bundle.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="26" column="115" selection-start-line="26" selection-start-column="115" selection-end-line="26" selection-end-column="115" />
+            <state relative-caret-position="546">
+              <caret line="5" column="2347" selection-start-line="5" selection-start-column="2347" selection-end-line="5" selection-end-column="2347" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="master-auth.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master-auth.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="109" column="7" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -133,15 +104,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="5014">
               <caret line="218" column="82" selection-start-line="218" selection-start-column="82" selection-end-line="218" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Add.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/enseignents/Add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4462">
-              <caret line="194" column="11" selection-start-line="190" selection-start-column="8" selection-end-line="194" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -162,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class_affect</find>
       <find>absen</find>
       <find>devoir</find>
       <find>convocation</find>
@@ -192,6 +153,7 @@
       <find>student</find>
       <find>datepick</find>
       <find>Classe</find>
+      <find>switch</find>
     </findStrings>
     <replaceStrings>
       <replace>../../img/banner_img.png</replace>
@@ -206,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Requests/ConvocationRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TutelPortalController.php" />
         <option value="$PROJECT_DIR$/resources/views/master/student-admin.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
@@ -257,6 +217,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/school/students/Add.blade.php" />
         <option value="$PROJECT_DIR$/app/Student.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/prof/students/absence.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.bundle.css" />
       </list>
     </option>
   </component>
@@ -367,7 +329,7 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -377,6 +339,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -392,6 +355,38 @@
             <path>
               <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
               <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="style.bundle.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="evaluator" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -413,7 +408,7 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="prof" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="evaluator" type="b2602c69:ProjectViewProjectNode" />
@@ -421,18 +416,17 @@
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="school" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="enseignents" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="prof" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="students" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Studen&#9;null&#9;null&#10;Student&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;User&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/User.php&#10;clas&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;Scho&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/School.php&#10;Class&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;School&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/School.php&#10;web&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/web.php&#10;Stude&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;user&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2020_01_16_220229_create_multi_student_user.php&#10;Schoo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/SchoolController.php&#10;api&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/api.php&#10;USer&#9;null&#9;null&#10;Stud&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;student_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_09_001936_create_students_table.php&#10;Module&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;prof_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_025833_create_profs_table.php&#10;Prof&#9;null&#9;null&#10;ClassR&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Requests/Classe/ClassRequest.php&#10;Leve&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/LevelController.php&#10;level&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_15_220844_create_levels_table.php&#10;Level&#9;null&#9;null&#10;UpdateR&#9;null&#9;null&#10;U&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;module&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;Seed&#9;null&#9;null&#10;Seeder&#9;null&#9;null&#10;REgi&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/RegisterController.php&#10;multi&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2020_01_16_165830_create_multi_student_user.php&#10;Logi&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/LoginController.php&#10;style.b&#9;FILE&#9;file:///Users/issam/dev/evaluator/public/assets/css/style.bundle.css&#10;Tutel&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/TutelPortalController.php&#10;studen&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Student.php&#10;wen&#9;null&#9;null&#10;StudentC&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;Lo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/LoginController.php&#10;Convocation&#9;null&#9;null&#10;conv&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_18_152014_create_convocations_table.php&#10;Conv&#9;null&#9;null&#10;modul&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;convocati&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_18_152014_create_convocations_table.php&#10;convoca&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2020_01_07_112145_classe_convocation_table.php&#10;Convo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Convocation.php&#10;Modul&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;Pro&#9;null&#9;null&#10;Regi&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/RegisterController.php&#10;Con&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Convocation.php&#10;role&#9;null&#9;null&#10;Regis&#9;null&#9;null&#10;Login&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="master&#9;FILE&#9;file:///Users/issam/dev/evaluator/resources/views/layouts/master-auth.blade.php&#10;Studen&#9;null&#9;null&#10;Student&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;User&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/User.php&#10;clas&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;Scho&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/School.php&#10;Class&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Classe.php&#10;School&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/School.php&#10;web&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/web.php&#10;Stude&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;user&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2020_01_16_220229_create_multi_student_user.php&#10;Schoo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/SchoolController.php&#10;api&#9;FILE&#9;file:///Users/issam/dev/evaluator/routes/api.php&#10;USer&#9;null&#9;null&#10;Stud&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;student_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_09_001936_create_students_table.php&#10;Module&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;prof_&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_025833_create_profs_table.php&#10;Prof&#9;null&#9;null&#10;ClassR&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Requests/Classe/ClassRequest.php&#10;Leve&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/LevelController.php&#10;level&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_15_220844_create_levels_table.php&#10;Level&#9;null&#9;null&#10;UpdateR&#9;null&#9;null&#10;U&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;module&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_14_120541_create_modules_table.php&#10;Seed&#9;null&#9;null&#10;Seeder&#9;null&#9;null&#10;REgi&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/RegisterController.php&#10;multi&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2020_01_16_165830_create_multi_student_user.php&#10;Logi&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/LoginController.php&#10;style.b&#9;FILE&#9;file:///Users/issam/dev/evaluator/public/assets/css/style.bundle.css&#10;Tutel&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/TutelPortalController.php&#10;studen&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Student.php&#10;wen&#9;null&#9;null&#10;StudentC&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/StudentController.php&#10;Lo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/LoginController.php&#10;Convocation&#9;null&#9;null&#10;conv&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_18_152014_create_convocations_table.php&#10;Conv&#9;null&#9;null&#10;modul&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;convocati&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2019_11_18_152014_create_convocations_table.php&#10;convoca&#9;FILE&#9;file:///Users/issam/dev/evaluator/database/migrations/2020_01_07_112145_classe_convocation_table.php&#10;Convo&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Convocation.php&#10;Modul&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Module.php&#10;Pro&#9;null&#9;null&#10;Regi&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Http/Controllers/Auth/RegisterController.php&#10;Con&#9;FILE&#9;file:///Users/issam/dev/evaluator/app/Convocation.php&#10;role&#9;null&#9;null&#10;Regis&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -514,23 +508,27 @@
       <workItem from="1579439491979" duration="26000" />
       <workItem from="1579683590336" duration="8830000" />
       <workItem from="1579744136483" duration="180000" />
+      <workItem from="1579774869946" duration="539000" />
+      <workItem from="1579889180341" duration="444000" />
+      <workItem from="1580043472263" duration="1467000" />
+      <workItem from="1580736438197" duration="641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218180000" />
+    <option name="totallyTimeSpent" value="221271000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="836" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.30160692" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.20746888" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4041488" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.18424243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42703864" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,13 +549,14 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3869814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="13" weight="0.32880098" />
@@ -566,9 +565,8 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.30160692" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880098" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,55 +576,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/school/landing/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="93" column="66" selection-start-line="93" selection-start-column="66" selection-end-line="93" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/LevelSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ModuleSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/convocations/Add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_14_120541_create_modules_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin/schools/Add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -931,8 +880,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+        <state relative-caret-position="1242">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/master/prof-admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17480">
+          <caret line="760" column="61" selection-start-line="760" selection-start-column="55" selection-end-line="760" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/students/absence.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/prof/students/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master-auth.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="109" column="7" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.bundle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="3774" column="3" lean-forward="true" selection-start-line="3774" selection-start-column="3" selection-end-line="3774" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.bundle.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="5" column="2347" selection-start-line="5" selection-start-column="2347" selection-end-line="5" selection-end-column="2347" />
         </state>
       </provider>
     </entry>
